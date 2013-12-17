@@ -27,7 +27,7 @@
   margin-top: 30px;
 }
 
-.detail p, a, ul, li {
+.detail, .post p, a, ul, li {
   text-align: left;
 }
 
