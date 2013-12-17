@@ -8,11 +8,6 @@
   margin: 0 auto;
 }
 
-.biglink {
-    font-size:18px;    
-    color:gray;
-}
-
 .biglink a {
     display:block;
     padding: 15px 15px;

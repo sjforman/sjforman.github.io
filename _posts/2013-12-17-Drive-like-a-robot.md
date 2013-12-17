@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Drive like a robot"
+title:  "Why I drive like a robot, and you should too."
 date:   2013-12-17 18:24
 categories: transportation
 ---
