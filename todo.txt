@@ -1,0 +1,27 @@
+[ ] consolidate branches
+[ ] replace favicon
+[ ] remove extraneous bootstrap stuff
+[ ] make accessible
+[ ] sync blog style
+[ ] rewrite consult page
+[ ] choose font
+[ ] increase type size
+
+[x] change to single column
+[x] get favicon working
+[x] change photo
+[x] make type bigger
+[x] fix responsive
+[x] add 'about'
+[x] make link targets big
+[x] add server-side includes
+[x] add consult interstitial
+[x] add Opower interstitial
+[x] make travel interstitial
+[x] make projects interstitial
+[x] host link icons locally
+[x] improve favicon
+[x] add google analytics
+[x] make into git repo
+[x] add content to interstitials
+[x] add back in projects page
