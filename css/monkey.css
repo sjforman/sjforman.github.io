@@ -3,6 +3,10 @@
   margin-bottom: 10px;
 }
 
+.bottombreathe {
+  margin-bottom: 15px;
+}
+
 #profilephoto {
   max-width: 150px;
   margin: 0 auto;
@@ -11,6 +15,8 @@
 .biglink a {
     display:block;
     padding: 15px 15px;
+    text-align: center;
+    border: 1px dotted linen;
 }
 
 .biglink a:hover {
@@ -22,13 +28,13 @@
   margin-top: 30px;
 }
 
-.detail, .post p, a, ul, li {
-  text-align: left;
+#tagline {
+  padding:10px 0px 0px 0px;
+  font-size:18px;
 }
 
-#tagline {
-  padding:10px 10px;
-  font-size:18px;
+#tagaddendum {
+  margin-top: -0.7em;
 }
 
 #linkrow-footer {
@@ -50,5 +56,9 @@
 body, input, button, select, textarea, p, a {
   font-family: 'Open Sans', sans-serif;
   color: gray;
-  text-align: center;
+}
+
+.social-logo {
+  width: 16px;
+  height: 16px;
 }
