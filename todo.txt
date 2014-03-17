@@ -1,12 +1,3 @@
-[ ] consolidate branches
-[ ] replace favicon
-[ ] remove extraneous bootstrap stuff
-[ ] make accessible
-[ ] sync blog style
-[ ] rewrite consult page
-[ ] choose font
-[ ] increase type size
-
 [x] change to single column
 [x] get favicon working
 [x] change photo
@@ -25,3 +16,10 @@
 [x] make into git repo
 [x] add content to interstitials
 [x] add back in projects page
+[x] consolidate branches
+[x] replace favicon
+[x] remove extraneous bootstrap stuff
+[x] make accessible
+[x] sync blog style
+[x] rewrite consult page
+[x] choose font
