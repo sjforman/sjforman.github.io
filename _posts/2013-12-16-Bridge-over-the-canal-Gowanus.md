@@ -13,6 +13,6 @@ As a partial remedy, inspired by Jane Jacob's memorable discussion of "border va
 
 \-- I propose the following pedestrian and cyclist bridge over Degraw Street, placed for maximum impact on permeability:
 
-![](/img/gowanus-bridge.png)
+![bridge-sketch](/assets/gowanus-bridge.png)
 
 It would dramatically reduce the time it takes to travel from one side of the canal to the other from points in the surrounding blocks. It would make the neighborhood more pedestrian-and-cyclist friendly. And it at least appears that the city controls the land on both sides of the crossing.
