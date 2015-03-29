@@ -1,3 +1,6 @@
 [submodule "hue-gowanus"]
 	path = hue-gowanus
 	url = https://github.com/sjforman/hue-gowanus.git
+[submodule "wedding-website"]
+	path = wedding-website
+	url = https://github.com/sjforman/wedding-website.git
