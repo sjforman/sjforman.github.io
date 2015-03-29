@@ -4,3 +4,4 @@
 [submodule "wedding"]
 	path = wedding-website
 	url = https://github.com/sjforman/wedding-website.git
+  ignore = dirty
