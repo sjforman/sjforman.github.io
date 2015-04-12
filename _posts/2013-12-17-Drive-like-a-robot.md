@@ -2,7 +2,6 @@
 layout: post
 title:  "Why I drive like a robot, and you should too."
 date:   2013-12-17 18:24
-categories: transportation
 ---
 
 As Burkhard Bilger's [superb piece](http://www.newyorker.com/reporting/2013/11/25/131125fa_fact_bilger) in the New Yorker makes clear, making cars drives themselves is in large part about making them act more like humans. The (fascinating) example he gives is the four-way stop sign: 

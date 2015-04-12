@@ -2,7 +2,6 @@
 layout: post
 title: "Better learn a fugue"
 date: 2014-05-07
-categories: music piano counterpoint polyphony
 ---
 
 I've been learning the d-sharp-minor fugue from the first book of the Well Tempered Clavier for ages (definition of an amateur pianist: one who never finishes anything?). A few weeks ago I decided to try an experiment. Having marked up my score nearly to the point of illegibility:

@@ -2,7 +2,6 @@
 layout: post
 title:  "A (new) bridge over the Canal Gowanus?"
 date:   2013-12-16
-categories: transportation
 ---
 
 With change afoot in the Gowanus (Superfund cleanup, Whole Foods market opening, real estate frenzy, etc.), how about a new bridge, too? I cross the canal regularly. It's hard to remember where the crossings are, and frustrating to shlep around to them. Just seems like there just aren't enough.
