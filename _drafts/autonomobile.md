@@ -1,3 +1,8 @@
+---
+layout: post
+title: “How autonomous cars can save our cities and defeat traffic for good"
+---
+
 Take a mental stroll around your nearest city. Don’t look at the buildings, or the trees. Look instead at the negative space, the parts you would normally ignore. What do you notice? 
 
 Unless you’re in Midtown Manhattan, you will probably see that from the perspective of the pedestrian, the _majority_ of the land is devoted to infrastructure that serves the purposes of people in cars. 
