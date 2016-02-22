@@ -48,7 +48,7 @@ A virtuous circle. Healthier people; denser, better, more affordable cities; but
 [la-parking-crater]: http://www.betterinstitutions.com/blog/2016/1/2/map-a-parking-lot-with-all-of-la-countys-186-million-parking-spaces
 [shoup-parking-cost]: http://shoup.bol.ucla.edu/HighCost.pdf
 [dinosaurs]: http://www.qwantz.com/index.php?comic=2587
-[high-cost-of-free-parking]: http://amzn.to/1OoHVBh
+[high-cost-of-free-parking]: http://amzn.to/1OqVDmZ
 [induced-demand]: https://vimeo.com/94457061
 [fagnant]: http://www.caee.utexas.edu/prof/kockelman/public_html/TRB15SAVsinAustin.pdf
 [mailing-list]: http://eepurl.com/bRkrSP
