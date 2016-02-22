@@ -4,8 +4,6 @@ title: Autonomous cars and the end of parking
 date: 2016-02-21
 ---
 
-Self-driving cars will never need to be parked. Let’s think about the implications of that. 
-
 As of today, there are something on the order of 250 million cars in the United States alone. There are also around 800 million parking spaces. 
 
 Cities all over the country have “parking craters.” Many downtowns have been simply obliterated, and replaced with vast quantities of surface parking. Here’s an example - Tulsa, Oklahoma, which has the dubious honor of winning the [2013 Streetsblog Parking Crater Competition][streetsblog]: 
