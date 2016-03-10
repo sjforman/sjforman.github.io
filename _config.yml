@@ -1,4 +1,4 @@
 name: sjforman (aka secondmonkey)'s home on the web
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 exclude: [Gemfile, Gemfile.lock, todo.txt]
