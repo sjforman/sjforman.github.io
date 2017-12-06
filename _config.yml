@@ -1,4 +1,4 @@
-name: sjforman (aka secondmonkey)'s home on the web
+name: sjforman home on the web
 markdown: kramdown
 highlighter: rouge
-exclude: [Gemfile, Gemfile.lock, todo.txt]
+exclude: [Gemfile, Gemfile.lock]
