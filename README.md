@@ -1,4 +1,1 @@
-sjforman.github.io
-======================
-
-GH pages site
+http://sjforman.com
