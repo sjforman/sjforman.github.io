@@ -1,34 +1,26 @@
 ---
 layout: default
-title: Scott J. Forman | Home
+title: scott j. forman | home
 ---
 
-<div id="name-handle" class="row">
-
-  <div class="col-md-4">
-    <h2 class="text-center">Scott J. Forman</h2>
+<div class="mw9 center ph3-ns">
+  <div class="cf ph2-ns">
+  <div class="fl w-100 w-50-ns pa2">
+    <h1 class="tc f4 f3-m f-headline-1">scott j. forman</h1>
+    <div class="pb2 tc">
+      <img src="/img/profilephoto.jpg" class="h3 w3 dib br-100" id="profilephoto" alt="profile photo">
+    </div>
+    {% include linkrow.html %} 
   </div>
 
-  <div class="col-md-4">
-    <img id="profilephoto" src="/img/profilephoto.jpg" class="img-responsive img-rounded" alt="profile photo">
+  <div class="fl w-100 w-50-ns">
+    <ul class="list">
+      {% for post in site.posts %}
+      <li class="pv2">
+        <a class="link blue hover-orange" href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
-
-  <div class="col-md-4">
-    <h2 class="text-center">@sjforman</h2>
-  </div>
-
 </div>
-
-<ul>
-  {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
-
-<div class="col-md-4 col-md-offset-4 row">
-  <p id="linkrow-footer" class="text-center">
-  {% include linkrow.html %} 
-  </p>
 </div>

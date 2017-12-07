@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Why I drive like a robot, and you should too."
-date:   2013-12-17 18:24
+date:   2013-12-17
 ---
 
-As Burkhard Bilger's [superb piece](http://www.newyorker.com/reporting/2013/11/25/131125fa_fact_bilger) in the New Yorker makes clear, making cars drives themselves is in large part about making them act more like humans. The (fascinating) example he gives is the four-way stop sign: 
+In his [superb piece](http://www.newyorker.com/reporting/2013/11/25/131125fa_fact_bilger) about autonomous cars in the New Yorker, Burkhard Bilger explains that making cars drives themselves is in large part about making them act more like humans. The (fascinating) example he gives is the four-way stop sign: 
 
 > Most drivers don’t just sit and wait their turn. They nose into the intersection, nudging ahead while the previous car is still passing through. The Google car didn’t do that. Being a law-abiding robot, it waited until the crossing was completely clear—and promptly lost its place in line. “The nudging is a kind of communication,” \[Sebastian\] Thrun told me. “It tells people that it’s your turn. ...The car has to learn that language.”
 
