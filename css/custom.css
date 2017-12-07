@@ -1,3 +1,13 @@
+#social-icons {
+  display: inline !important;
+  white-space: nowrap;
+}
+
+.social-icon-item {
+  list-style: none;
+  width: 1.5rem;
+}
+
 .container {
   margin-top: 10px;
   margin-bottom: 10px;
