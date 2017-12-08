@@ -1,53 +1,34 @@
 ---
 layout: post
-title: Cars destroyed our cities. Autonomous cars can save them.
+title: "Autonomous Cars Can Save Our Cities"
 ---
 
-Lewis Mumford famously asserted:
+<div class="pa4">
+  <blockquote class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
+    <p class="f5 f4-m f3-l lh-copy measure mt0">
 
-> The right to have access to every building in the city by private motorcar in an age when everyone possesses such a vehicle, is actually the right to destroy the city.
+    The right to have access to every building in the city by private motorcar in an age when everyone possesses such a vehicle, is actually the right to destroy the city.
 
-We live in a world where this prophecy has come to pass. Cars lobotomized our cities. What if we could undo the damage? What would our cities look like? How would they change?
+    </p>
+    <cite class="f6 ttu tracked fs-normal">―Lewis Mumford</cite>
+  </blockquote>
+</div>
 
-Much has been written about autonomous cars, but not enough has been said about their implications for the shapes of cities themselves. If we can seize the opportunity, I believe autonomous cars hold the seeds of a true urban renaissance. An opportunity to reverse the most disastrous consequences of the first 100 years of the automobile. 
+Sadly, Mumford's prophecy has come to pass. But I believe, if we can seize the opportunity, that autonomous cars hold the seeds of an urban renaissance, giving us a fighting chance to reverse the most disastrous consequences of the first 100 years of the automobile. It will take imagination, foresight, and political will. And the stakes are high, so we should start now. 
 
-It’s not a certainty. It will take imagination, foresight, and political will. And there’s a great deal at stake, so we need to start now. 
+Lest I be accused of irrational optimism, I'm well aware of the danger that autonomous cars will make things worse rather than better. As driving becomes radically more convenient, people may simply drive more and move farther away from cities. Perhaps traffic will improve temporarily, but just as with highway-widening, the increase in total driving will inevitably lead it to return, worse than before. 
 
-To get a sense for what’s at stake, let’s imagine two different possible futures. A bleak one, first, because there is a real danger that autonomous cars will make us all worse off.
+Avoiding this nightmare and making autonomous vehicles a force for good will require four ingredients: 
 
-# Future A
-
-Let’s say, in 10 years, you can buy your very own Ford Carnivalista. It drives itself home from the dealer and parks in your driveway.
-
-These things are so convenient that soon, pretty much everyone replaces their old car with a self-driving one. The technology advances fast, so they become more affordable quickly, and when you factor in the insurance savings...well, they’re just a better bet for most people. Crashes become infrequent, traffic moves more smoothly. People move farther out from cities as they realize they can be productive during their commutes, and traffic has improved, so the commutes themselves are shorter. For a while. 
-
-Soon, so many people are driving so much more, that congestion returns. Traffic slows to a crawl. What might have been a 60 minute commute 10 years earlier, that for a while took 30 minutes, is creeping back up towards 90 on bad days. 
-
-People start to demand that the roads be widened to ease the congestion. We’ve got to widen these roads! Billions are spent. But the traffic never gets any better. 
-
-# Future B
-
-10 years from now, you’re living in a townhouse with a bakery on the first floor. You’re within walking distance of a grocery store and dozens of restaurants, a hardware store, some art galleries, some bars and nightclubs. Biking has gotten more popular, since deaths and injuries have plummeted as human drivers have become scarce. They’re still allowed, but the insurance premiums are so high that fewer and fewer people do it. The new developments in your neighborhood all have restaurants, bars, and shops on their ground floors. Most of the surface parking lots have been replaced with housing. 
-
-Cars are still a constant presence. And there’s nothing wrong with that. When you want to get Thai food at the great place a few miles away, and it’s raining, you summon an autonomous car for one person, and it shows up on your block 3 minutes later. You hop into your Goober - which is fast, light, and efficient, and off you go. It takes 10 minutes, there’s no traffic, and it costs a dollar. 
-
-# The Difference
-
-The difference between Future A and Future B has everything to do with what’s known as “induced demand.” In Future A, we’ve taken the gains in convenience and road capacity that result from self-driving cars, and allowed them to encourage so much more driving that we’re worse off than where we started. Because, as traffic engineer Walter Kulash pointed out, “trying to cure traffic congestion with more capacity is like trying to cure obesity by loosening your belt.” [The Fundamental Law of Road Congestion][fundamental-law] is this: traffic increases to fill, and exceed, the space we give it.
-
-People fantasize about fleets of self-driving cars driving smoothly and fast on freeways, ending our traffic problems for good. Don’t be fooled. It’s a mirage. Increasing the carrying capacity of the roads in this way is, in an important sense, equivalent to widening them. In fact, it’s worse, because at the same time we’re (effectively) widening the roads, we’re making it less boring and painful for people to drive. 
-
-Realizing Future B will require 4 key ingredients: 
-
-## Shared Vehicles
+### Shared Vehicles
 
 [Fagnant et. al.][fagnant-et-al] attempted to figure out what size fleet of shared vechicles would be needed in a mid-sized city like Austin to achieve the same level of mobility as currently exists. They found it would take roughly one tenth the number of vehicles currently on the road, if those vehicles were shared. Because they’re in use more-or-less constantly, there’s no need to park them for long periods of time. If we don’t need to park our cars, we can reclaim a truly vast quantity of urban land for more productive uses, and start to knit them back together as walkable places. 
 
-## Clear Price Signals
+### Clear Price Signals
 
 In many urban areas, it is already cheaper to go carless than to own a car, and it’s an increasingly popular choice. But the price signals are really hard to see - a car is a major purchase, and once you have it, you mentally discount the cost of the vehicle itself, maintenance, depreciation, etc. in each incremental trip. The cost of the infrastructure - parking, roads, etc. - is also completely hidden - as are the cost of lost time spent in traffic or circling for parking, and the health costs of emissions in respiratory and other illnesses and premature death. If we’re going to avoid a world where autonomous driving means more driving, we need to internalize all of these externalities. More on how in a future post. 
 
-## Full Autonomy
+### Full Autonomy
 
 In December 2015, the California DMV released a [draft proposal][CA-dmv] for regulation of autonomous cars that includes the requirement that there be a steering wheel and a licensed driver behind it, ready to take control at any moment. While understandable,this would be a terrible mistake. For the elderly and disabled, it would destroy all of the substantial benefits that autonomous mobility promises. It would make real shared autonomous fleets impossible. And most importantly, it would undermine the potentially enormous safety benefits. It’s already obvious that humans are terrible drivers. They have no place at the wheel of a deadly moving projectile. Fortunately, [the Federal government seems to understand this][federal-reg]. 
 

@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Autonomous Cars and the Future of Traffic
+title: Toll All the Roads 
 --- 
 
 As a I child of LA, I remember being outraged by traffic. Staring out the window at the endless river of concrete and steel and glass. Why couldn't we all just go faster? Years later, my first economics class was a revelation, because I felt I finally understood. It had almost nothing to do with the way people drive, and everything to do with prices. We've set the price at zero, so the demand vastly exceeds the supply.

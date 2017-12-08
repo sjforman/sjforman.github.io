@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Autonomous cars and the end of parking
+title: The End of Parking
 date: 2016-02-21
 ---
 

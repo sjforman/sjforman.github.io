@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Autonomous car congestion nightmare? Maybe not...
+title: Autonomous Cars and Induced Demand
 ---
 
 [Last week][parking-post] I argued that autonomous cars can unleash a positive feedback loop transforming our cities for the better, by rendering parking an anachronism. In response, several commenters pointed to [a post on Jarrett Walker's blog][jarrett-walker-congestion-disaster] that contemplates an alternative possible future. One where — land-use benefits notwithstanding — autonomy causes a dramatic _increase_ in the total number of miles driven, and, by extension, terrible congestion. Walker, paraphrasing [Mark Hallenbeck][hallenbeck-bio], imagines as follows:

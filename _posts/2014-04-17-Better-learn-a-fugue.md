@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Better learn a fugue"
+title: "How to Learn A Fugue"
 date: 2014-05-07
 ---
 

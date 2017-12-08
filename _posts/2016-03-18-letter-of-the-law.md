@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Autonomous Cars and The Letter of the Law
+title: Let's Hope Autonomous Cars Respect the Law
 ---
 
 > 21950.(a) The driver of a vehicle shall yield the right-of-way to a pedestrian crossing the roadway within any marked crosswalk or within any unmarked crosswalk...
