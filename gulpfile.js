@@ -100,7 +100,7 @@ gulp.task('pre-process', function(){
 });
 
 gulp.task('production', function(){
-    gulp.run('minify-css', 'minify-img', 'minify-svg');
+    gulp.run('minify-css', 'minify-images', 'minify-svg');
 });
 
 /*
