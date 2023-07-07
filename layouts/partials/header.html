@@ -1,3 +1,5 @@
+{{ $image := resources.Get "images/fermata.svg" }}
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -6,11 +8,12 @@
     <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
-<body>
-<header>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/posts">Posts</a>
-        <a href="/contact">Contact</a>
+<body class="bg-gray-50">
+<header class="p-4 text-xl">
+    <nav class="flex items-center">
+        <a href="/"></a><img src="{{ $image.Permalink }}" alt="fermata" class="inline-block mx-2"></a>
+        <a href="/" class="font-bold mx-2 transition duration-200 hover:text-blue-500">Scott J. Forman</a>
+        <a href="/posts" class="mx-2 transition duration-200 hover:text-blue-500">Posts</a >
+        <a href="/about" class="mx-2 transition duration-200 hover:text-blue-500">About</a>
     </nav>
 </header>
