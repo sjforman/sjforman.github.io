@@ -1,7 +1,11 @@
 <html>
-<head></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ $css := resources.Get "css/index.css" }}
+    <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" />
+</head>
 <body>
-<!-- A header that appears on all pages of the site, with links to blog, home, and contact -->
 <header>
     <nav>
         <a href="/">Home</a>
