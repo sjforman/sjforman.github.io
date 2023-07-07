@@ -1,6 +1,0 @@
-name: "The home of Scott J. Forman on the www."
-description: "Scott. J. Forman's personal website and blog."
-author: "sjforman"
-url: "http://sjforman.com"
-future: true
-exclude: [README.md, Rakefile, Gemfile, Gemfile.lock, node_modules]
