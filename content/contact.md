@@ -1,4 +1,4 @@
 ---
-title: Contact page
+title: Contact
 ---
-Send me an email at joost@vdschee.nl
+Feel free to send me an email if you have my email address.
