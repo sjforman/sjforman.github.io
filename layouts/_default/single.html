@@ -1,5 +1,29 @@
 {{ partial "header.html" . }}
-    {{ if .Date }}{{ .Date | time.Format ":date_long" }}{{ end }}
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
+
+<main class="flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4 py-8">
+    <div class="bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg">
+        {{ if .Date }}<p>{{ .Date | time.Format ":date_long" }}</p>{{ end }}
+        {{ if .Title}}
+            <h1 class="text-3xl font-bold mb-4">{{ .Title }}</h1>
+        {{ end }}
+        <div class="markdown-content">
+            {{ .Content }}
+        </div>
+    </div>
+</main>
+
 {{ partial "footer.html" . }}
+
+<style>
+    .markdown-content p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .markdown-content a {
+        text-decoration: underline;
+        transition: color 200ms;
+    }
+    .markdown-content a:hover {
+        color: #3B82F6;
+    }
+</style>
