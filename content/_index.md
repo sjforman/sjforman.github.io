@@ -1,4 +1,4 @@
 ---
-title: My first content file
+title: Scott J. Forman
 ---
-My first paragraph in Markdown
+Accomplished indoorsman, intermediate outdoorsman
