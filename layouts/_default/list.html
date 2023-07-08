@@ -1,12 +1,13 @@
 {{ partial "header.html" . }}
-    <h1>Posts</h1>
-    <ul>
+
+<main class="flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8 space-y-4 sm:space-y-8">
     {{ range .RegularPages }}
-        <li>
-            {{ if .Date }}{{ .Date | time.Format ":date_long" }}{{ end }}
-            <h2>{{ .Title }}</h2>
-            <p>{{ .Summary }}... <a href="{{ .RelPermalink }}">Read more</a></p>
-        </li>
+        <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl">
+            <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date | time.Format ":date_long" }}{{ end }}</p>
+            <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h2>
+            <p class="mb-4">{{ .Summary }}</p>
+        </a>
     {{ end }}
-    </ul>
+</main>
+
 {{ partial "footer.html" . }}

@@ -1,0 +1,14 @@
+menu:
+  main:
+    - name: Scott J. Forman
+      pageRef: /
+      url: /
+      weight: 1
+    - name: Posts
+      pageref: /posts
+      url: /posts
+      weight: 2
+    - name: About
+      pageRef: /about
+      url: /about
+      weight: 3
