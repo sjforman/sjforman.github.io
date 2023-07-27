@@ -1,19 +1,20 @@
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
 <script>
-  function rssFeed() {
+  function atomFeed() {
     return {
-      items: [],
+      entries: [],
       loadFeed() {
-        fetch('https://sjforman-microblog.s3.us-west-1.amazonaws.com/microblog.xml')
+        fetch('/microblog.xml')
           .then(response => response.text())
           .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
           .then(data => {
-            const items = data.querySelectorAll("item");
-            this.items = Array.from(items).map(el => {
+            const entries = data.querySelectorAll("entry");
+            this.entries = Array.from(entries).map(el => {
               return {
-                title: el.querySelector("title").textContent,
-                link: el.querySelector("link").textContent,
-                description: el.querySelector("description").textContent,
+                content: el.querySelector("content").textContent,
+                id: el.querySelector("id").textContent,
+                updated: new Date(el.querySelector("updated").textContent).toLocaleString(),
               };
             });
           });
@@ -22,12 +23,13 @@
   }
 </script>
 
-<div x-data="rssFeed()" x-init="loadFeed()">
-  <template x-for="item in items" :key="item.title">
-    <div class="utterance bg-white border border-gray-300 rounded p-3 mb-3 w-96 shadow-md mx-auto">
-      <h2 class="utterance-title font-bold text-lg" x-text="item.title"></h2>
-      <a class="utterance-link text-blue-500 no-underline hover:underline" :href="item.link">Read more</a>
-      <p class="utterance-desc text-gray-700" x-text="item.description"></p>
+<main class="flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8 space-y-4 sm:space-y-8">
+    <div x-data="atomFeed()" x-init="loadFeed()">
+      <template x-for="entry in entries" :key="entry.id">
+        <a :href="'/' + entry.id" class="block border border-gray-300 bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg">
+          <div x-text="entry.content" class="mb-3 text-lg"></div>
+          <div x-text="entry.updated" class="text-right text-gray-400 text-xs"></div>
+        </a>
+      </template>
     </div>
-  </template>
-</div>
+  </main>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Microblog</title>
+  <link href="http://www.sjforman.me" rel="self" />
+  <updated>2023-07-26T18:30:02Z</updated>
+  <author>
+    <name>Scott J. Forman</name>
+  </author>
+  <id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
+
+  <entry>
+    <title>This is a short utterance.</title>
+    <content>This is a short utterance.</content>
+    <link href="http://www.sjforman.me/urn:uuid:60a76c81-d399-11d9-b91C-0003939e0af6" />
+    <id>urn:uuid:60a76c81-d399-11d9-b91C-0003939e0af6</id>
+    <updated>2023-07-26T18:30:02Z</updated>
+  </entry>
+
+  <entry>
+    <title>This is a slightly longer utterance, with more text to demonstrate the format.</title>
+    <content>This is a short utterance.</content>
+    <link href="http://www.sjforman.me/urn:uuid:60a76c82-d399-11d9-b91C-0003939e0af6" />
+    <id>urn:uuid:60a76c82-d399-11d9-b91C-0003939e0af6</id>
+    <updated>2023-07-26T18:31:02Z</updated>
+  </entry>
+
+  <!-- More entries here... -->
+
+</feed>
