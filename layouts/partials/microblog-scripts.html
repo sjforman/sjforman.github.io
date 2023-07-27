@@ -1,0 +1,33 @@
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script>
+  function rssFeed() {
+    return {
+      items: [],
+      loadFeed() {
+        fetch('https://sjforman-microblog.s3.us-west-1.amazonaws.com/microblog.xml')
+          .then(response => response.text())
+          .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+          .then(data => {
+            const items = data.querySelectorAll("item");
+            this.items = Array.from(items).map(el => {
+              return {
+                title: el.querySelector("title").textContent,
+                link: el.querySelector("link").textContent,
+                description: el.querySelector("description").textContent,
+              };
+            });
+          });
+      },
+    };
+  }
+</script>
+
+<div x-data="rssFeed()" x-init="loadFeed()">
+  <template x-for="item in items" :key="item.title">
+    <div class="utterance bg-white border border-gray-300 rounded p-3 mb-3 w-96 shadow-md mx-auto">
+      <h2 class="utterance-title font-bold text-lg" x-text="item.title"></h2>
+      <a class="utterance-link text-blue-500 no-underline hover:underline" :href="item.link">Read more</a>
+      <p class="utterance-desc text-gray-700" x-text="item.description"></p>
+    </div>
+  </template>
+</div>
