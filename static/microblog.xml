@@ -12,7 +12,7 @@
 
   <entry>
     <title>This is a short utterance.</title>
-    <content>This is a short utterance.</content>
+    <content>Applied moral philosophy. The *easy* part of the challenge of aligning a superintelligent AI is "solving ethics."</content>
     <link href="http://www.sjforman.me/urn:uuid:60a76c81-d399-11d9-b91C-0003939e0af6" />
     <id>urn:uuid:60a76c81-d399-11d9-b91C-0003939e0af6</id>
     <updated>2023-07-26T18:30:02Z</updated>
@@ -20,12 +20,10 @@
 
   <entry>
     <title>This is a slightly longer utterance, with more text to demonstrate the format.</title>
-    <content>This is a short utterance.</content>
+    <content>Hypothesis: one reason existential AI risks are hard to convey to a general audience is that most people have very wrong intuitions about how far beyond our current capabilities lie the real limits imposed by physics. Yud tried to gesture at Drexler without trying to get into the details in the QA after his TED talk, but I doubt hardly anyone in the audience understood what he was driving at.</content>
     <link href="http://www.sjforman.me/urn:uuid:60a76c82-d399-11d9-b91C-0003939e0af6" />
     <id>urn:uuid:60a76c82-d399-11d9-b91C-0003939e0af6</id>
-    <updated>2023-07-26T18:31:02Z</updated>
+    <updated>2022-07-26T18:31:02Z</updated>
   </entry>
-
-  <!-- More entries here... -->
 
 </feed>
