@@ -50,10 +50,10 @@ function atomFeed() {
 <main class="flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8 space-y-4 sm:space-y-8">
   <div x-data="atomFeed()" x-init="loadFeed()">
     <template x-for="entry in entries" :key="entry.id">
-      <a :href="'/' + entry.id" class="block border border-gray-300 bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg mb-4 flex flex-col">
+      <div class="block border border-gray-300 bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg mb-4 flex flex-col">
         <div class="self-end text-xs text-gray-400 mb-2" :title="entry.fullDate" x-text="entry.updated"></div>
         <div x-html="entry.content" class="mb-3 text-lg"></div>
-      </a>
+      </div>
     </template>
   </div>
 </main>
