@@ -6,7 +6,7 @@ function atomFeed() {
   return {
     entries: [],
     loadFeed() {
-      fetch('/microblog.xml')
+      fetch('https://sjforman-microblog.s3.us-west-1.amazonaws.com/microblog.xml')
         .then(response => response.text())
         .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
         .then(data => {
