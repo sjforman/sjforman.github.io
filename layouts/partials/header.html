@@ -12,32 +12,33 @@
 </head>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const darkModeToggle = document.getElementById("darkModeToggle");
-        const toggleIcon = document.getElementById("toggleIcon");
-        const fermata = document.getElementById("fermata");
+document.addEventListener("DOMContentLoaded", function () {
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const toggleIcon = document.getElementById("toggleIcon");
+    const fermata = document.getElementById("fermata");
 
-        // Check for saved preference
-        if (localStorage.getItem('dark-mode') === 'enabled') {
-            document.body.classList.add('dark');
-            toggleIcon.style.transform = 'rotate(0deg)';
-        }
+    // Function to set the filter style for SVGs
+    const setSVGFilter = (isDarkMode) => {
+        const filterValue = isDarkMode ? 'invert(1)' : 'invert(0)';
+        toggleIcon.style.filter = filterValue;
+        fermata.style.filter = filterValue;
+    };
 
-        darkModeToggle.addEventListener("click", function () {
-            document.body.classList.toggle('dark');
+    // Check for saved preference
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+        document.body.classList.add('dark');
+        setSVGFilter(true);
+    }
 
-            // Rotate the icon
-            if (document.body.classList.contains('dark')) {
-                toggleIcon.style.filter = 'invert(1)';
-                fermata.style.filter = 'invert(1)';
-                localStorage.setItem('dark-mode', 'enabled');
-            } else {
-                toggleIcon.style.filter = 'invert(0)';
-                fermata.style.filter = 'invert(0)';
-                localStorage.setItem('dark-mode', 'disabled');
-            }
-        });
+    darkModeToggle.addEventListener("click", function () {
+        document.body.classList.toggle('dark');
+        const isDarkMode = document.body.classList.contains('dark');
+        setSVGFilter(isDarkMode);
+        
+        // Save the current mode to localStorage
+        localStorage.setItem('dark-mode', isDarkMode ? 'enabled' : 'disabled');
     });
+});
 </script>
 
 <body class="bg-gray-50">

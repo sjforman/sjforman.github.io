@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
-<main class="flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8">
-    <div class="bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg">
+<main class="flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8 dark:bg-gray-900 dark:text-slate-50">
+    <div class="bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg dark:bg-gray-700 dark:text-slate-50">
         {{ if .Date }}<p>{{ .Date | time.Format ":date_long" }}</p>{{ end }}
         {{ if .Title}}
             <h1 class="text-3xl font-bold mb-4">{{ .Title }}</h1>

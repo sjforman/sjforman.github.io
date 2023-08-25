@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "hugo -D serve"
+    "dev:server": "hugo -D serve",
+    "watch:css": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/index.css --watch",
+    "dev": "concurrently 'npm run dev:server' 'npm run watch:css'"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/sjforman/sjforman.github.io#readme",
   "devDependencies": {
     "autoprefixer": "10.4.14",
+    "concurrently": "^8.2.1",
     "postcss": "8.4.25",
     "tailwindcss": "3.3.2"
   }
