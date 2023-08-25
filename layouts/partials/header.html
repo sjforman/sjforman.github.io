@@ -1,47 +1,38 @@
 {{ $image := resources.Get "images/fermata.svg" }}
 
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{ $css := resources.Get "css/index.css" }}
-    <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
-</head>
-
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const darkModeToggle = document.getElementById("darkModeToggle");
-    const toggleIcon = document.getElementById("toggleIcon");
-    const fermata = document.getElementById("fermata");
+    document.addEventListener("DOMContentLoaded", function () {
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const toggleIcon = document.getElementById("toggleIcon");
+        const fermata = document.getElementById("fermata");
 
-    // Function to set the filter style for SVGs
-    const setSVGFilter = (isDarkMode) => {
-        const filterValue = isDarkMode ? 'invert(1)' : 'invert(0)';
-        toggleIcon.style.filter = filterValue;
-        fermata.style.filter = filterValue;
-    };
+        // Function to set the filter style for SVGs
+        const setSVGFilter = (isDarkMode) => {
+            const filterValue = isDarkMode ? 'invert(1)' : 'invert(0)';
+            toggleIcon.style.filter = filterValue;
+            fermata.style.filter = filterValue;
+        };
 
-    // Check for saved preference
-    if (localStorage.getItem('dark-mode') === 'enabled') {
-        document.body.classList.add('dark');
-        setSVGFilter(true);
-    }
+        // Check for saved preference
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+            document.body.classList.add('dark');
+            setSVGFilter(true);
+        }
 
-    darkModeToggle.addEventListener("click", function () {
-        document.body.classList.toggle('dark');
-        const isDarkMode = document.body.classList.contains('dark');
-        setSVGFilter(isDarkMode);
-        
-        // Save the current mode to localStorage
-        localStorage.setItem('dark-mode', isDarkMode ? 'enabled' : 'disabled');
+        darkModeToggle.addEventListener("click", function () {
+            document.body.classList.toggle('dark');
+            const event = new Event('darkModeToggle');
+            document.dispatchEvent(event);
+            const isDarkMode = document.body.classList.contains('dark');
+            setSVGFilter(isDarkMode);
+
+            // Save the current mode to localStorage
+            localStorage.setItem('dark-mode', isDarkMode ? 'enabled' : 'disabled');
+        });
     });
-});
 </script>
 
-<body class="bg-gray-50">
+<div class="bg-gray-50">
     <div class="dark:bg-gray-900 dark:text-slate-50">
         <header class="p-4 text-s sm:text-xl md:text-2xl items-center mx-auto flex flex-col">
             <nav class="flex items-center">
@@ -49,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         style="width: var(--image-size); height: auto;" class="inline-block"></a>
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
-                <a class="mx-1 sm:mx-2 md:mx-4 whitespace-nowrap {{ if $currentPage.IsMenuCurrent "main" .
+                <a class="mx-1 sm:mx-2 md:mx-4 whitespace-nowrap {{ if $currentPage.IsMenuCurrent " main" .
                     }}is-active{{ end }}" href="{{ .URL }}">
                     {{ .Name }}
                 </a>
