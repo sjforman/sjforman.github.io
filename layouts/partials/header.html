@@ -1,6 +1,7 @@
 {{ $image := resources.Get "images/fermata.svg" }}
 
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +10,120 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="icon" type="image/x-icon" href="/favicon.png">
 </head>
-<body class="bg-gray-50">
-<header class="p-4 text-xl">
-    <nav class="flex items-center">
-        <img src="{{ $image.Permalink }}" alt="fermata" class="inline-block">
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-        <a 
-            class="mx-4 {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}"
-            href="{{ .URL }}">
-            {{ .Name }}
-        </a>
-      {{ end }}
-    </nav>
-</header>
 
-<style>
-    .is-active {
-        text-decoration: underline;
-    }
-</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const toggleIcon = document.getElementById("toggleIcon");
+        const fermata = document.getElementById("fermata");
+
+        // Check for saved preference
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+            document.body.classList.add('dark');
+            toggleIcon.style.transform = 'rotate(0deg)';
+        }
+
+        darkModeToggle.addEventListener("click", function () {
+            document.body.classList.toggle('dark');
+
+            // Rotate the icon
+            if (document.body.classList.contains('dark')) {
+                toggleIcon.style.filter = 'invert(1)';
+                fermata.style.filter = 'invert(1)';
+                localStorage.setItem('dark-mode', 'enabled');
+            } else {
+                toggleIcon.style.filter = 'invert(0)';
+                fermata.style.filter = 'invert(0)';
+                localStorage.setItem('dark-mode', 'disabled');
+            }
+        });
+    });
+</script>
+
+<body class="bg-gray-50">
+    <div class="dark:bg-gray-900 dark:text-slate-50">
+        <header class="p-4 text-s sm:text-xl md:text-2xl items-center mx-auto flex flex-col">
+            <nav class="flex items-center">
+                <a href="/"><img id="fermata" src="{{ $image.Permalink }}" alt="fermata symbol"
+                        style="width: var(--image-size); height: auto;" class="inline-block"></a>
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                <a class="mx-1 sm:mx-2 md:mx-4 whitespace-nowrap {{ if $currentPage.IsMenuCurrent "main" .
+                    }}is-active{{ end }}" href="{{ .URL }}">
+                    {{ .Name }}
+                </a>
+                {{ end }}
+                <button id="darkModeToggle" class="p-2 w-12 h-12 toggleIcon">
+                    <svg id="toggleIcon" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g fill="#000000">
+                            <path
+                                d="M61.50475,67.52875 C69.09075,62.46675 73.88675,54.02375 74.30875,44.91775 C74.72975,35.81675 70.41375,26.94275 63.27875,21.36475 C57.99975,17.23775 51.46575,15.04675 44.77475,15.01375 C35.53375,15.05875 26.66375,19.29375 21.03475,26.65975 C15.44875,33.97075 13.76775,43.71375 16.58175,52.47675 C19.36075,61.12975 26.33075,67.87975 34.82475,70.91075 C43.62475,74.05075 53.75775,72.69775 61.50475,67.52875 Z M67.46175,29.70575 C72.44975,37.22975 73.04075,47.06375 69.04275,55.14775 C65.08175,63.15475 57.02175,68.67475 48.18675,69.75275 C47.48775,69.83875 46.78775,69.89375 46.08775,69.92475 C46.08775,61.48575 46.08775,53.04575 46.08775,44.60675 C46.08775,35.63275 46.08775,26.65975 46.08775,17.68575 C54.64675,18.13275 62.68375,22.49975 67.46175,29.70575 Z M23.92975,60.36675 C18.03475,53.50275 16.36875,43.82075 19.28975,35.31475 C22.18575,26.88175 29.59475,20.59975 38.14775,18.44275 C39.89075,18.00375 41.66775,17.76575 43.45675,17.68175 C43.45675,26.11875 43.45675,34.55475 43.45675,42.99175 C43.45675,51.96675 43.45675,60.94275 43.45675,69.91775 C35.98675,69.53575 28.87475,66.12475 23.92975,60.36675 Z"
+                                id="Shape"></path>
+                            <path
+                                d="M46.31475,10.82075 C46.31475,7.63775 46.31475,4.45475 46.31475,1.27275 C46.31475,-0.42425 43.68375,-0.42425 43.68375,1.27275 C43.68375,4.45575 43.68375,7.63775 43.68375,10.82075 C43.68375,12.51775 46.31475,12.51775 46.31475,10.82075 Z"
+                                id="Path"></path>
+                            <path
+                                d="M63.09075,15.90375 C64.72675,13.14675 66.36275,10.39075 67.99975,7.63375 C68.86775,6.17075 66.59275,4.84775 65.72775,6.30575 C64.09075,9.06175 62.45475,11.81875 60.81875,14.57575 C59.94875,16.03775 62.22475,17.36175 63.09075,15.90375 Z"
+                                id="Path"></path>
+                            <path
+                                d="M75.02875,28.44575 C77.86375,26.85475 80.69775,25.26275 83.53275,23.67175 C85.01175,22.84075 83.68475,20.56775 82.20475,21.39975 C79.36975,22.99175 76.53575,24.58275 73.70075,26.17375 C72.22175,27.00475 73.54775,29.27875 75.02875,28.44575 Z"
+                                id="Path"></path>
+                            <path
+                                d="M88.72675,42.48375 C85.45475,42.48375 82.18175,42.48375 78.90975,42.48375 C77.21275,42.48375 77.21275,45.11475 78.90975,45.11475 C82.18175,45.11475 85.45475,45.11475 88.72675,45.11475 C90.42375,45.11475 90.42375,42.48375 88.72675,42.48375 Z"
+                                id="Path"></path>
+                            <path
+                                d="M63.09075,71.69575 C62.22475,70.23875 59.94875,71.56175 60.81875,73.02375 C62.45475,75.78075 64.09075,78.53775 65.72775,81.29475 C66.59275,82.75175 68.86875,81.42875 67.99975,79.96675 C66.36275,77.20875 64.72675,74.45175 63.09075,71.69575 Z"
+                                id="Path"></path>
+                            <path
+                                d="M43.68375,76.77875 C43.68375,79.96175 43.68375,83.14475 43.68375,86.32775 C43.68375,88.02475 46.31475,88.02475 46.31475,86.32775 C46.31475,83.14475 46.31475,79.96175 46.31475,76.77875 C46.31475,75.08075 43.68375,75.08075 43.68375,76.77875 Z"
+                                id="Path"></path>
+                            <path
+                                d="M26.90975,71.69575 C25.27375,74.45275 23.63675,77.20975 22.00075,79.96675 C21.13175,81.42875 23.40775,82.75175 24.27275,81.29475 C25.90875,78.53775 27.54575,75.78075 29.18175,73.02375 C30.04975,71.56175 27.77475,70.23775 26.90975,71.69575 Z"
+                                id="Path"></path>
+                            <path
+                                d="M14.96975,59.15375 C12.13575,60.74475 9.30175,62.33675 6.46675,63.92775 C4.98775,64.75775 6.31375,67.03175 7.79475,66.19875 C10.62875,64.60775 13.46375,63.01575 16.29775,61.42475 C17.77775,60.59475 16.45175,58.32075 14.96975,59.15375 Z"
+                                id="Path"></path>
+                            <path
+                                d="M11.09075,42.48375 C7.81775,42.48375 4.54575,42.48375 1.27275,42.48375 C-0.42425,42.48375 -0.42425,45.11475 1.27275,45.11475 C4.54575,45.11475 7.81775,45.11475 11.09075,45.11475 C12.78775,45.11475 12.78775,42.48375 11.09075,42.48375 Z"
+                                id="Path"></path>
+                            <path
+                                d="M6.46675,23.67175 C9.30075,25.26275 12.13575,26.85475 14.96975,28.44575 C16.45175,29.27775 17.77775,27.00475 16.29875,26.17375 C13.46475,24.58275 10.62975,22.99075 7.79575,21.39975 C6.31375,20.56775 4.98775,22.84175 6.46675,23.67175 Z"
+                                id="Path"></path>
+                            <path
+                                d="M26.90975,15.90375 C27.77475,17.36175 30.05075,16.03775 29.18175,14.57475 C27.54575,11.81875 25.90875,9.06175 24.27275,6.30475 C23.40775,4.84675 21.13175,6.16975 22.00075,7.63275 C23.63675,10.39075 25.27275,13.14675 26.90975,15.90375 Z"
+                                id="Path"></path>
+                        </g>
+                        </g>
+                    </svg>
+
+                </button>
+            </nav>
+        </header>
+
+        <style>
+            .is-active {
+                text-decoration: underline;
+            }
+
+            :root {
+                --image-size: 48px;
+                /* Default size */
+            }
+
+            @media (max-width: 640px) {
+
+                /* Tailwind's sm breakpoint */
+                :root {
+                    --image-size: 40px;
+                }
+            }
+
+            @media (min-width: 641px) and (max-width: 768px) {
+
+                /* Between Tailwind's sm and md breakpoints */
+                :root {
+                    --image-size: 32px;
+                }
+            }
+        </style>
