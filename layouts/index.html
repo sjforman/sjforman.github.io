@@ -2,10 +2,11 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const profileImage = document.getElementById("profileImage");
+        let isAnimated = true; // A flag to keep track of the image state
 
         // Function to set the profile image based on the mode
         const setProfileImage = (isDarkMode) => {
-            profileImage.src = isDarkMode ? "/images/profile-dark.gif" : "/images/profile-light.png";
+            profileImage.src = isDarkMode ? "/images/profile-dark-static.gif" : "/images/profile-light.png";
         };
 
         // Check for saved preference on page load
