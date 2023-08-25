@@ -1,6 +1,5 @@
-{{ partial "header.html" . }}
-
-<main class="flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8 space-y-4 sm:space-y-8 dark:bg-gray-900 dark:text-slate-50">
+{{ define "main" }}
+<main class="flex flex-col items-center min-h-screen px-4 py-8 space-y-4 sm:space-y-8 dark:bg-gray-900 dark:text-slate-50">
     {{ range .RegularPages }}
         <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
             <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date | time.Format ":date_long" }}{{ end }}</p>
@@ -9,5 +8,4 @@
         </a>
     {{ end }}
 </main>
-
-{{ partial "footer.html" . }}
+{{ end }}
