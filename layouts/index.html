@@ -1,31 +1,6 @@
 {{ define "main" }}
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const profileImage = document.getElementById("profileImage");
-        let isAnimated = true; // A flag to keep track of the image state
-
-        // Function to set the profile image based on the mode
-        const setProfileImage = (isDarkMode) => {
-            profileImage.src = isDarkMode ? "/images/profile-dark-static.gif" : "/images/profile-light.png";
-        };
-
-        // Check for saved preference on page load
-        if (localStorage.getItem('dark-mode') === 'enabled') {
-            document.body.classList.add('dark');
-            setProfileImage(true);
-        } else {
-            setProfileImage(false);
-        }
-
-        // Listen for the custom event dispatched from header.html
-        document.addEventListener("darkModeToggle", function () {
-            const isDarkMode = document.body.classList.contains('dark');
-            setProfileImage(isDarkMode);
-        });
-    });
-</script>
 <div class="flex flex-col items-center min-h-screen mx-auto mt-6">
-    <img id="profileImage" src="/images/profile-light.png" alt="Profile Photo"
+    <img id="profileImage" src="/images/profile-dark-static.gif" alt="Profile Photo"
         class="rounded-full mx-auto mb-4 mt-6 max-w-xs">
     <h1 class="text-3xl font-bold">{{ .Title }}</h1>
     {{ .Content }}
