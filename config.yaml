@@ -1,3 +1,5 @@
+title: "Scott J. Forman"
+
 menu:
   main:
     - name: Scott J. Forman
@@ -5,8 +7,8 @@ menu:
       url: /
       weight: 1
     - name: Macroblog 
-      pageref: /posts
-      url: /posts
+      pageref: /macroblog
+      url: /macroblog
       weight: 2
     - name: Microblog
       pageref: /microblog
