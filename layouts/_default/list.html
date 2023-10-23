@@ -4,7 +4,7 @@
         <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
             <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date | time.Format ":date_long" }}{{ end }}</p>
             <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h2>
-            <p class="mb-4">{{ .Summary }}</p>
+            <p class="mb-4">{{ .Summary }} <span class="text-gray-400 text-lg">&hellip;</span></p>
         </a>
     {{ end }}
 </main>

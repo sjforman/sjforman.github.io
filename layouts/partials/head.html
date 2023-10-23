@@ -10,6 +10,8 @@
     {{ .Site.Title }}
     {{ else if eq .Type "post" }}
     {{ .Title }} | Blog
+    {{ else if eq .Section "macroblog" }}
+    Macroblog | {{ .Site.Title }}
     {{ else }}
     {{ .Title }} | {{ .Site.Title }}
     {{ end }}

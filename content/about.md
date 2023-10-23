@@ -1,3 +1,7 @@
+---
+title: "About"
+---
+
 &#x1F44B; Hi! Scott J. Forman here, the person whose website this is. 
 
 You might know me as the founder of [Vote Forward](https://votefwd.org), a nonprofit that works to increase civic participation by organizing volunteers to send handwritten letters to their fellow citizens. Since 2018, more than a quarter million people have written letters, a total of more than 30 million of them.
