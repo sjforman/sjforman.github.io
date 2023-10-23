@@ -4,11 +4,11 @@
     <div class="bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg dark:bg-gray-700 dark:text-slate-50">
         {{ if .Date }}<p class="text-sm text-gray-500 mb-2">{{ .Date | time.Format ":date_long" }}</p>{{ end }}
         {{ if .Title}}
-            <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h1>
-        {{ end }}
-        <div class="markdown-content">
-            {{ .Content }}
-        </div>
+        <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h1>
+            {{ end }}
+            <div class="markdown-content">
+                {{ .Content }}
+            </div>
     </div>
 </main>
 
@@ -19,12 +19,26 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+
     .markdown-content a {
         text-decoration: underline;
         transition: color 200ms;
     }
+
     .markdown-content a:hover {
         color: #3B82F6;
+    }
+
+    .markdown-content ul,
+    .markdown-content ol {
+        list-style-type: disc; /* You can also use 'circle' or 'square' */
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+    }
+
+    .markdown-content li {
+        margin-bottom: 0.5rem;
     }
 </style>
 
