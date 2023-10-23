@@ -50,6 +50,16 @@ function atomFeed() {
 </script>
 
 <main class="flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8 space-y-4 sm:space-y-8 dark:bg-gray-900 dark:text-slate-50">
+  <!-- Information Section -->
+  <div class="relative mb-4 max-w-3xl w-full">
+    <div class="text-xs text-gray-400 mb-2 inline-block leading-7">
+      What is this? It's a microblog. Brief thoughts, ideas, observations, etc., in a form resembling social media, but...you know...not social. Antisocial. You can also subscribe through your RSS reader. Remember Google Reader? That was a better world.
+      <!-- Subscribe Button -->
+      <a href="https://sjforman-microblog.s3.us-west-1.amazonaws.com/microblog.xml" target="_blank" rel="noopener noreferrer" class="text-xs bg-gray-300 text-gray-600 h-6 py-1 px-2 rounded inline-block ml-2 align-middle">
+        Subscribe
+      </a>
+    </div>
+  </div>
   <div x-data="atomFeed()" x-init="loadFeed()">
     <template x-for="entry in entries" :key="entry.id">
       <div class="block border-gray-300 bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg mb-4 flex flex-col dark:bg-gray-600 dark:text-slate-50">

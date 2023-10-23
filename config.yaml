@@ -6,7 +6,7 @@ menu:
       pageref: /
       url: /
       weight: 1
-    - name: Macroblog 
+    - name: Macroblog
       pageref: /macroblog
       url: /macroblog
       weight: 2
