@@ -40,8 +40,8 @@
                         style="width: var(--image-size); height: auto;" class="inline-block"></a>
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
-                <a class="mx-1 sm:mx-2 md:mx-4 whitespace-nowrap {{ if $currentPage.IsMenuCurrent " main" .
-                    }}is-active{{ end }}" href="{{ .URL }}">
+                <a class="mx-1 sm:mx-2 md:mx-4 whitespace-nowrap {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}"
+                    href="{{ .URL }}">
                     {{ .Name }}
                 </a>
                 {{ end }}
