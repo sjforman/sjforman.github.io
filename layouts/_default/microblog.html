@@ -16,11 +16,14 @@ function atomFeed() {
           this.entries = Array.from(entries).map(el => {
             const published = new Date(el.querySelector("published").textContent);
             const renderedContent = marked.parse(el.querySelector("content").textContent);
+            const imageElement = el.querySelector('link[rel="enclosure"][type="image/jpeg"]');
+            const imageUrl = imageElement ? imageElement.getAttribute("href") : null;
             return {
               content: renderedContent,
               id: el.querySelector("id").textContent,
               published: this.timeSince(published),
               fullDate: published.toLocaleString(),
+              imageUrl: imageUrl
             };
           });
         });
@@ -65,6 +68,11 @@ function atomFeed() {
       <div class="block border-gray-300 bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg mb-4 flex flex-col dark:bg-gray-600 dark:text-slate-50">
         <div class="self-end text-xs text-gray-400 mb-2" :title="entry.fullDate" x-text="entry.published"></div>
         <div x-html="entry.content" class="mb-3 text-lg"></div>
+        <template x-if="entry.imageUrl">
+          <div class="mt-4">
+            <img class="rounded-lg object-cover w-full h-48" :src="entry.imageUrl" :alt="entry.content">
+          </div>
+        </template>
       </div>
     </template>
   </div>
