@@ -4,11 +4,12 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 <script>
+const feedUrl = 'https://sjforman-microblog.s3.us-west-1.amazonaws.com/microblog.rss';
 function atomFeed() {
   return {
     entries: [],
     loadFeed() {
-      fetch('https://sjforman-microblog.s3.us-west-1.amazonaws.com/microblog.atom')
+      fetch(feedUrl)
         .then(response => response.text())
         .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
         .then(data => {
@@ -58,7 +59,7 @@ function atomFeed() {
     <div class="text-xs text-gray-400 mb-2 inline-block leading-7">
       What is this? It's a microblog. Brief thoughts, ideas, observations, etc., in a form resembling social media, but...you know...not social. Antisocial. You can also subscribe through your RSS reader. Remember Google Reader? That was a better world.
       <!-- Subscribe Button -->
-      <a href="https://sjforman-microblog.s3.us-west-1.amazonaws.com/microblog.atom" type="application/rss+xml" target="_blank" rel="noopener noreferrer" class="text-xs bg-gray-300 text-gray-600 h-6 py-1 px-2 rounded inline-block ml-2 align-middle">
+      <a :href="feedUrl" type="application/rss+xml" target="_blank" rel="noopener noreferrer" class="text-xs bg-gray-300 text-gray-600 h-6 py-1 px-2 rounded inline-block ml-2 align-middle">
         Subscribe
       </a>
     </div>
