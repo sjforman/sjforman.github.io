@@ -1,0 +1,10 @@
+<!-- layouts/_default/_markup/render-heading.html -->
+{{ if eq .Level 1 }}
+  <h1 class="text-3xl">{{ .Text | safeHTML }}</h1>
+{{ else if eq .Level 2 }}
+  <h2 class="text-2xl">{{ .Text | safeHTML }}</h2>
+{{ else if eq .Level 3 }}
+  <h2 class="text-xl">{{ .Text | safeHTML }}</h2>
+{{ else }}
+  <h{{ .Level }} class="text-l">{{ .Text | safeHTML }}</h{{ .Level }}>
+{{ end }}
