@@ -4,8 +4,8 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 <script>
-const feedUrl = 'https://pubfeed-io-prod.s3.us-west-1.amazonaws.com/36cc90b8-7fbf-42fe-8103-1258b731c13c/feed.rss';
-function atomFeed() {
+  const feedUrl = 'https://pubfeed-io-prod.s3.us-west-1.amazonaws.com/36cc90b8-7fbf-42fe-8103-1258b731c13c/feed.rss';
+  function atomFeed() {
   return {
     entries: [],
     loadFeed() {
@@ -15,19 +15,37 @@ function atomFeed() {
         .then(data => {
           const entries = data.querySelectorAll("entry");
           this.entries = Array.from(entries).map(el => {
+            console.log(el);
             const published = new Date(el.querySelector("published").textContent);
-            const renderedContent = marked.parse(el.querySelector("content").textContent);
-            const imageElement = el.querySelector('link[rel="enclosure"][type="image/jpeg"]');
-            const imageUrl = imageElement ? imageElement.getAttribute("href") : null;
+            const updated = new Date(el.querySelector("updated").textContent);
+            const isUpdated = published.getTime() !== updated.getTime();
+            let content = el.querySelector("content").textContent;
+
+            content = this.urlify(content);
+
+            const imageElements = el.querySelectorAll('link[rel="enclosure"][type="image/jpeg"]');
+            const imageUrls = Array.from(imageElements).map(img => img.getAttribute("href"));
             return {
-              content: renderedContent,
+              content: content,
               id: el.querySelector("id").textContent,
-              published: this.timeSince(published),
-              fullDate: published.toLocaleString(),
-              imageUrl: imageUrl
+              publishedDate: published, 
+              updatedDate: updated,
+              publishedSince: this.timeSince(published),
+              updatedSince: this.timeSince(updated),
+              isUpdated: isUpdated,
+              publishedFullDate: 'Published: ' + published.toDateString() + ' ' + published.toTimeString(),
+              updatedFullDate: 'Updated: ' + updated.toDateString() + ' ' + updated.toTimeString(),
+              imageUrls: imageUrls
             };
           });
         });
+    },
+    urlify(text) {
+      const urlRegex = /(https?:\/\/[^\s]+)/g;
+      return text.replace(urlRegex, function(url) {
+        const truncatedUrl = url.length > 40 ? url.substring(0, 37) + '...' : url;
+        return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">${truncatedUrl}</a>`;
+      });
     },
       timeSince(date) {
         const seconds = Math.floor((new Date() - date) / 1000);
@@ -53,28 +71,45 @@ function atomFeed() {
   }
 </script>
 
-<main class="flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8 space-y-4 sm:space-y-8 dark:bg-gray-900 dark:text-slate-50">
+<main
+  class="flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8 space-y-4 sm:space-y-8 dark:bg-gray-900 dark:text-slate-50">
   <!-- Information Section -->
   <div class="relative mb-4 max-w-3xl w-full">
     <div class="text-xs text-gray-400 mb-2 inline-block leading-7">
-      What is this? It's a microblog. Brief thoughts, ideas, observations, etc., in a form resembling social media, but...you know...not social. Antisocial. You can also subscribe through your RSS reader. Remember Google Reader? That was a better world.
+      What is this? It's a microblog. Brief thoughts, ideas, observations, etc., in a form resembling social media,
+      but...you know...not social. Antisocial. You can also subscribe through your RSS reader. Remember Google Reader?
+      That was a better world.
       <!-- Subscribe Button -->
-      <a id="subscribeLink" type="application/rss+xml" target="_blank" rel="noopener noreferrer" class="text-xs bg-gray-300 text-gray-600 h-6 py-1 px-2 rounded inline-block ml-2 align-middle">
+      <a id="subscribeLink" type="application/rss+xml" target="_blank" rel="noopener noreferrer"
+        class="text-xs bg-gray-300 text-gray-600 h-6 py-1 px-2 rounded inline-block ml-2 align-middle">
         Subscribe
       </a>
     </div>
   </div>
   <div x-data="atomFeed()" x-init="loadFeed()">
     <template x-for="entry in entries" :key="entry.id">
-      <div class="block border-gray-300 bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg mb-4 flex flex-col dark:bg-gray-600 dark:text-slate-50">
-        <div class="self-end text-xs text-gray-400 mb-2" :title="entry.fullDate" x-text="entry.published"></div>
-        <div x-html="entry.content" class="mb-3 text-lg"></div>
-        <template x-if="entry.imageUrl">
-          <div class="mt-4">
-            <img class="rounded-lg object-cover w-full h-48" :src="entry.imageUrl" :alt="entry.content">
+      <!-- Wrap the content in an anchor tag -->
+      <a :href="`https://pubfeed.io/feed/36cc90b8-7fbf-42fe-8103-1258b731c13c/entry/${entry.id.substring(9)}`" target="_blank" class="block">
+        <div class="border-gray-300 bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg mb-4 flex flex-col dark:bg-gray-600 dark:text-slate-50">
+          <div class="flex justify-end space-x-2 mb-2">
+            <div class="text-xs text-gray-400" x-text="entry.publishedSince" :title="entry.publishedFullDate"></div>
+            <template x-if="entry.isUpdated">
+              <div class="text-xs text-gray-400 ml-1" x-text="entry.updatedSince" :title="entry.updatedFullDate"></div>
+            </template>
           </div>
+        <div x-html="entry.content" class="mb-3 text-lg"></div>
+        <!-- Check if there is only one image, if so, span full width -->
+        <template x-if="entry.imageUrls.length === 1">
+          <img class="rounded-sm object-cover w-full" :src="entry.imageUrls[0]" :alt="`Image for entry ${entry.id}`">
         </template>
+        <!-- If there is more than one image, use a grid -->
+        <div x-show="entry.imageUrls.length > 1" class="mt-4 grid grid-cols-2 gap-1">
+          <template x-for="imageUrl in entry.imageUrls" :key="imageUrl">
+            <img class="rounded-sm object-cover w-full h-48" :src="imageUrl" :alt="`Image for entry ${entry.id}`">
+          </template>
+        </div>
       </div>
+      </a>
     </template>
   </div>
 </main>
