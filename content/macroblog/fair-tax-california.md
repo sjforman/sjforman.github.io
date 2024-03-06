@@ -3,13 +3,17 @@ title: Fair Tax California
 date: 2024-03-04
 ---
 
-I got a little fixated on [this](https://twitter.com/sjforman/status/1760489338234962150). I wanted some kind of inverse of the [Howard Jarvis Taxpayers Association obscenity](https://www.hjta.org/resources/taxpayer-tools/guessing-game-tax-calculator/) to exist, so I channeled my ire into building a little microsite to expose the grotesque unfairness of Prop 13: [Fair Tax California](https://www.fairtaxcalifornia.org/).
+I got a little obssessed with California's Prop 13 recently. I knew it was very bad but I didn't grasp the full magnitude. So I dug in and channeled my ire into building something.
+
+<!--more-->
+
+My goal was to build a sort of inverse of [this Howard Jarvis obscenity](https://www.hjta.org/resources/taxpayer-tools/guessing-game-tax-calculator/). The result: [Fair Tax California](https://www.fairtaxcalifornia.org/).
 
 So far I have:
 
  * [A calculator](https://www.fairtaxcalifornia.org/calculate). It accepts an "assessed value" and a "market value" and computes your savings or additional obligations under a fairer tax regime. 
  * [A comparison tool](https://www.fairtaxcalifornia.org/compare) that highlights some particularly egregious mismatches between pairs of very similar properties.
- * [A leaderboard](https://www.fairtaxcalifornia.org/gawk) for champion property tax freeloaders. The current leader is my example from San Diego. Second place is [@Rohin’s](https://twitter.com/rohindhar/status/1763666051202760976) example in San Francisco. Find more and send them to me! I’ll add them.
+ * [A leaderboard](https://www.fairtaxcalifornia.org/gawk) for champion property tax freeloaders. The current leader is my example from San Diego. Second place is [@Rohin’s](https://twitter.com/rohindhar/status/1763666051202760976) example in San Francisco.
 
 The "fairer tax regime" envisioned by that calculator: in San Diego county, the average value of the parcels with assessed values in the most recent available year (2022) is $1.6M. The average assessed value of *all the other parcels* is $639k. 
 
