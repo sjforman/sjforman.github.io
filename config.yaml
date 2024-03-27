@@ -6,11 +6,11 @@ menu:
       pageref: /
       url: /
       weight: 1
-    - name: Feed
-      pageref: /feed
-      url: /feed
+    - name: Posts
+      pageref: /posts
+      url: /posts
       weight: 2
     - name: About
       pageref: /about
       url: /about
-      weight: 4
+      weight: 3

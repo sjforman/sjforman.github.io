@@ -1,0 +1,6 @@
+---
+title: "Advance market commitments for industrial policy?"
+date: 2024-01-17
+---
+
+Re: https://www.noahpinion.blog/p/is-us-industrial-policy-learning, I think many of these problems could have been sidestepped entirely if the funding mechanism had been more akin to an advance market commitment. Lump sum payments to be made to the companies producing the desired output, when and only when that output is actually produced and sold. Wouldn't this have been simpler to administer, taking NEPA out of the picture, while also directly incentivizing quick results?

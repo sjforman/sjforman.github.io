@@ -1,0 +1,5 @@
+---
+date: 2023-11-16
+---
+
+Will we ever let customer service agents stop saying "standard messaging rates may apply" or are we permanently stuck with this zombie boilerplate?

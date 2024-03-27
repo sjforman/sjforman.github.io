@@ -1,5 +1,5 @@
 ---
-title: "My brother sent me this astounding..."
+title: "La Jolla Tax Madness"
 date: 2024-02-22
 ---
 
@@ -16,5 +16,3 @@ Really drives home the perversity of this system. Also makes me wonder whether s
 One idea: maybe there should exist something like an inverse of the (surprisingly garish, and not actually very informative) Howard Jarvis tax calculator. Jarvis wants to tell the landed gentry of California how much more they'd be paying without Prop 13...
 
 What if recent home buyers could see how much lower their taxes would be if all properties were assessed at market values? That is, if we lowered the rate to whatever would keep total revenue constant. (Which isn't how reform would or should work, just illustratively).
-
-

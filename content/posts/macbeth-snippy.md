@@ -1,5 +1,5 @@
 ---
-title: "I read this years ago, had..."
+title: "Macbeth ist snippy"
 date: 2023-12-20
 ---
 
@@ -7,7 +7,3 @@ I read this years ago, had forgotten about it, but L'dOL all over again today on
 
 "MACBETH: I’m not snippy."
 "MACDUFF: Thou ist. A little bit."
-
-:)
-
-

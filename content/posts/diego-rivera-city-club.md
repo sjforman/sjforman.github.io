@@ -1,5 +1,5 @@
 ---
-title: "Did you know there's a spectacular..."
+title: "Diego Rivera at the SF City Club"
 date: 2023-12-10
 ---
 
@@ -9,4 +9,3 @@ First clue to its presence was the security guard diligently, patiently — and 
 
 ![Image](https://pubfeed-io-prod.s3.us-west-1.amazonaws.com/36cc90b8-7fbf-42fe-8103-1258b731c13c/images/1702237131825.jpeg)
 ![Image](https://pubfeed-io-prod.s3.us-west-1.amazonaws.com/36cc90b8-7fbf-42fe-8103-1258b731c13c/images/1702237132300.jpeg)
-
