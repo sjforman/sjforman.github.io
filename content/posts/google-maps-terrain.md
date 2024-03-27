@@ -1,4 +1,5 @@
 ---
+title: "Terrain basemap in navigation mode?"
 date: 2023-08-25
 ---
 

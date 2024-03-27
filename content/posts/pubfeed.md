@@ -4,6 +4,10 @@ date: 2023-12-13
 summary: My quixotic gesture at an alternative and healthier model for social media. Think of it as *anti*-social media.
 ---
 
+{{< alert-banner >}}
+Update: This was going to be somewhat costly to host on AWS, so I decided to take it down. If people want it to exist though, I might re-publish it! There's an interest form [here](https://forms.gle/akYT3Ew6xWnkKBGEA).
+{{< /alert-banner >}}
+
 In the navigation for this site there's a link to my ["Microblog"](/microblog). It leads to a feed that I publish through a [website I built](https://pubfeed.io). "Pubfeed" is my quixotic gesture at an alternative and healthier model for social media. I think of it as *anti*-social media.
 
 ## Why? Because The Platforms Are Poison
@@ -11,6 +15,7 @@ In the navigation for this site there's a link to my ["Microblog"](/microblog). 
 We all know that social media is toxic and poisonous. 
 
 Carefully constructed empirical research like [Braghieri et al, "Social Media and Mental Health," 2022](https://www.aeaweb.org/articles?id=10.1257/aer.20211218) clearly demonstrates deleterious impacts on mental health.
+:w
 
 It seems that people are even willing to *pay* for everyone else to *stop* using social media.  ([Bursztyn et al, "When Products Become Collective Traps: The Case of Social Media," 2023](https://www.nber.org/papers/w31771)). 
 

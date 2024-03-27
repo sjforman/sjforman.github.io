@@ -1,4 +1,5 @@
 ---
+title: "Ampersand excess"
 date: 2023-11-06
 ---
 

@@ -1,9 +1,11 @@
 ---
-title: "Listen to Peter Attia talk to Richard Miller about the science of aging"
+title: "Peter Attia + Richard Miller on the science of aging"
 date: 2023-12-15
 ---
 
 Anyone interested in aging science should listen to both of these episodes of Peter Attia's podcast: 
+
+<!--more-->
 
 https://peterattiamd.com/richardmiller/
 https://peterattiamd.com/richardmiller2/

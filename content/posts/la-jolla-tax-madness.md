@@ -3,6 +3,10 @@ title: "La Jolla Tax Madness"
 date: 2024-02-22
 ---
 
+Here's some La Jolla property tax madness: 
+
+<!--more-->
+
 My brother sent me this astounding Zillow listing. Check out the property tax history. Is this one of the most egregious Prop 13 injustices in the state?
 
 https://www.zillow.com/homedetails/1890-Spindrift-Dr-La-Jolla-CA-92037/16839111_zpid/
