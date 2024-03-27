@@ -6,14 +6,10 @@ menu:
       pageref: /
       url: /
       weight: 1
-    - name: Macroblog
-      pageref: /macroblog
-      url: /macroblog
+    - name: Feed
+      pageref: /feed
+      url: /feed
       weight: 2
-    - name: Microblog
-      pageref: /microblog
-      url: /microblog
-      weight: 3
     - name: About
       pageref: /about
       url: /about
