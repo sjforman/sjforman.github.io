@@ -1,6 +1,7 @@
 ---
 title: "Filtering is real, exhibit 100"
 date: 2024-02-22
+tags: ["yimby"]
 ---
 
 Nice study out of Harvard JCHS, more evidence for "filtering":

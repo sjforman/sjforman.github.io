@@ -1,6 +1,7 @@
 ---
 title: "NIMBY SLAPP-down"
 date: 2023-11-01
+tags: ["yimby"]
 ---
 
 Thirty busybodies shouldn't have the power to use the courts to strangle democratically enacted policies.
