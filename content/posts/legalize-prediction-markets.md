@@ -1,5 +1,5 @@
 ---
-title: "Legalize the prediction markets!"
+title: "Legalize the prediction markets"
 date: 2024-03-28
 ---
 
