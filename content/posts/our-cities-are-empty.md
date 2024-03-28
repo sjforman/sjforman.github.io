@@ -1,7 +1,6 @@
 ---
 title: "Our cities are empty"
 date: 2024-03-28
-draft: true
 tags: ["yimby"]
 ---
 
