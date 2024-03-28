@@ -1,6 +1,7 @@
 ---
 title: "Henry George was right."
 date: 2024-02-26
+tags: ["yimby"]
 ---
 
 Lately, when I walk around the city, I often hear myself thinking, "Land value tax fixes this." 

@@ -1,6 +1,7 @@
 ---
 title: "YIMBY legislative database?"
 date: 2024-02-23
+tags: ["yimby"]
 ---
 
 I see YIMBY legislative wins reported and discussed on social media regularly. 

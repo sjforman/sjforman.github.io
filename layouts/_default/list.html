@@ -1,0 +1,33 @@
+{{ define "main" }}
+<main class="flex flex-col items-center min-h-screen px-4 py-8 space-y-4 sm:space-y-8 dark:bg-gray-900 dark:text-slate-50">
+    <!-- Tags Filter -->
+    <div class="tags-filter text-sm mb-4">
+        {{ if .Data.Term }}
+            <span>Filtered for: <span class="font-mono">{{ .Data.Term }}</span></span>
+            <a href="/posts/" class="ml-1 underline">See all posts</a>
+        {{ else }}
+            <span>Filter for:</span>
+            {{ range .Site.Taxonomies.tags }}
+                <a href="{{ .Page.Permalink }}" class="ml-1 font-mono">{{ .Page.Title }}</a>
+            {{ end }}
+        {{ end }}
+    </div>
+    
+    {{ $currentPageTag := .Params.tag }}
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $currentPageTag) }}
+        <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
+            <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
+            <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h2>
+            <p class="mb-4">{{ .Summary }}</p>
+        </a>
+    {{ else }}
+        {{ range .Pages }}
+            <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
+                <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
+                <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h2>
+                <p class="mb-4">{{ .Summary }}</p>
+            </a>
+        {{ end }}
+    {{ end }}
+</main>
+{{ end }}
