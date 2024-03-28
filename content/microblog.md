@@ -1,4 +1,0 @@
----
-title: "Microblog"
-layout: "microblog"
----
