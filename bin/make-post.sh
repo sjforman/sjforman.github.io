@@ -1,12 +1,17 @@
 #!/bin/bash
 
-# Function to convert title to lowercase and replace spaces with hyphens
+# Function to convert title to lowercase, replace spaces with hyphens, and remove special characters
 function convert_title_to_filename() {
-  echo "$1" | tr '[:upper:]' '[:lower:]' | tr ' ' '-'
+    echo "$1" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-'
 }
 
-# Prompt the user for the post title
-read -p "Enter the post title: " title
+# Check if the title is provided as a command line argument
+if [ -n "$1" ]; then
+    title="$1"
+else
+    # Prompt the user for the post title if not provided as an argument
+    read -p "Enter the post title: " title
+fi
 
 # Generate the filename from the title
 filename="$(convert_title_to_filename "$title").md"
