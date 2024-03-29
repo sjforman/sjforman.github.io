@@ -1,7 +1,6 @@
 ---
 title: "Tax the curb cuts"
 date: 2024-03-29
-draft: true
 tags: [yimby]
 ---
 
