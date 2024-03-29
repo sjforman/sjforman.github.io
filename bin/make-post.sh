@@ -13,20 +13,29 @@ else
     read -p "Enter the post title: " title
 fi
 
+# Check if the tags are provided as a second command line argument
+if [ -n "$2" ]; then
+    tags="$2"
+else
+    tags="[]"
+fi
+
 # Generate the filename from the title
 filename="$(convert_title_to_filename "$title").md"
 
 # Get the current date
 current_date=$(date +"%Y-%m-%d")
 
-# Create the new post file with front matter
+# Create the new post file with front matter and the <!--more--> string
 cat > "content/posts/$filename" <<EOF
 ---
 title: "$title"
 date: $current_date
 draft: true
-tags: []
+tags: [$tags]
 ---
+
+<!--more-->
 
 EOF
 
