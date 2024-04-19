@@ -3,9 +3,15 @@ title: "Lake Merritt botanical textures"
 date: 2024-04-18
 ---
 
-![Three colors of flowers](/images/textures-1.jpg)
-![Daisy-like wildflowers](/images/textures-2.jpg)
-![Grasses](/images/textures-4.jpg)
-![Orange and yellow flowers](/images/textures-5.jpg)
+
+{{< imgproc path="textures-1.jpg" command="resize 800x" alt="Three colors of flowers" >}}
+
+{{< imgproc path="textures-2.jpg" command="resize 800x" alt="Daisy-like wildflowers" >}}
+
+{{< imgproc path="textures-4.jpg" command="resize 800x" alt="Grasses" >}}
+
+{{< imgproc path="textures-5.jpg" command="resize 800x" alt="Orange and yellow flowers" >}}
+
 <!--more-->
-![Two colors of velvety plants](/images/textures-3.jpg)
+
+{{< imgproc path="textures-3.jpg" command="resize 800x" alt="Two colors of velvety plants" >}}

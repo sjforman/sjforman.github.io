@@ -1,0 +1,9 @@
+{{- $path := .Get "path" -}}
+{{- $command := .Get "command" -}}
+{{- $alt := .Get "alt" -}}
+{{- if $image := .Page.Resources.GetMatch $path -}}
+  {{- $processedImage := $image.Process $command -}}
+  <img src="{{ $processedImage.RelPermalink }}" alt="{{ $alt }}" width="{{ $processedImage.Width }}" height="{{ $processedImage.Height }}">
+{{- else -}}
+  {{ errorf "Image not found: %s" $path }}
+{{- end }}
