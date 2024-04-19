@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="flex flex-col items-center min-h-screen mx-auto mt-6">
-    <img id="profileImage" src="/images/profile-dark-static.gif" alt="Profile Photo"
+    <img id="profileImage" src="/images/profile-dark.gif" alt="Profile Photo"
         class="rounded-full mx-auto mb-4 mt-6 max-w-xs">
     <h1 class="text-3xl font-bold">{{ .Title }}</h1>
     {{ .Content }}
@@ -18,4 +18,24 @@
         <a href="/posts" class="text-sm text-gray-500 hover:text-gray-600" style="padding-top: 1rem; display: inline-block;">See all posts ></a>
     </div>
 </div>
+<script>
+    // Get the profile image element
+    const profileImage = document.getElementById('profileImage');
+
+    // Function to update the profile image based on the theme
+    function updateProfileImage() {
+        if (document.body.classList.contains('dark')) {
+            profileImage.src = '/images/profile-dark.gif';
+        } else {
+            profileImage.src = '/images/profile-light.jpg';
+        }
+    }
+
+    // Call the function initially
+    updateProfileImage();
+
+    // Listen for theme changes
+    const observer = new MutationObserver(updateProfileImage);
+    observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+</script>
 {{ end }}
