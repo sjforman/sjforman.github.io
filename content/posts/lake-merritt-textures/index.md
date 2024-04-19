@@ -3,6 +3,7 @@ title: "Lake Merritt botanical textures"
 date: 2024-04-18
 ---
 
+Lake Merritt sporting some very fine spring textures at the moment.
 
 {{< imgproc path="textures-1.jpg" command="resize 800x" alt="Three colors of flowers" >}}
 
