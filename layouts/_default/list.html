@@ -18,16 +18,52 @@
         <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
             <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
             <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h2>
-            <p class="mb-4">{{ .Summary }}</p>
+            <p class="mb-4 post-summary">{{ .Summary }}</p>
         </a>
     {{ else }}
         {{ range .Pages }}
             <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
                 <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
                 <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h2>
-                <p class="mb-4">{{ .Summary }}</p>
+                <p class="mb-4 post-summary">{{ .Summary }}</p>
             </a>
         {{ end }}
     {{ end }}
 </main>
+<style>
+    .post-summary {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 10px; 
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 200px) {
+        .post-summary p {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media (min-width: 400px) {
+        .post-summary p {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (min-width: 800px) {
+        .post-summary p {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .post-summary img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+</style>
 {{ end }}
