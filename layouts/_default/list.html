@@ -8,7 +8,7 @@
         {{ else }}
             <span>Filter for:</span>
             {{ range .Site.Taxonomies.tags }}
-                <a href="{{ .Page.Permalink }}" class="ml-1 font-mono">{{ .Page.Title }}</a>
+                <a href="{{ .Page.Permalink }}" class="ml-1 font-mono">{{ .Page.Title | lower }}</a>
             {{ end }}
         {{ end }}
     </div>
