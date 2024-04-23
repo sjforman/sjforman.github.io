@@ -1,7 +1,7 @@
 ---
 title: Maybe RSS is all we need
 date: 2023-12-13
-summary: My quixotic gesture at an alternative and healthier model for social media. Think of it as *anti*-social media.
+summary: My quixotic gesture at an alternative and healthier model for social media. Think of it as anti-social media.
 ---
 
 {{< alert-banner >}}
@@ -15,7 +15,6 @@ In the navigation for this site there's a link to my ["Microblog"](/microblog). 
 We all know that social media is toxic and poisonous. 
 
 Carefully constructed empirical research like [Braghieri et al, "Social Media and Mental Health," 2022](https://www.aeaweb.org/articles?id=10.1257/aer.20211218) clearly demonstrates deleterious impacts on mental health.
-:w
 
 It seems that people are even willing to *pay* for everyone else to *stop* using social media.  ([Bursztyn et al, "When Products Become Collective Traps: The Case of Social Media," 2023](https://www.nber.org/papers/w31771)). 
 
