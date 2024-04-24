@@ -1,7 +1,6 @@
 ---
 title: "How to type 50% faster with LLM assistance"
 date: 2024-04-24
-draft: true
 tags: ["llm"]
 ---
 
