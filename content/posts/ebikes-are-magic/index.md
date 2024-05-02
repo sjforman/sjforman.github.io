@@ -1,6 +1,7 @@
 ---
 title: "A few reasons ebikes are magic"
 date: 2024-05-02
+draft: true
 tags: ["bikes", "urbanism"]
 ---
 
