@@ -1,12 +1,11 @@
-<!-- image-modal.html -->
 {{- $path := .Get "path" -}}
-{{- $command := .Get "command" -}}
+{{- $command := .Get "command" | default "resize 800x" -}}
 {{- $alt := .Get "alt" -}}
 {{- $linkText := .Get "linkText" -}}
 {{- if $image := .Page.Resources.GetMatch $path -}}
   {{- $processedImage := $image.Process $command -}}
-  <a href="#" data-src="{{ $processedImage.RelPermalink }}" data-alt="{{ $alt }}" onclick="openModal('{{ $processedImage.RelPermalink }}', '{{ $alt }}'); return false;">{{ $linkText -}}</a>{{- print "" -}}
+  {{- $src := $processedImage.RelPermalink -}}
+  <a href="#" data-src="{{ $src }}" data-alt="{{ $alt }}" onclick="openModal('{{ $src }}', '{{ $alt }}'); return false;">{{ $linkText }}</a>{{- print "" -}}
 {{- else -}}
   {{- errorf "Image not found: %s" $path -}}
 {{- end -}}
-{{- /* Strip trailing newline */ -}}
