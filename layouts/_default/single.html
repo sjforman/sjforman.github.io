@@ -1,12 +1,11 @@
 {{ define "main" }}
-
-<main class="flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8 dark:bg-gray-900 dark:text-slate-50">
-    <div class="bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg dark:bg-gray-700 dark:text-slate-50">
+<main class="relative flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8 dark:bg-gray-900 dark:text-slate-50">
+    <div class="bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg dark:bg-gray-700 dark:text-slate-50 relative z-10">
         {{ if .Date }}
-            <p class="text-sm text-gray-500 mb-2">{{ .Date | time.Format ":date_long" }}</p>
+        <p class="text-sm text-gray-500 mb-2">{{ .Date | time.Format ":date_long" }}</p>
         {{ end }}
-        {{ if .Title}}
-        <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h1>
+        {{ if .Title }}
+        <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h2>
         {{ end }}
         {{ if .Params.tags }}
         <div class="tags mb-4">
@@ -21,7 +20,58 @@
     </div>
 </main>
 
-{{ partial "footer.html" . }}
+<!-- Modal -->
+<div id="imageModal" class="modal fixed inset-0 flex hidden items-center justify-center bg-black bg-opacity-50 z-50" aria-hidden="true">
+    <div class="modal-content relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-xl max-w-screen-xl max-h-screen overflow-auto">
+        <button class="modal-close absolute top-2 right-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 z-50">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <div class="flex justify-center items-center w-full h-full">
+            <img id="modalImage" src="" alt="" class="modal-img w-full h-auto max-w-full max-h-screen">
+        </div>
+        <div id="modalCaption" class="mt-2 text-center text-gray-600 dark:text-gray-400"></div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const openModal = (src, alt) => {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalCaption = document.getElementById('modalCaption');
+            modalImage.src = src;
+            modalCaption.textContent = alt;
+            modal.classList.remove('hidden');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeModal = () => {
+            const modal = document.getElementById('imageModal');
+            modal.classList.add('hidden');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = 'auto';
+        };
+
+        document.querySelector('.modal-close').addEventListener('click', closeModal);
+
+        document.addEventListener('click', (event) => {
+            if (event.target.classList.contains('modal') && !event.target.closest('.modal-content')) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        window.openModal = openModal;
+    });
+</script>
 
 <style>
     .markdown-content p {
@@ -32,10 +82,11 @@
     .markdown-content a {
         text-decoration: underline;
         transition: color 200ms;
+        color: #5FAAD9;
     }
 
     .markdown-content a:hover {
-        color: #3B82F6;
+        color: #2477BF;
     }
 
     .markdown-content ul {
@@ -59,7 +110,7 @@
     .markdown-content img {
         max-width: 100%;
         height: auto;
-        padding: 1rem 0rem;
+        padding: 1rem 0;
         display: block;
         margin: 0 auto;
     }
@@ -90,7 +141,7 @@
     }
 
     pre code {
-        text-wrap: wrap;
+        white-space: pre-wrap;
         text-indent: 2em;
     }
 
@@ -105,5 +156,4 @@
         margin-top: 2rem;
     }
 </style>
-
 {{ end }}
