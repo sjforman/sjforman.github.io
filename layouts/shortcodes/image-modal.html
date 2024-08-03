@@ -5,6 +5,7 @@
 {{- if $image := .Page.Resources.GetMatch $path -}}
   {{- $processedImage := $image.Process $command -}}
   {{- $src := $processedImage.RelPermalink -}}
+  {{- $.Page.Scratch.Add "imageGallery" (slice (dict "src" $src "alt" $alt)) -}}
   <a href="#" data-src="{{ $src }}" data-alt="{{ $alt }}" onclick="openModal('{{ $src }}', '{{ $alt }}'); return false;">{{ $linkText }}</a>{{- print "" -}}
 {{- else -}}
   {{- errorf "Image not found: %s" $path -}}

@@ -5,10 +5,10 @@ summary: My quixotic gesture at an alternative and healthier model for social me
 ---
 
 {{< alert-banner >}}
-Update: This was going to be somewhat costly to host on AWS, so I decided to take it down. If people want it to exist though, I might re-publish it! There's an interest form [here](https://forms.gle/akYT3Ew6xWnkKBGEA).
+Update: This was going to be costly to host on AWS, so while it was fun to noodle on, I took it down.
 {{< /alert-banner >}}
 
-In the navigation for this site there's a link to my ["Microblog"](/microblog). It leads to a feed that I publish through a [website I built](https://pubfeed.io). "Pubfeed" is my quixotic gesture at an alternative and healthier model for social media. I think of it as *anti*-social media.
+ [Pubfeed](https://www.pubfeed.io) is a quixotic gesture at an alternative and healthier model for social media. I think of it as *anti*-social media.
 
 ## Why? Because The Platforms Are Poison
 
