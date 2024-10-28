@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="flex flex-col items-center min-h-screen mx-auto mt-6">
-    <img id="profileImage" src="/images/profile-dark.gif" alt="Profile Photo"
+    <img id="profileImage" src="/images/profile.jpg" alt="Profile Photo"
         class="rounded-full mx-auto mb-4 mt-6 max-w-xs">
     <h1 class="text-3xl font-bold">{{ .Title }}</h1>
     <div class="text-center">
@@ -61,20 +61,4 @@
         border-radius: 4px;
     }
 </style>
-<script>
-    const profileImage = document.getElementById('profileImage');
-
-    function updateProfileImage() {
-        if (document.body.classList.contains('dark')) {
-            profileImage.src = '/images/profile-dark.gif';
-        } else {
-            profileImage.src = '/images/profile-light.jpg';
-        }
-    }
-
-    updateProfileImage();
-
-    const observer = new MutationObserver(updateProfileImage);
-    observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-</script>
 {{ end }}

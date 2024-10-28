@@ -10,7 +10,7 @@
         {{ if .Params.tags }}
         <div class="tags mb-4">
             {{ range .Params.tags }}
-            <a href="{{ with $.Site.GetPage (print " tags/" .) }}{{ .Permalink }}{{ end }}" class="tag">{{ . | lower
+            <a href="{{ with $.Site.GetPage (printf "tags/%s" .) }}{{ .Permalink }}{{ end }}" class="tag">{{ . | lower
                 }}</a>
             {{ end }}
         </div>

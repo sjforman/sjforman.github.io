@@ -1,20 +1,25 @@
 ---
-title: "Tehipite Valley Trip Report"
-date: "2024-10-28"
+title: "Tehipite Valley Trip Report — October 2024"
+date: "2024-10-27"
 description: "A five-day backpacking trip into the remote Tehipite Valley in Kings Canyon National Park"
+tags: ['outdoors']
 ---
 
-HST has been super helpful to me on my first trips as a new backpacker. Big thanks to the admins, moderators, and contributors. This is my first time posting. Here's a quick report of a recent trip to Tehipite Valley.
+In October 2024, I backpacked into the remote Tehipite Valley in Kings Canyon National Park. 
 
-I drove up from Oakland and met @cboone at a deserted Rancheria Trailhead last Tuesday mid-afternoon. We started around 4pm, and hiked in to just beyond the turnoff to Spanish Lake. Nice view of Crown Rock from the meadow around there.
+<!--more-->
 
-Wednesday we got a late start. Poked around Crown Valley Station a little. The steel plate on the back window is loose, allowing a view inside...seemingly abandoned, unremarkable other than a big empty bottle of whiskey.
+I drove up from Oakland and we met [@cboone](https://catamounthardware.com/about/) at a deserted Rancheria Trailhead on a Tuesday mid-afternoon. We started around 4pm, and hiked in to just beyond the turnoff to Spanish Lake. Nice view of Crown Rock from the meadow around there.
+
+Wednesday we got a late start. Poked around Crown Valley Station a little. The steel plate on the back window is loose, allowing a view inside...
 
 ![View through loose steel plate on Crown Valley Station window](station-window.jpg)
 
+...seemingly abandoned, unremarkable other than a big empty bottle of whiskey.
+
 ![Empty whiskey bottle in Crown Valley Station](station-whiskey.jpg)
 
-Strolled around Johnson's Cow Camp ("Absolutely no camping"). Encountered many downed trees in the forest on the approach to the big descent, so we lost the trail a few times. Nice views of Kettle Dome peaking through the trees.
+Strolled around Johnson's Cow Camp ("Absolutely no camping"). Encountered many downed trees in the forest on the approach to the big descent, so we lost the trail a few times. Nice views of Kettle Dome peeking through the trees.
 
 ![Kettle Dome viewed through trees](kettle.jpg)
 
@@ -50,6 +55,6 @@ Saturday: we set an alarm to make an early start up and out of the valley. A lit
 
 ![Comet C/2023 A3 (Tsuchinshan–ATLAS) in the night sky](comet-atlas.jpg)
 
-Sunday we hiked back to the TH on tired legs. Found the "Grave" marked on the USGS topo just east of Crown Valley Station. "Ike Smit, 1914." Fake, evidently! According to one report, anyway (www.douglasvanbossuyt.com/tag/johnsons-cow-camp) ¯\_(ツ)_/¯. On the way out we saw the only other humans we'd come across since Tuesday, a pair of hunters hiking in to Crown Valley. They were putting up bright orange plastic ribbons at regular intervals along a very unambiguous section of trail, unclear to us why. Hopefully they removed all the blazing when they left.
+Sunday we hiked back to the TH on tired legs. Found the "Grave" marked on the USGS topo just east of Crown Valley Station. "Ike Smit, 1914." Fake, evidently! According to [one report](https://www.douglasvanbossuyt.com/tag/johnsons-cow-camp), anyway, ¯\_(ツ)_/¯. On the way out we saw the only other humans we'd come across since Tuesday, a pair of hunters hiking in to Crown Valley. They were putting up bright orange plastic ribbons at regular intervals along a very unambiguous section of trail, unclear to us why. Hopefully they removed all the blazing when they left.
 
-Overall assessment: the valley really is difficult to reach! The steep part itself was hard but doable (although could easily have been much less so, given an unlucky tree-fall or dirt-slide.), but made more difficult by tired legs from the long hike to and from. Not surprising that it's so infrequently visited. Of course that's part of the charm, so for those with the time and fortitude, easily recommendable; I'm very glad to have seen it. Thanks, @cboone, for joining me on this marvelous trip!
+Overall assessment: Tehipite Valley really is quite difficult to reach! The steep part itself was hard but doable (although could easily have been much less so, given an unlucky tree-fall or dirt-slide.), but tired legs from the long hike in and out makes for tougher going. Not surprising that it's so infrequently visited. Of course that's part of the charm, so for those with the time and fortitude, easily recommendable; I'm very glad to have seen it. Thanks, @cboone, for joining me on this marvelous trip!

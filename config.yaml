@@ -1,5 +1,8 @@
 title: "Scott J. Forman"
 
+taxonomies:
+  tag: "tags"
+
 menu:
   main:
     - name: Scott J. Forman
@@ -14,4 +17,3 @@ menu:
       pageref: /about
       url: /about
       weight: 3
-tag: "tags"
