@@ -1,7 +1,12 @@
 {{ define "main" }}
 <div class="flex flex-col items-center min-h-screen mx-auto mt-6">
-    <img id="profileImage" src="/images/profile.jpg" alt="Profile Photo"
-        class="rounded-full mx-auto mb-4 mt-6 max-w-xs">
+    <div class="relative group">
+        <img id="profileImage" src="/images/profile.jpg" alt="Profile Photo by Kari Orvik Tintype Studio"
+            class="rounded-full mx-auto mb-4 mt-6 max-w-xs">
+        <div class="fixed bottom-0 left-0 right-0 text-center py-2 text-sm text-gray-400/75 bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm opacity-0 transition-opacity duration-300 group-hover:opacity-100 photo-credit">
+            Tintype portrait by <a href="http://www.kariorviktintypestudio.com" class="hover:text-gray-600 dark:hover:text-gray-300">Kari Orvik Tintype Studio</a>
+        </div>
+    </div>
     <h1 class="text-3xl font-bold">{{ .Title }}</h1>
     <div class="text-center">
         {{ .Content }}
