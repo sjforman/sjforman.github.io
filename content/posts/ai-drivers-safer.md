@@ -1,6 +1,7 @@
 ---
 title: "The AI drivers are safer"
 date: 2023-10-30
+tags: ["urbanism","self-driving"]
 ---
 
 Judging by personal experience riding a bike around San Francisco over the last few months, I'd say the AI drivers are less inclined to endanger my life than the human ones. 

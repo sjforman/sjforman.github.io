@@ -2,6 +2,7 @@
 title: Right now is the perfect moment to toll all the roads
 date: 2023-12-15
 summary: Autonomous driving gives us a rare opportunity to prevent future traffic nightmares and steer the future of mobility towards the public good. 
+tags: ["urbanism","self-driving"]
 ---
 
 The road to autonomous vehicles has been longer and rockier than many people expected. Tesla Autopilot has been chronically delayed and overpromised. And of course there was the recent [Cruise debacle](https://www.nytimes.com/2023/11/03/technology/cruise-general-motors-self-driving-cars.html). 

@@ -1,6 +1,7 @@
 ---
 title: "Automated bike lane enforcement"
 date: 2023-11-17
+tags: ["urbanism","bikes"]
 ---
 
 Automated bike lane enforcement is good, I'm glad it's happening.

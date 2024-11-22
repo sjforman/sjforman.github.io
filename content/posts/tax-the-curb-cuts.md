@@ -1,7 +1,7 @@
 ---
 title: "Tax the curb cuts"
 date: 2024-03-29
-tags: [yimby]
+tags: ["yimby", "urbanism"]
 ---
 
 Proposal: after repealing mandatory off-street parking requirements, go a step further and impose a significant annual fee on curb cuts. 

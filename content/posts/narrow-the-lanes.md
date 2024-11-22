@@ -1,6 +1,7 @@
 ---
 title: "Narrow the lanes please"
 date: 2023-11-05
+tags: ["urbanism"]
 ---
 
 Where lanes are concerned, 9ft is the new 10ft.

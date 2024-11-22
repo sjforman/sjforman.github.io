@@ -1,7 +1,7 @@
 ---
 title: "Our cities are empty"
 date: 2024-03-28
-tags: ["yimby"]
+tags: ["yimby", "urbanism"]
 ---
 
 Walking around downtown Oakland last night I found myself thinking, as I often do, "where are all the people?" 
