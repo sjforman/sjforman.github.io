@@ -3,9 +3,10 @@ title: "ADU opportunities abound"
 subtitle: "ADU reforms are quietly succeeding, but the opportunity remains mostly untapped."
 date: 2024-11-25
 tags: ["urbanism", "yimby", "adu", "housing"]
+summary: "California and New York are blessed with incredible natural and economic advantages, but they're hemorrhaging people. They're driving people away by strangling their housing markets. People still want to live there. You can tell by the sky-high housing prices. But those same prices are forcing people to leave. What can be done?" 
 ---
 
-California and New York, states blessed with incredible natural and economic advantages, are hemorrhaging people.{{< ref "1" >}} California is on track to lose at least four seats after the 2030 census, while New York expects to lose three. Why? Because these states are *driving people away* by strangling their housing markets. The demand is clearly there - just look at the sky-high prices. But those same prices are forcing people to leave!
+California and New York are blessed with incredible natural and economic advantages, but they're hemorrhaging people.{{< ref "1" >}} They're *driving people away* by strangling their housing markets. People still *want* to live there. You can tell by the sky-high housing prices. But those same prices are forcing people to leave. What can be done? 
 
 What we really need to do is for states to exercise their land use sovereignty and legalize housing in general, sweeping away all the local restrictions, extortionate shakedowns, and endless byzantine procedural obstacles. But in California the most ambitious attempts to change the rules statewide [have failed in recent years](https://cayimby.org/legislation/sb-827/), and New York City [is keeping its costly and pointless parking mandates](https://nyc.streetsblog.org/2024/11/22/city-of-yes-council-vote-parking). The YIMBY movement is making progress, just maddeningly slowly.
 
@@ -27,7 +28,7 @@ In Oakland, 20,273 of the 56,737 single-family properties (36%) have enough open
 
 If all these opportunities were realized, Oakland could house over 52,000 more people in ADUs alone, increasing its population by about 12% from its current ~436k residents.
 
-{{< imgproc path="oakland-adu-suitable-parcels.png" command="resize 900x" alt="Oakland parcels suitable for ADUs." >}}
+[{{< imgproc path="oakland-adu-suitable-parcels.png" command="resize 900x" alt="Oakland parcels suitable for ADUs." >}}](https://aduopportunity.org)
 
 In Berkeley, the lots are bigger. 5,794 of the 9,546 single-family properties (61%) have enough open space for a detached ADU. Breaking this down further:
 
@@ -35,7 +36,7 @@ In Berkeley, the lots are bigger. 5,794 of the 9,546 single-family properties (6
 * 1,174 properties (20%) could accommodate a one-bedroom unit, with room for about 2,300 residents
 * 3,954 properties (68%) have space for even larger ADUs, which could house up to 11,800 people
 
-{{< imgproc path="berkeley-adu-suitable-parcels.png" command="resize 900x" alt="Berkeley parcels suitable for ADUs." >}}
+[{{< imgproc path="berkeley-adu-suitable-parcels.png" command="resize 900x" alt="Berkeley parcels suitable for ADUs." >}}](https://aduopportunity.org)
 
 If all these opportunities were realized, Berkeley could house over 15,000 more people in ADUs alone, increasing its population by about 13% from its current ~119k residents.
 
@@ -60,12 +61,12 @@ If you live in a single-family home in Oakland or Berkeley, I probably have a de
 
 But you can enter any US address to get some info on your state's rules and how well an ADU would fit on your property.
 
-{{< imgproc path="adu-fit-tool.png" command="resize 900x" alt="Ride1Up ebike by Lake Merritt" >}}
+[{{< imgproc path="adu-fit-tool.png" command="resize 900x" alt="Ride1Up ebike by Lake Merritt" >}}](https://aduopportunity.org)
 
 If you're a homeowner in California or one of the other 13 states with ADU-friendly laws, you might be sitting on an opportunity to create more housing while generating rental income, or providing a home for a friend or loved one. Check your property's potential at https://aduopportunity.org. And share with anyone who might be interested! Help build our way out of this crisis, one ADU at a time.
 
 {{< footnote "1" >}}
-[Brennan Center](https://www.brennancenter.org/our-work/analysis-opinion/how-congressional-maps-could-change-2030), [The American Redistricting Project](https://thearp.org/blog/apportionment/2030-forecasted-apportionment/), [Jerusalem Demsas for The Atlantic, "The Democrats are Committing Partycide"](https://www.theatlantic.com/politics/archive/2024/11/democrat-states-population-stagnation/680641/)
+California is on track to lose at least four seats after the 2030 census, while New York expects to lose three. [Brennan Center](https://www.brennancenter.org/our-work/analysis-opinion/how-congressional-maps-could-change-2030), [The American Redistricting Project](https://thearp.org/blog/apportionment/2030-forecasted-apportionment/), [Jerusalem Demsas for The Atlantic, "The Democrats are Committing Partycide"](https://www.theatlantic.com/politics/archive/2024/11/democrat-states-population-stagnation/680641/)
 {{< /footnote >}}
 
 {{< footnote "2" >}}
