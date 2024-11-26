@@ -18,50 +18,32 @@ That said, I've had some conversations recently in which I tried to explain that
 
 I got inspired to make a contribution to the cause of housing abundance, and built something to help share the good news ***that ADUs really are an option.***
 
-I started close to home with some analysis of the situation for Oakland and Berkeley, trying to estimate how many homeowners could reasonably build a detached ADU. I started with all the properties in each city,{{< ref "3">}} the existing building footprints, and a model of the terrain, then excluded the areas too close to the lot lines and the existing buildings:  
+I started close to home with some analysis of the situation for Oakland and Berkeley, trying to estimate how many homeowners could reasonably build a detached ADU. I started with all the properties in each city,{{< ref "3">}} the existing building footprints, and a model of the terrain, then excluded the areas too close to the lot lines and the existing buildings. Here's what I found:
 
-In Oakland, 20,273 of the 56,737 single-family properties (36%) have enough open space for a detached ADU. Breaking this down further:
-
-* 2,725 properties (13% of suitable lots) could fit a studio ADU, potentially housing over 4,000 people
-* 4,504 properties (22%) could accommodate a one-bedroom unit, with room for about 9,000 residents
-* 13,044 properties (64%) have space for even larger ADUs, which could house up to 39,000 people
-
-If all these opportunities were realized, Oakland could house over 52,000 more people in ADUs alone, increasing its population by about 12% from its current ~436k residents.
+In Oakland, 20,273 of the 56,737 single-family properties (36%) have enough open space for a detached ADU. If all these opportunities were realized, Oakland could house over fifty thousand more people, increasing its population by about 12% from its current ~436k residents.
 
 [{{< imgproc path="oakland-adu-suitable-parcels.png" command="resize 900x" alt="Oakland parcels suitable for ADUs." >}}](https://aduopportunity.org)
 
-In Berkeley, the lots are bigger. 5,794 of the 9,546 single-family properties (61%) have enough open space for a detached ADU. Breaking this down further:
-
-* 666 properties (11% of suitable lots) could fit a studio ADU, potentially housing over 1,000 people
-* 1,174 properties (20%) could accommodate a one-bedroom unit, with room for about 2,300 residents
-* 3,954 properties (68%) have space for even larger ADUs, which could house up to 11,800 people
+In Berkeley, the lots are bigger. 5,794 of the 9,546 single-family properties (61%) seem to have enough open space for a detached ADU. If all these were built, Berkeley could house over 15,000 more people in ADUs alone, increasing its population by about 13% from its current ~119k residents.
 
 [{{< imgproc path="berkeley-adu-suitable-parcels.png" command="resize 900x" alt="Berkeley parcels suitable for ADUs." >}}](https://aduopportunity.org)
-
-If all these opportunities were realized, Berkeley could house over 15,000 more people in ADUs alone, increasing its population by about 13% from its current ~119k residents.
 
 | | Oakland | Berkeley |
 |--------|---------|----------|
 | Total Single-Family Properties | 56,737 | 9,546 |
 | Properties Suitable for ADUs | 20,273 (36%) | 5,794 (61%) |
-| &nbsp;&nbsp;&nbsp;&nbsp;Studio | 2,725 (13%) / 4,000+ | 666 (11%) / 1,000+ |
-| &nbsp;&nbsp;&nbsp;&nbsp;One-Bedroom | 4,504 (22%) / 9,000 | 1,174 (20%) / 2,300 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Larger | 13,044 (64%) / 39,000 | 3,954 (68%) / 11,800 |
-| Total Potential New Residents | 52,000+ | 15,000+ |
+| &nbsp;&nbsp;&nbsp;&nbsp;Studio | 2,725 / 4,000 people | 666 / 1,000 people |
+| &nbsp;&nbsp;&nbsp;&nbsp;One-Bedroom | 4,504 / 9,000 people | 1,174 / 2,300 people |
+| &nbsp;&nbsp;&nbsp;&nbsp;Larger | 13,044 / 39,000 people | 3,954 / 11,800 people |
+| Total Potential New Neighbors | 52,000+ | 15,000+ |
 | Current City Population | ~436,000 | ~119,000 |
 | Potential Population Increase | 12% | 13% |
 
-These are rough estimates; some of these are not actually realistic due to, e.g., mature trees. Others are a mirage because they already happened! On the other hand, garage conversion opportunities and multi-family situations where multiple ADUs could be added are omitted. But clearly, if the owners of these properties were all inclined to build, it would be a non-trivial number of new homes for people.
+These are rough estimates. Some are not actually realistic due to, for example, mature trees. Others are a mirage because they already happened! On the other hand, garage conversion opportunities and multi-family situations where multiple ADUs could be added are omitted. But it seems very clear that if the owners of all the properties who could build an ADU did so, there would be many new homes for people to live in. I want to encourage them to act, so to that end, announcing:
 
-And I want to encourage them to do so. Thus: 
+# [ADU Opportunity Center](https://aduopportunity.org)
 
-# [The ADU Opportunity Center](https://aduopportunity.org)
-
-If you live in a single-family home in Oakland or Berkeley, I probably have a detailed ADU opportunity report for you. 
-
-But you can enter any US address to get some info on your state's rules and how well an ADU would fit on your property.
-
-[{{< imgproc path="adu-fit-tool.png" command="resize 900x" alt="Ride1Up ebike by Lake Merritt" >}}](https://aduopportunity.org)
+If you live in a single-family home in Oakland or Berkeley, I probably have a detailed ADU opportunity report for you. But you can enter any US address to get some info on your state's rules and how well an ADU would fit on your property.
 
 If you're a homeowner in California or one of the other 13 states with ADU-friendly laws, you might be sitting on an opportunity to create more housing while generating rental income, or providing a home for a friend or loved one. Check your property's potential at https://aduopportunity.org. And share with anyone who might be interested! Help build our way out of this crisis, one ADU at a time.
 
