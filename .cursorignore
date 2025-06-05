@@ -1,0 +1,17 @@
+# Hugo output
+public/
+resources/
+.hugo_build.lock
+
+# Node
+node_modules/
+package-lock.json
+
+# System files
+.DS_Store
+
+# Cursor/VSCode specific temp files
+.vscode/
+.cursor/
+
+.specstory/
