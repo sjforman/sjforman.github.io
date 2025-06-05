@@ -1,0 +1,17 @@
+{
+  "files.watcherExclude": {
+    "**/public/**": true,
+    "**/resources/**": true,
+    "**/node_modules/**": true
+  },
+  "files.exclude": {
+    "**/public/**": true,
+    "**/resources/**": true,
+    "**/node_modules/**": true
+  },
+  "search.exclude": {
+    "**/public/**": true,
+    "**/resources/**": true,
+    "**/node_modules/**": true
+  }
+}
