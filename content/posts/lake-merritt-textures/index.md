@@ -1,7 +1,7 @@
 ---
 title: "Lake Merritt botanical textures"
 date: 2024-04-18
-tags: ["photo"]
+tags: ["photos"]
 ---
 
 Lake Merritt sporting some very fine spring textures at the moment.

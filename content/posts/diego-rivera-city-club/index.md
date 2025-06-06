@@ -1,6 +1,7 @@
 ---
 title: "Diego Rivera at the SF City Club"
 date: 2023-12-10
+tags: ["photos"]
 ---
 
 I learned this weekend that there's a spectacular Diego Rivera fresco at the City Club in San Francisco on the stairwell between the 10th and 11th floors. 

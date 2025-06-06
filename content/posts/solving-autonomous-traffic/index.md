@@ -6,6 +6,8 @@ tags: ["urbanism", "self-driving"]
 
 The autonomous vehicle revolution promises three enormous benefits: millions of avoided deaths and maimings, more productive uses for the vast amounts of land we currently devote to parking (and gas stations, auto repair shops, dealerships, etc.). And most obviously, much cheaper mobility, which is straightforwardly a good thing. 
 
+<!--more-->
+
 So it can be transformatively great, but we really do have to mitigate the big downside — a huge increase in traffic and congestion. If driving gets an order of magnitude cheaper and easier, vehicle miles travelled will skyrocket, and we simply do not have enough space to accommodate that, especially in cities.
 
 Demand for the roads will increase so much that the only answer will be dynamic road pricing. Of course, the roads are already a scarce resource and it is and has always been stupid and wasteful to ration their use by making people pay with their time in pointless soul-crushing traffic. It's not just inefficient, it's undignified. We are not meant to live like that! But implementing the obvious solution has never been politically viable. 

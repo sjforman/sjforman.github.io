@@ -1,7 +1,7 @@
 ---
 title: "Red shouldered hawk"
 date: 2023-12-24
-tags: ["photo"]
+tags: ["photos"]
 ---
 
 {{< imgproc path="buteo-lineatus.jpeg" command="resize 800x" alt="Red-shouldered hawk (Buteo lineatus)" >}}
