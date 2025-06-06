@@ -5,3 +5,5 @@ tags: ["photos"]
 ---
 
 {{< imgproc path="lake-merritt-rainbow.jpeg" command="resize 800x" alt="Rainbow over Lake Merritt" >}}
+
+<!--more-->
