@@ -14,18 +14,25 @@ Posts are located in the `content/posts` directory. Posts with images should be 
 
 ### Creating a New Post
 
-1.  Create a new directory: `content/posts/my-new-post/`
-2.  Add an `index.md` file with front matter:
-    ```markdown
-    ---
-    title: "My New Post"
-    date: 2024-08-01
-    tags: ["some-tag", "another-tag"]
-    ---
+There is a helper script in the `bin` directory to simplify post creation.
 
-    Your content here.
-    ```
-3.  Place images inside the `content/posts/my-new-post/` directory.
+To create a new post, you can run:
+
+```bash
+./bin/make-post.sh "Your Post Title" "tag1, tag2"
+```
+
+This will create a new file `content/posts/your-post-title.md`.
+
+To create a post with its own directory for images (a leaf bundle), use the `--dir` or `-d` flag:
+
+```bash
+./bin/make-post.sh "Your Post Title" "tag1, tag2" your-post-title --dir
+```
+
+This will create `content/posts/your-post-title/index.md`.
+
+All new posts are created as drafts.
 
 ### Handling Images
 
