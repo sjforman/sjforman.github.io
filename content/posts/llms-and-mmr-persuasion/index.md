@@ -100,27 +100,29 @@ This kind of persuasion *does* seem to work to some degree; I'd like to get more
 And then I'd like to test the best performing interventions in a real-world trial across a a few pediatric clinics and try to have an impact on the thing that really matters: shots in arms.
 
 
-{{< alert-banner >}}
+{{< callout color="blue" >}}
 ### Interested in collaborating?
 
 If you're a pediatric medical practitioner interested in novel ways of tackling this problem, if you have funds you want to contribute, if you're a researcher or designer, or want to get involved in any way, I'd love to hear from you.
 
+<div class="not-italic">
 <form
   action="https://formspree.io/f/xwpbwpbp"
   method="POST"
+  class="space-y-4 mt-4"
 >
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+  <div>
+    <label for="email" class="block text-sm font-medium text-blue-800 mb-2">Your email</label>
+    <input type="email" id="email" name="email" required class="form-field" placeholder="your@email.com" />
+  </div>
+  <div>
+    <label for="message" class="block text-sm font-medium text-blue-800 mb-2">Your message</label>
+    <textarea id="message" name="message" rows="4" required class="form-field" placeholder="Tell me about your interest in this project..."></textarea>
+  </div>
+  <button type="submit" class="btn-primary">Send Message</button>
 </form>
-{{< /alert-banner >}}
+</div>
+{{< /callout >}}
 
 ## The Complete Analysis
 

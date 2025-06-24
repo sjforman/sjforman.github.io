@@ -2,7 +2,16 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ["./content/**/*.{html,js}", "./layouts/**/*.{html,js}"],
+  content: ["./content/**/*.{html,js,md}", "./layouts/**/*.{html,js}"],
+  safelist: [
+    'alert-banner--green',
+    'alert-banner--red',
+    'btn-primary',
+    'form-field',
+    'callout--blue',
+    'callout--green',
+    'callout--red'
+  ],
   darkMode: 'class',
   theme: {
     extend: {

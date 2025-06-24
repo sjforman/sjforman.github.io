@@ -17,3 +17,9 @@ menu:
       pageref: /about
       url: /about
       weight: 3
+
+# Allow raw HTML (e.g., Formspree contact forms) inside Markdown
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
