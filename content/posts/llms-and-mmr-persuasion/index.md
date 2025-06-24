@@ -3,15 +3,18 @@ title: "Can LLMs persuade people to vaccinate their kids?"
 date: 2025-06-05
 tags: ["vaccines", "llm"]
 draft: true
+summary: I've been watching our 2025 measles outbreaks with growing horror. So I decided to try to do something about it.
 ---
 
-I've been watching our 2025 measles outbreaks in [Texas](https://www.dshs.texas.gov/news-alerts/measles-outbreak-2025), [Ontario](https://www.reuters.com/en/ontario-reports-death-child-measles-2025-06-05/), with growing horror. I've also noticed researchers publishing a number of promising studies showing LLMs can be quite effective at changing people's minds, including by reducing their credence in conspiracy theories. It got me wondering: can they also be used to protect people, to help them to make wise choices about vaccination for their children? I've spent the last couple months trying to find out, and my preliminary answer is...maybe.
+I've been watching our 2025 measles outbreaks in [Texas](https://www.dshs.texas.gov/news-alerts/measles-outbreak-2025), [Ontario](https://www.reuters.com/en/ontario-reports-death-child-measles-2025-06-05/), and elsewhere with growing horror. 
 
-<!--more-->
+I've also noticed researchers publishing a number of promising studies showing LLMs can be quite effective at changing people's minds, including by reducing their credence in conspiracy theories. It got me wondering: can they also be used to protect people, to help them to make wise choices about vaccination for their children? 
+
+I've spent the last couple months trying to find out, and my preliminary answer is...maybe.
 
 ## Measles is terrible, and unnecessary 
 
-Measles is a fucking nightmare, but it's one that we have basically *solved*. The vaccine works, and the objections people have to it are *entirely* spurious. If AI persuasion is worth doing at all, it's worth doing here. I feel as confident about the wisdom of MMR vaccination as I do about almost any other proposition other than "I am currently experiencing qualia."
+Measles is a fucking nightmare, but it's one that we have basically *solved*. The vaccine works, and the objections people have to it are *entirely* spurious. 
 
 Misinformation also imposes worse negative externalities here than almost any other arena. When people decline to vaccinate their children, they're also endangering all of us, including babies who aren't old enough to be fully vaccinated yet, immunocompromised people. [Kiang et al](https://jamanetwork.com/journals/jama/article-abstract/2833361) show in their recent JAMA paper that if vaccination rates continue to fall, measles will become endemic again: 
 
@@ -19,9 +22,9 @@ Misinformation also imposes worse negative externalities here than almost any ot
 
 Every single one of those possible millions of cases is unnecessary and avoidable. It's maddening. So it seems to me that the case for using AI to push in the other direction is stronger than just about anywhere else.
 
-## AI might be able to help protect us
+## LLMs might be able to help
 
-While AI persuasion remains someone under-studied, there are also good reasons to think engagement with LLMs might do some good here. [Costello et al.](https://www.science.org/doi/10.1126/science.adq1814) demonstrated that AI dialogues could durably reduce conspiracy beliefs.[Goel et al.](https://osf.io/preprints/osf/2vh4k_v1) showed that five-round conversations with ChatGPT-4o significantly reduced certainty in false or unsupported beliefs, although less so than conversations with human experts. And (describe the sketchy Dutch one here). 
+While AI persuasion remains somewhat understudied, some recent results suggest LLMs might be of use. [Costello et al.](https://www.science.org/doi/10.1126/science.adq1814) demonstrated that AI dialogues could durably reduce conspiracy beliefs.[Goel et al.](https://osf.io/preprints/osf/2vh4k_v1) showed that five-round conversations with ChatGPT-4o significantly reduced certainty in false or unsupported beliefs, although less so than conversations with human experts. And (describe the sketchy Dutch one here). 
 
 None of these speak directly to the real-world behaviors that follow from dubious belief. Credence is one thing, but making major life decisions is another. So these results are suggestive, but don't directly address the question I'm interested in: can LLMs help people make wiser healthcare decisions?
 
@@ -39,52 +42,86 @@ Here's the setup:
 
 **Two Arms**:
 1. **Standard Educational Materials (SEM)**: Participants reviewed 5 panels of CDC-style educational content, with a minimum 30-second exposure per panel (150 seconds total)
-2. **Interactive Conversation Tool (ICT)**: Structured conversation with Claude 4.0, with minimum engagement requirements (at least 3 turns of dialogue, plus a chat engagement score threshold)
+2. **Interactive Conversation Tool (ICT)**: Structured conversation with Claude 4 Sonnet with minimum engagement requirements (at least 3 turns of dialogue, plus a chat engagement score threshold)
 
-The conversation tool used a carefully constructed prompt, that took in as context some of the participant details shared in the pre-intervention survey, and then attempted to address specific concerns participants had flagged. Motivational interviewing techniques aimed to avoid triggering reactance, provide evidence-based information without being preachy, and engage empathetically with parental concerns.
+The conversation tool used a carefully constructed prompt that took in as context some of the participant details shared in the pre-intervention survey, and then attempted to address the specific concerns participants flagged. The LLM prompt was framed around motivational interviewing techniques to avoid triggering reactance, provide evidence without being preachy or condescending, and engage empathetically with parental concerns.
 
-**Additional Measures**: Beyond the primary intention outcome, I collected data on specific vaccine concerns (safety, effectiveness, ingredients, etc.), trust in healthcare providers, political ideology, and engagement metrics. For the ICT arm, I tracked conversation length, number of turns, and characters typed. I also included a behavioral proxy measure — whether participants clicked through to vaccines.gov after the intervention.
+**Additional Measures**: In addition to the primary intention outcome, I collected data on specific vaccine concerns (safety, effectiveness, ingredients, etc.), trust in healthcare providers, political ideology, and engagement metrics. For the ICT arm, I tracked conversation length, number of turns, and characters typed. I also included a behavioral proxy measure — whether participants clicked through to [vaccines.gov](vaccines.gov) after the intervention.
 
-## I expected the interactive chat experience to outperform the static content 
+## I expected the interactive chat experience to outperform
 
-Based on the Costello and Goel precedents, I hypothesized that the Interactive Conversation Tool would lead to a greater increase in vaccination intention compared to standard educational materials. I thought personalized, conversational engagement would be more persuasive than static content.
+Based on the Costello and Goel precedents, I hypothesized that we'd see a greater increase in vaccination intention in participants in the chat arm vs. those in the standard educational materials arm. I thought personalized, conversational engagement would be more persuasive than static content.
 
-I also had secondary hypotheses about engagement predicting intention change, and exploratory hypotheses about potential moderators (baseline concerns, political ideology, trust in providers).
+## The results surprised me 
 
-## What I found surprised me 
+**AI didn't outperform**: Vaccine intent increased by **0.54 points in the chat arm**, and by **0.4 points in the standard materials arm**. The between-group difference (\(b = 0.14\)) was not statistically significant (*t*(214) = 1.1, *p* = 0.27).
 
-Both interventions increased vaccination intention significantly from baseline — encouraging! But while the AI conversation slightly outperformed the standard materials, the difference was small and not statistically significant.
+**But both interventions worked**:  Among participants with initial intention scores ≤ 6, *both conditions* produced meaningful increases in vaccination intention.
 
-**AI didn't outperform**: While participants in the ICT condition showed a slightly larger increase in vaccination intention (Cohen's d ≈ 0.15), the 95% confidence interval included zero. AI wasn't meaningfully superior to well-designed educational materials.
+{{< figure src="/fig-delta-change-1.png" title="Change in intention by condition" alt="Distribution of individual Post–Pre intention changes for each arm with CI bars." >}}
 
-**But both...worked?**:  Among participants with initial intention scores ≤ 6, *both conditions* produced meaningful increases in vaccination intention. Overall on average, intention scores increased by X, or Y%. While I can't rule out that some of this was due to mere measurement effects, the magnitude of the increase is at the top of the range of what is typically observed for such effects.
+Measuring from the initial pre-screen questionnaire all the way through to the post-intervention survey, the overall average intent increase was 0.67 points on the 7 point scale. This is at least partly a measurement effect, but it's pretty encouraging anyway; it's at the upper range of effect sizes typically seen for such interventions. 
 
-**People engaged meaningfully**: Time spent didn't predict attitude change much, but the voluntary engagement patterns were striking. Some participants in the ICT condition engaged far beyond the minimum requirements, having extended conversations about their concerns. This suggests the conversational format might be inherently more engaging, even if not more persuasive per unit time.
+**People engaged meaningfully**: Time spent didn't predict attitude change much, but the voluntary engagement patterns were striking. Some chat participants engaged well beyond the minimum requirements, having extended conversations about their concerns. The conversational format seems to be more engaging, even if not clearly more persuasive per unit time.
 
-## This looks promising, if not the slam dunk I was hoping to see
+Here's an example exchange to demonstrate the quality and tone of the chat: 
 
-Even though I didn't find a slam-dunk superiority effect, these results point toward something interesting for patient decision support:
 
-**Information Discovery**: The conversation logs revealed the specific concerns each participant had, creating a rich dataset of what actually worries vaccine-hesitant parents. In a clinical setting, this kind of tool could help providers understand and address individual patient concerns more effectively.
 
-**Reduced Reactance**: While not statistically significant, the conversational approach seems to have induced fewer backlash reactions, and a higher percentage of increased intention scores. This is what motivational interviewing has been shown to do, and AI can do it. Static content can't. 
+## This looks promising, even if not what I was hoping to see
 
-**Scalability**: Unlike one-on-one counseling with healthcare providers, an AI system could provide personalized responses to common concerns 24/7, potentially reaching parents who might not otherwise engage with healthcare professionals about their hesitations.
+I didn't find a slam-dunk superiority effect, but these results point toward something interesting for patient decision support:
 
-**The Real Question**: The question isn't whether AI is magic — it's whether we can build tools that help people engage more thoughtfully with health decisions. Based on these results, the answer seems to be "yes, but it's not going to be a silver bullet."
+**Information Discovery**: The conversation logs reveal a lot of nuance in the participants' concerns. In a clinical setting, this kind of tool could help providers understand and address individual patient concerns.
 
-## There are obvious avenues for further research
+**Reduced Reactance**: While not statistically significant, the conversational approach induced fewer backlash reactions, and a higher percentage of increased intention scores.
 
-I considered including a third arm in this experiment that would have shown parents neutral educational materials about topics like sleep and nutrition. I decided against it in the end, to increase my power to detect a difference between the standard and chat arms. I'd plan to include this kind of control in future experiments, to try to disentangle the effect of the actual content from the frame around it. 
+**Scalability**: LLM systems could provide personalized responses to common concerns 24/7, potentially reaching parents who might not otherwise engage with healthcare professionals about their hesitations.
 
-My inclination would be to take what we learned here and do a larger trial of that kind of active control, vs. the standard materials, vs. Hotez-style visualizations (citation tk), vs. perhaps an improved AI experience. This kind of persuasion *does* seem to work to some degree; I'd like to get more signal on what exactly works best at shaping *intentions*. 
+Can AI tools help people engage more thoughtfully with health decisions? Based on these results the answer seems to be "yes, but it's not going to be a silver bullet."
 
-And then I'd like to test the best performing interventions in a cluster-randomized trial across a bunch of pediatric clinics, to see if we can have an impact on actual vaccination rates. 
+## This seems well worth pursuing further
 
-*If you're working on similar problems in health decision-making, have thoughts about building tools that help patients make better choices, or want to help fund this line of research, I'd love to hear from you. You can reach me at [your contact info].* 
+I considered including a third arm in this experiment that would have shown parents neutral educational materials about topics like sleep and nutrition. I omitted this to increase power to detect a difference between the standard and chat arms. But in retrospect I wish I had included it. 
+
+Because the real control group for this kind of intervention — the standard of care that most people encounter in practice — is not 5 minutes of mandatory reading of the CDC's best case. It's *nothing*! 
+
+So I'm planning a next iteration of this experiment:
+
+* Treatment: a synthesis of the two approaches; informational materials, including graphics of some kind, alongside an AI chat experience 
+* Control: a matching format, but with the content completely unrelated to vaccines
+
+I'm also planning to integrate the pre-screening step into the experiment itself, instead of using a two-step screening process on Prolific.
+
+The goal is to more clearly disentangle the effect of my new best stab at the intervention versus a proper control.
+
+This kind of persuasion *does* seem to work to some degree; I'd like to get more signal on what exactly works best at shaping *intentions*. 
+
+And then I'd like to test the best performing interventions in a real-world trial across a a few pediatric clinics and try to have an impact on the thing that really matters: shots in arms.
+
+
+{{< alert-banner >}}
+### Interested in collaborating?
+
+If you're a pediatric medical practitioner interested in novel ways of tackling this problem, if you have funds you want to contribute, if you're a researcher or designer, or want to get involved in any way, I'd love to hear from you.
+
+<form
+  action="https://formspree.io/f/xwpbwpbp"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+{{< /alert-banner >}}
 
 ## The Complete Analysis
 
-For those interested in the full statistical analysis, including all preregistered tests, robustness checks, and exploratory analyses, you can [view the complete analysis here](TK).
-
-The preregistration is [available on OSF](https://osf.io/7upk5), and I'll be making the anonymized dataset available for replication once I've finished writing this up for journal submission.
+The preregistration is [available on OSF](https://osf.io/7upk5). An analysis aligned with that preregistration, along with various exploratory analyses, is available [here](/mmr-persuasion-analysis.html).
