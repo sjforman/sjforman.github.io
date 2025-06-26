@@ -2,7 +2,6 @@
 title: "Can LLMs persuade people to vaccinate their kids?"
 date: 2025-06-05
 tags: ["vaccines", "llm"]
-draft: true
 summary: I've been watching our 2025 measles outbreaks with growing horror. So I decided to try to do something about it.
 ---
 
