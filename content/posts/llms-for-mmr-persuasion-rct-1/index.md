@@ -55,7 +55,7 @@ Based on the Costello and Goel precedents, I hypothesized that we'd see a greate
 
 ## The results surprised me 
 
-**AI didn't outperform**: Vaccine intent increased by **0.54 points in the chat arm** on a 7 point Likert scale, and by **0.4 points in the standard materials arm**. But the between-group difference (\(b = 0.14\)) was not statistically significant (*t*(214) = 1.1, *p* = 0.27).
+**LLM chat didn't clearly outperform**: Vaccine intent increased by **0.54 points in the chat arm** on a 7 point Likert scale, and by **0.4 points in the standard materials arm**. But the between-group difference (\(b = 0.14\)) was not statistically significant (*t*(214) = 1.1, *p* = 0.27).
 
 **On the other hand, both interventions worked**:  Among participants with initial intention scores ≤ 6, *both conditions* produced meaningful increases in vaccination intention!
 
@@ -68,9 +68,21 @@ Based on the Costello and Goel precedents, I hypothesized that we'd see a greate
 
 Measuring from the initial pre-screen questionnaire all the way through to the post-intervention survey, the overall average intent increase was 0.67 points on the 7 point scale. This is at least partly a measurement effect, but it's pretty encouraging anyway; it's at the upper range of effect sizes typically seen for such interventions. 
 
-## Claude performed quite well, and some participants engaged quite deeply 
+## Claude performed quite skillfully 
 
-I read every chat transcript in detail, and found that Claude 4 Sonnet to be essentially flawless. The system delivered pertinent, factual, and nuanced answers to all questions and concerns. Many asked the same questions about side effects and ingredients, but there was also a long tail of more nuanced situations: 
+I read every chat transcript in detail, and found that Claude 4 Sonnet to be essentially flawless. The system delivered pertinent, factual, and nuanced answers to nearly all questions and concerns.
+
+The only possible exceptions were some adversarial conversations in which I might have preferred for the LLM to push back a little harder. But the choices it made under the circumstances were certainly at least defensible.
+
+## Some participants engaged quite deeply 
+
+Many participants asked the same questions about side effects and ingredients, and a number of them explicitly acknowledged having their concerns assuaged: 
+
+> That was actually very helpful and has made my decison alot easier. I feel like I learned some new things and I dont feel as cautious about the vaccine now.
+
+> That puts it into perspective. I did not realize how serious measles could be or how common complications are. I feel more confident about the vaccine now. I wanted to ensure I wasn't overlooking anything. 
+
+There was also a long tail of more nuanced situations: 
 
 * One participant indicated uncertainty about the vaccine on the pre-survey, but in the chat it became clear that this person is not himself hesitant. His partner is. (Claude handled this gracefully.)
 * Several people with religious objections to the porcine gelatin on the ingredient list were informed there's an alternative formulation available ([Priorix](https://www.fda.gov/vaccines-blood-biologics/priorix)) that does not contain this ingredient.
