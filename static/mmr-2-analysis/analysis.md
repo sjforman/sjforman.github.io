@@ -3,10 +3,6 @@ increases vaccination intent among hesitant parents
 Scott J. Forman
 2025-09-15
 
-<script  src="analysis_files/libs/quarto-diagram/mermaid.min.js"></script>
-<script  src="analysis_files/libs/quarto-diagram/mermaid-init.js"></script>
-<link  href="analysis_files/libs/quarto-diagram/mermaid.css" rel="stylesheet" />
-
 ## Abstract
 
 We conducted a preregistered two‑arm online RCT (N = 180 MMR hesitant
@@ -644,49 +640,3 @@ Additional pre-clinical work could explore and disentangle the
 mechanisms of action, and a clinical trial to assess whether an
 intervention of this kind can impact real-world vaccination rates seems
 clearly warranted.
-
-<details>
-
-<summary>
-
-Data & Code Availability
-</summary>
-
-The Quarto source for this report and a self-contained HTML render will
-be published on the investigator’s website and linked to from the OSF
-project containing the preregistration. Participant‑level data include
-potentially identifying Prolific IDs and cannot be shared publicly; they
-will be provided upon reasonable request under a data‑use agreement.
-</details>
-
-<details>
-
-<summary>
-
-Provenance
-</summary>
-
-This document was rendered with R 4.5 and renv‑pinned packages. Batch
-analysis files resolved at render time:
-
-| batch | file |
-|:---|:---|
-| 2B | /Users/scott/Projects/verum-analysis/experiments/45ff14/data_freezes/experiment_analysis_view_exp-45ff14_20250910-153854.csv |
-| 2B2 | /Users/scott/Projects/verum-analysis/experiments/5bb2fd/data_freezes/experiment_analysis_view_exp-5bb2fd_20250910-153904.csv |
-| 2B3 | /Users/scott/Projects/verum-analysis/experiments/8bb589/data_freezes/experiment_analysis_view_exp-8bb589_20250910-095801.csv |
-
-Main RCT‑2 analysis files resolved at render time
-
-    Build: 2025-09-15 12:25 PDT; Git: <set GIT_SHORT_SHA before publish>
-
-</details>
-
-<script>
- document.addEventListener("DOMContentLoaded", function() {
-   var anchors = document.querySelectorAll("a[href^=\"http\"]");
-   anchors.forEach(function(a) {
-     a.setAttribute("target","_blank");
-     a.setAttribute("rel","noopener");
-   });
- });
- </script>
