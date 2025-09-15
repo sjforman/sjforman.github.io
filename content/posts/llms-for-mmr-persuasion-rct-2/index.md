@@ -3,7 +3,7 @@ title: "LLMs and MMR Persuasion (RCT‑2)"
 date: 2025-09-15
 description: "A preregistered active-control RCT finds a clear increase in stated MMR vaccination intent after a short content review and LLM conversation."
 summary: "A preregistered active-control RCT finds a clear increase in stated MMR vaccination intent after a short content review and LLM conversation."
-draft: false
+draft: true 
 tags: [vaccines, llm]
 ---
 
