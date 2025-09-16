@@ -3,7 +3,7 @@ title: "LLMs can help persuade parents to vaccinate their kids."
 date: 2025-09-15
 tags: ["vaccines", "llm", "rct"]
 summary: "A preregistered active‑control RCT finds a clear increase in stated MMR vaccination intent after a short content review and an LLM conversation."
-draft: false
+draft: true 
 ---
 
 It seems pretty clear that us moderns are susceptible to vaccine misinformation partly because we’ve simply forgotten how bad these diseases are. Because they’re rare now. Because of vaccines. But in fact measles (just for example) is a nightmarish disease.
