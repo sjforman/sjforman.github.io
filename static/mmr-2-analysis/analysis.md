@@ -1,7 +1,6 @@
-# Discussing MMR vaccines with an LLM after a brief content review
-increases vaccination intent among hesitant parents
+# Discussing MMR vaccines with an LLM after a brief content review increases vaccination intent among hesitant parents
 Scott J. Forman
-2025-09-15
+2025-09-16
 
 ## Abstract
 
@@ -76,6 +75,15 @@ over a period of several days.
   compensation to maintain enrollment when it slowed: Batch 2B at
   \$2.50, Batch 2B2 at \$3.50, and Batch 2B3 at \$4.50. Each relaunch
   followed the same protocol and analysis plan.
+
+### LLM Settings
+
+All LLM conversations were powered by Claude 4.0 Sonnet via the
+Anthropic API (model: `claude-sonnet-4-20250514`). Generation settings:
+`temperature = 1`, `max_tokens = 4096`, `thinking_enabled = TRUE`,
+`thinking_budget = 1024`. Prompts followed an identical
+motivational‑interviewing style; only the topic‑specific elements of the
+prompts differed by arm.
 
 ## Data Import
 
@@ -214,7 +222,8 @@ Ages cluster in 25-34 (51.1%) and 35-44 (34.4%).
 
 Age distribution (counts and %)
 
-<img src="figures/demographics-age-plot-1.png" data-fig-align="center"
+<img src="analysis_files/figure-commonmark/demographics-age-plot-1.png"
+data-fig-align="center"
 data-fig-alt="Bar chart of participant age categories with counts; the sample skews to 25–34 and 35–44."
 alt="Age distribution (counts)" />
 
@@ -228,7 +237,8 @@ alt="Age distribution (counts)" />
 
 Gender distribution (counts and %)
 
-<img src="figures/demographics-gender-plot-1.png"
+<img
+src="analysis_files/figure-commonmark/demographics-gender-plot-1.png"
 data-fig-align="center"
 data-fig-alt="Bar chart of participant gender categories with counts."
 alt="Gender distribution (counts)" />
@@ -244,42 +254,13 @@ alt="Gender distribution (counts)" />
 
 Political ideology distribution (counts and %)
 
-<img src="figures/demographics-ideology-plot-1.png"
+<img
+src="analysis_files/figure-commonmark/demographics-ideology-plot-1.png"
 data-fig-align="center"
 data-fig-alt="Bar chart of participant political ideology categories with counts."
 alt="Political ideology distribution (counts)" />
 
 ## Overview of Participant Flow
-
-<pre class="mermaid mermaid-js">flowchart TD
-A[Started study: 654] --> A0[Abandoned: 157]
-A --> B[Consented: 497]
-B --> S[Screened out: 317]
-S --> C[No concerns about the MMR vaccine: 284]
-S --> D[Ceiling: 33]
-B --> E[Randomized: 180]
-E --> A1[Allocated to Control: 89]
-E --> A2[Allocated to Treatment: 91]</pre>
-
-<div style="display:none;">
-
-<div>
-
-<figure class=''>
-
-<div>
-
-<pre class="mermaid mermaid-js">flowchart LR
-init([.]) --&gt; ready([.])
-</pre>
-
-</div>
-
-</figure>
-
-</div>
-
-</div>
 
 Among those who reached the mock‑appointment screen (N = 497), 42.9%
 (95% CI \[38.5, 47.3\]%) clicked “I have questions or concerns about
@@ -389,7 +370,8 @@ Arm effect (Treatment vs Control) with HC3 SEs and 95% CI
 
     - One-sided CIs: upper bound fixed at [1.00].
 
-<img src="figures/ancova-coef-plot-1.png" data-fig-align="center"
+<img src="analysis_files/figure-commonmark/ancova-coef-plot-1.png"
+data-fig-align="center"
 data-fig-alt="Horizontal coefficient plot showing the adjusted Treatment vs Control effect with 95% confidence interval; the interval does not cross zero."
 alt="Adjusted arm effect (Treatment vs Control) with 95% CI from the primary ANCOVA; horizontal dashed line denotes no effect." />
 
@@ -473,9 +455,11 @@ Per-arm descriptive means and within-arm changes (SDs)
 
 Responder rates (Δ ≥ +1) by arm
 
-<img src="figures/responder-rates-1.png" data-fig-align="center" />
+<img src="analysis_files/figure-commonmark/responder-rates-1.png"
+data-fig-align="center" />
 
-<img src="figures/prepost-plot-1.png" data-fig-align="center"
+<img src="analysis_files/figure-commonmark/prepost-plot-1.png"
+data-fig-align="center"
 data-fig-alt="Two side-by-side line plots showing mean pre and post intention for Control and Treatment arms on the 1–7 scale; Treatment increases more than Control."
 alt="Pre vs Post means by arm (full 1–7 scale)" />
 
@@ -511,7 +495,8 @@ Follow‑up delay (days): N, mean, median, min, max
 
 Histogram of days between intervention and rescue follow‑up
 
-<img src="figures/durability-delay-summary-1.png"
+<img
+src="analysis_files/figure-commonmark/durability-delay-summary-1.png"
 data-fig-align="center"
 data-fig-alt="Histogram of follow-up delays in days with most responses clustered at shorter delays."
 alt="Histogram of days between intervention and rescue follow‑up" />
@@ -529,7 +514,8 @@ Arm effect by follow-up window (ANCOVA with HC3)
 Adjusted arm effect by follow-up window using quantile-based bins;
 points show estimates and bars show 95% CIs; dashed line at zero.
 
-<img src="figures/durability-by-bin-1.png" data-fig-align="center"
+<img src="analysis_files/figure-commonmark/durability-by-bin-1.png"
+data-fig-align="center"
 data-fig-alt="Three bin plot of adjusted arm effects by follow-up delay window with 95% confidence intervals; all estimates positive with wide intervals in longer delays."
 alt="Adjusted arm effect by follow-up window using quantile-based bins; points show estimates and bars show 95% CIs; dashed line at zero." />
 
@@ -539,7 +525,8 @@ next window (1.6–2.1d) at 0.94. This pattern indicates that the effect
 persists over the observed follow-up period (up to 7.1 days), with wider
 confidence intervals at longer delays due to smaller sample sizes.
 
-<img src="figures/durability-compare-figure-1.png"
+<img
+src="analysis_files/figure-commonmark/durability-compare-figure-1.png"
 data-fig-align="center"
 data-fig-alt="Horizontal dot-and-errorbar chart comparing the immediate primary effect, the overall rescue effect, and the rescue effects within delay windows; all estimates are positive."
 alt="Comparison of adjusted arm effects: immediate (primary) and rescue overall, alongside rescue window-specific estimates with 95% CIs." />
@@ -563,14 +550,16 @@ chat-point (95% CI -0.0026, 0.0012).
 
 Experimental arm: ANCOVA with chat_points (HC3)
 
-<img src="figures/engagement-delta-plot-1.png" data-fig-align="center"
+<img src="analysis_files/figure-commonmark/engagement-delta-plot-1.png"
+data-fig-align="center"
 data-fig-alt="Scatter of chat engagement (capped) versus change in intention within the Treatment arm with a fitted regression line."
 alt="Experimental arm: chat points vs change in intent (with linear fit)" />
 
 ## Individual Trajectories
 
-<img src="figures/trajectories-1.png" data-fig-align="center"
-data-fig-alt="Slopegraph showing each participant’s pre and post intention connected by a line, faceted by Control and Treatment; most Treatment lines slope upward."
+<img src="analysis_files/figure-commonmark/trajectories-1.png"
+data-fig-align="center"
+data-fig-alt="Slopegraph showing each participant&#39;s pre and post intention connected by a line, faceted by Control and Treatment; most Treatment lines slope upward."
 alt="Individual participant trajectories from Pre to Post by arm" />
 
 ## Discussion
@@ -640,3 +629,27 @@ Additional pre-clinical work could explore and disentangle the
 mechanisms of action, and a clinical trial to assess whether an
 intervention of this kind can impact real-world vaccination rates seems
 clearly warranted.
+
+
+#### Data & Code Availability
+
+The Quarto source for this report and a self-contained HTML render will
+be published on the investigator’s website and linked to from the OSF
+project containing the preregistration. Participant‑level data include
+potentially identifying Prolific IDs and cannot be shared publicly; they
+will be provided upon reasonable request under a data‑use agreement.
+
+#### Provenance
+
+This document was rendered with R 4.5 and renv‑pinned packages. Batch
+analysis files resolved at render time:
+
+| batch | file |
+|:---|:---|
+| 2B | /Users/scott/Projects/verum-analysis/experiments/45ff14/data_freezes/experiment_analysis_view_exp-45ff14_20250910-153854.csv |
+| 2B2 | /Users/scott/Projects/verum-analysis/experiments/5bb2fd/data_freezes/experiment_analysis_view_exp-5bb2fd_20250910-153904.csv |
+| 2B3 | /Users/scott/Projects/verum-analysis/experiments/8bb589/data_freezes/experiment_analysis_view_exp-8bb589_20250910-095801.csv |
+
+Main RCT‑2 analysis files resolved at render time
+
+    Build: 2025-09-16 16:44 PDT; Git: 582eeee
