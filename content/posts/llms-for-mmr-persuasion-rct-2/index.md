@@ -107,4 +107,4 @@ If you run a pediatric practice and are interested in collaborating on a lightwe
 - [Machine‑readable markdown output (.md)](/mmr-2-analysis/analysis.md)
 - [OSF preregistration](https://osf.io/qx46h)
 
-{{< footnote "1" >}}Specifically: xxx{{< /footnote >}}
+{{< footnote "1" >}}Specifically Claude 4.0 Sonnet via the Anthropic API (`claude-sonnet-4-20250514`, with thinking enabled. {{< /footnote >}}
