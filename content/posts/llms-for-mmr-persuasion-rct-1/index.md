@@ -33,7 +33,7 @@ Because the social sciences are littered with splashy p-hacked findings and file
 
 Here's the setup:
 
-**Participants**: I recruited ~200 U.S. parents of children born in 2019 or later through [Prolific](https://app.prolific.com/register/researcher?ref=NRD2F4X413). I pre-screened for some level of vaccine hesitancy on Prolific's screening questions as well as a score of less than 7 on my primary outcome measure:
+**Participants**: I recruited ~200 U.S. parents of children born in 2019 or later through [Prolific](https://www.prolific.com/). I pre-screened for some level of vaccine hesitancy on Prolific's screening questions as well as a score of less than 7 on my primary outcome measure:
 
 **The Key Question**: "If you had to make a decision about the MMR (measles, mumps, and rubella) vaccine for your child tomorrow, how likely would you be to choose vaccination?" (1-7 scale: "Certain not to" to "Definitely would")
 
@@ -68,7 +68,7 @@ Based on the Costello and Goel precedents, I hypothesized that we'd see a greate
 
 Measuring from the initial pre-screen questionnaire all the way through to the post-intervention survey, the overall average intent increase was 0.67 points on the 7 point scale. This is at least partly a measurement effect, but it's pretty encouraging anyway; it's at the upper range of effect sizes typically seen for such interventions. 
 
-## Claude performed quite skillfully 
+## Claude performed skillfully 
 
 I read every chat transcript in detail, and found that Claude 4 Sonnet to be essentially flawless. The system delivered pertinent, factual, and nuanced answers to nearly all questions and concerns.
 

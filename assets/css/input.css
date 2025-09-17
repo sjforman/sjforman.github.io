@@ -42,4 +42,15 @@
     .markdown-content blockquote p {
         @apply mt-0 mb-0;
     }
+
+    /* Footnotes */
+    .footnote-ref {
+        @apply text-sm no-underline;
+    }
+    .footnote {
+        @apply text-gray-600;
+    }
+    .footnote-backref {
+        @apply ml-1 text-gray-500 hover:text-gray-800 no-underline;
+    }
 }
