@@ -3,7 +3,6 @@ title: "LLMs can help persuade parents to vaccinate their kids."
 date: 2025-09-15
 tags: ["vaccines", "llm", "rct"]
 summary: "A preregistered active‑control RCT finds a clear increase in stated MMR vaccination intent after a short content review and an LLM conversation."
-draft: true 
 ---
 
 It seems pretty clear that us moderns are susceptible to vaccine misinformation partly because we’ve simply forgotten how bad these diseases are. Because they’re rare now. Because of vaccines. But in fact measles (just for example) is a nightmarish disease.
@@ -22,11 +21,11 @@ Los Angeles County just reported a school‑aged child who died of SSPE from a m
 
 Many parents see lots of vivid false information about post-vaccine sequelae. I bet that almost none of them know about this *very real* and utterly devastating effect of the *virus itself*.
 
-# If we don't act, it will very bad
+# If we don't act, it will be very bad
 
 As vaccination rates continue to drop, epidemiologists have been sounding increasingly loud warnings. [Kiang et al.](https://doi.org/10.1001/jama.2025.6495) modelled re‑emergence under declining vaccination scenarios and found that at today's state‑level coverage, measles may become endemic again. Their model shows that a further 50% drop in childhood vaccination over 25 years would yield ~51 million measles cases (plus 10 million rubella cases and more than 4.3 million polio cases), more than 10 million hospitalizations, and ~160,000 deaths. Because these diseases are so contagious, the effect of declining vaccination rates is highly non-linear. Even a 10% drop plausibly translates into millions of additional cases and thousands of preventable deaths over a generation.
 
-# What can be done about this looming disaster? 
+# I'm trying to do something about this looming disaster
 
 I'm exploring ways to help stem the rising tide of vaccination refusal and spare a generation of children from deadly preventable diseases like measles. Specifically, I hypothesize that LLMs can help with this problem. I suspect that their encyclopedic knowledge, infinite patience, and ability to be resolutely non-judgmental can be a powerful force for good here.
 
@@ -34,7 +33,7 @@ Earlier this year I ran a [first experiment](/posts/llms-for-mmr-persuasion-rct-
 
 Now I've completed a second trial applying some lessons learned from the first one.
 
-# We narrowed our sample to MMR-hesitant U.S. parents of young kids
+# The focus: MMR-hesitant U.S.-based parents of kids under the age of 6
 
 I recruited U.S.-resident parents of young children who at some point expressed to [Prolific](https://www.prolific.com/) that they had less than complete confidence in the safety of childhood vaccines. But as I discovered in my first experiment, many such parents are actually not hesitant in practice.  
 
@@ -50,9 +49,7 @@ Only parents whose baseline intention was 6 or less on a 1-7 scale (1 = "Definit
 
 Overall even with a starting pool of parents somewhat enriched for vaccine skepticism, only about one in three (180 of 497, 36%) of those who saw the mock‑appointment step proceeded to randomization (N = 180). At least with this specific setup and sample, vaccine skepticism didn't always translate directly into practical reluctance.
 
-## Those who remained were mostly young, conservative-leaning women.
-
-The randomized sample skewed female (≈69%) and conservative (≈52%), with a majority in the 25–34 age bracket (≈51%) and most of the remainder 35–44 (≈34%).
+Those who remained were mostly young, conservative-leaning women. The randomized sample skewed female (≈69%) and conservative (≈52%), with a majority in the 25–34 age bracket (≈51%) and most of the remainder 35–44 (≈34%).
 
 # I applied some lessons from the first experiment 
 
@@ -62,41 +59,52 @@ The control group in this experiment is thus a much closer match to the pre-appo
 
 I made a few other changes as well:
 
-- The static content was more engaging and vivid, including **visualizations** of the relative risks of the vaccine vs. the measles virus itself, as well as an element of **anticipated regret**, telling stories of parents who regretted their decisions not to vaccinate their children, and inviting the participants to imagine that scenario.
+- The static content was more engaging and vivid, including **visualizations** of the relative risks of the vaccine vs. the measles virus itself, as well as an element of **anticipated regret**, telling stories of parents who regretted their decisions not to vaccinate their children, and inviting the participants to imagine that scenario. The content in RCT1 hewed more closely to the dry, factual tone of standard CDC materials.
 - The prompts were constructed to use **motivational‑interviewing-style techniques** to mitigate the risk of reactance, and to persistently emphasize parental autonomy.
+- Participants were asked to imagine an upcoming appointment, instructed that the purpose of their chat was to prepare for that visit, and that a summary of their chat transcript would be provided to their clinician. 
 
-# The results
+# Treatment group parents increased their MMR intent by a full point on the 7 point scale
 
-## The effect was large and significant — a full point on the 7 point scale
-
-Parental MMR vaccination intent in the Control arm barely budged (+≈0.03 points), while parents in the Treatment arm increased intent by ≈ 1.07 points. The adjusted Treatment–Control difference is roughly a full point (β̂ ≈ 1.03; 95% CI 0.72–1.34). And nearly two thirds (~64%) of treatment group parents increased their intention by at least one point vs only about 1 in 10 in the control group.
+Control group parents' vaccination intent did not meaningfully change (+≈0.03). On average, treatment group parents, by contrast, increased their vaccination intent by more than a full point (+≈1.07). The adjusted Treatment–Control difference was β̂ ≈  1.03; 95% CI 0.72–1.34. Nearly two thirds (~64%) of treatment group parents increased their intention by at least one point vs only about 1 in 10 in the control group.
 
 {{< figure src="prepost-plot-1.png" title="Pre vs Post mean intention by arm" alt="Mean pre and post intention for Control and Treatment; Treatment increases by about one point, Control is flat." >}}
 
 {{< figure src="ancova-coef-plot-1.png" title="Adjusted Treatment–Control effect (95% CI)" alt="Horizontal coefficient plot of the adjusted Treatment vs Control effect with a 95% confidence interval that does not include zero." >}}
 
-## Other observations 
+# Next step: a clinical pilot
 
-## Key transcripts
+This study, like the first one, has self-reported vaccination intent as its endpoint. It's a good first step, but obviously it's not the same as shots in arms. 
 
-[Coming soon – brief analyses and anonymized excerpts from representative conversations.]
+My working plan is to wire something very much like what we tested here into a pediatric clinical workflow: a pre‑visit message routing hesitant parents into the intervention, then feeding a brief summary and context to the pediatric provider. The endpoint would be EHR‑confirmed on‑time MMR within 30 days. 
 
-# What's next
+# Interested in collaborating?
 
-## We're still just measuring intent — a proxy
+{{< callout color="blue" >}}
+If you run a pediatric practice and are interested in collaborating on a lightweight pilot, or if you'd like to support this work in any way, please reach out.
 
-This study uses intention as the outcome. That’s the right confirmatory target for a quick, inexpensive pre‑clinical RCT, but it’s not the same as shots in arms. The next step is to wire this into a clinic’s pre‑visit flow and measure EHR‑confirmed on‑time MMR.
-
-## I think it's time to test this in a clinical setting
-
-We’ve learned what we can from quick online studies. I’m planning a small clinic pilot that sends a pre‑visit SMS, routes hesitant parents into the MMR conversation, and delivers a one‑page summary to the pediatrician. Primary endpoint: EHR‑confirmed on‑time MMR within 30 days (CVX 03 / CPT 90707). If that looks good, we’ll scale to a multi‑site trial.
-
-If you run a pediatric practice and would consider a lightweight pilot—or you’d like to support this work—please reach out. Let’s see if we can turn intention into immunizations.
+<div class="not-italic">
+<form
+  action="https://formspree.io/f/xwpbwpbp"
+  method="POST"
+  class="space-y-4 mt-4"
+>
+  <div>
+    <label for="email" class="block text-sm font-medium text-blue-800 mb-2">Your email address</label>
+    <input type="email" id="email" name="email" required class="form-field" placeholder="your@email.com" />
+  </div>
+  <div>
+    <label for="message" class="block text-sm font-medium text-blue-800 mb-2">Your message</label>
+    <textarea id="message" name="message" rows="4" required class="form-field" placeholder="Tell me about your interest in this project..."></textarea>
+  </div>
+  <button type="submit" class="btn-primary">Send Message</button>
+</form>
+</div>
+{{< /callout >}}
 
 ## Full analysis and preregistration
 
-- Full analysis (HTML): [/mmr-2-analysis/analysis.html](/mmr-2-analysis/index.html)
-- Machine‑readable Markdown: [/mmr-2-analysis/analysis.md](/mmr-2-analysis/analysis.md)
-- OSF preregistration: https://osf.io/qx46h
+- [R analysis workbook and output (HTML)](/mmr-2-analysis/index.html)
+- [Machine‑readable markdown output (.md)](/mmr-2-analysis/analysis.md)
+- [OSF preregistration](https://osf.io/qx46h)
 
 {{< footnote "1" >}}Specifically: xxx{{< /footnote >}}

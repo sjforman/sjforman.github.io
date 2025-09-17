@@ -5,6 +5,10 @@ tags: ["vaccines", "llm"]
 summary: I've been watching our 2025 measles outbreaks with growing horror. So I decided to try to do something about it.
 ---
 
+{{< alert-banner >}}
+Update: you can read about version 2 of this experiment [here](/posts/llms-for-mmr-persuasion-rct-2/). Spoiler alert: the answer seems increasingly likely to be, "yes, indeed they can."
+{{< /alert-banner >}}
+
 I've been watching the measles outbreaks in [Texas](https://www.dshs.texas.gov/news-alerts/measles-outbreak-2025), [Ontario](https://www.reuters.com/en/ontario-reports-death-child-measles-2025-06-05/), and elsewhere with growing horror. 
 
 I've also noticed a number of promising reports recently showing LLMs can be quite effective at changing people's minds, including by reducing their credence in conspiracy theories. It got me wondering: can they also be used to help people make wise choices about vaccination for their children? 
