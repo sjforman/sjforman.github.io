@@ -222,7 +222,7 @@ Ages cluster in 25-34 (51.1%) and 35-44 (34.4%).
 
 Age distribution (counts and %)
 
-<img src="analysis_files/figure-commonmark/demographics-age-plot-1.png"
+<img src="figures/demographics-age-plot-1.png"
 data-fig-align="center"
 data-fig-alt="Bar chart of participant age categories with counts; the sample skews to 25–34 and 35–44."
 alt="Age distribution (counts)" />
@@ -238,7 +238,7 @@ alt="Age distribution (counts)" />
 Gender distribution (counts and %)
 
 <img
-src="analysis_files/figure-commonmark/demographics-gender-plot-1.png"
+src="figures/demographics-gender-plot-1.png"
 data-fig-align="center"
 data-fig-alt="Bar chart of participant gender categories with counts."
 alt="Gender distribution (counts)" />
@@ -255,7 +255,7 @@ alt="Gender distribution (counts)" />
 Political ideology distribution (counts and %)
 
 <img
-src="analysis_files/figure-commonmark/demographics-ideology-plot-1.png"
+src="figures/demographics-ideology-plot-1.png"
 data-fig-align="center"
 data-fig-alt="Bar chart of participant political ideology categories with counts."
 alt="Political ideology distribution (counts)" />
@@ -370,7 +370,7 @@ Arm effect (Treatment vs Control) with HC3 SEs and 95% CI
 
     - One-sided CIs: upper bound fixed at [1.00].
 
-<img src="analysis_files/figure-commonmark/ancova-coef-plot-1.png"
+<img src="figures/ancova-coef-plot-1.png"
 data-fig-align="center"
 data-fig-alt="Horizontal coefficient plot showing the adjusted Treatment vs Control effect with 95% confidence interval; the interval does not cross zero."
 alt="Adjusted arm effect (Treatment vs Control) with 95% CI from the primary ANCOVA; horizontal dashed line denotes no effect." />
@@ -455,10 +455,10 @@ Per-arm descriptive means and within-arm changes (SDs)
 
 Responder rates (Δ ≥ +1) by arm
 
-<img src="analysis_files/figure-commonmark/responder-rates-1.png"
+<img src="figures/responder-rates-1.png"
 data-fig-align="center" />
 
-<img src="analysis_files/figure-commonmark/prepost-plot-1.png"
+<img src="figures/prepost-plot-1.png"
 data-fig-align="center"
 data-fig-alt="Two side-by-side line plots showing mean pre and post intention for Control and Treatment arms on the 1–7 scale; Treatment increases more than Control."
 alt="Pre vs Post means by arm (full 1–7 scale)" />
@@ -496,7 +496,7 @@ Follow‑up delay (days): N, mean, median, min, max
 Histogram of days between intervention and rescue follow‑up
 
 <img
-src="analysis_files/figure-commonmark/durability-delay-summary-1.png"
+src="figures/durability-delay-summary-1.png"
 data-fig-align="center"
 data-fig-alt="Histogram of follow-up delays in days with most responses clustered at shorter delays."
 alt="Histogram of days between intervention and rescue follow‑up" />
@@ -514,7 +514,7 @@ Arm effect by follow-up window (ANCOVA with HC3)
 Adjusted arm effect by follow-up window using quantile-based bins;
 points show estimates and bars show 95% CIs; dashed line at zero.
 
-<img src="analysis_files/figure-commonmark/durability-by-bin-1.png"
+<img src="figures/durability-by-bin-1.png"
 data-fig-align="center"
 data-fig-alt="Three bin plot of adjusted arm effects by follow-up delay window with 95% confidence intervals; all estimates positive with wide intervals in longer delays."
 alt="Adjusted arm effect by follow-up window using quantile-based bins; points show estimates and bars show 95% CIs; dashed line at zero." />
@@ -526,7 +526,7 @@ persists over the observed follow-up period (up to 7.1 days), with wider
 confidence intervals at longer delays due to smaller sample sizes.
 
 <img
-src="analysis_files/figure-commonmark/durability-compare-figure-1.png"
+src="figures/durability-compare-figure-1.png"
 data-fig-align="center"
 data-fig-alt="Horizontal dot-and-errorbar chart comparing the immediate primary effect, the overall rescue effect, and the rescue effects within delay windows; all estimates are positive."
 alt="Comparison of adjusted arm effects: immediate (primary) and rescue overall, alongside rescue window-specific estimates with 95% CIs." />
@@ -550,14 +550,14 @@ chat-point (95% CI -0.0026, 0.0012).
 
 Experimental arm: ANCOVA with chat_points (HC3)
 
-<img src="analysis_files/figure-commonmark/engagement-delta-plot-1.png"
+<img src="figures/engagement-delta-plot-1.png"
 data-fig-align="center"
 data-fig-alt="Scatter of chat engagement (capped) versus change in intention within the Treatment arm with a fitted regression line."
 alt="Experimental arm: chat points vs change in intent (with linear fit)" />
 
 ## Individual Trajectories
 
-<img src="analysis_files/figure-commonmark/trajectories-1.png"
+<img src="figures/trajectories-1.png"
 data-fig-align="center"
 data-fig-alt="Slopegraph showing each participant&#39;s pre and post intention connected by a line, faceted by Control and Treatment; most Treatment lines slope upward."
 alt="Individual participant trajectories from Pre to Post by arm" />
