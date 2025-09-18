@@ -55,10 +55,31 @@ Control group parents' vaccination intent did not meaningfully change (+≈0.03)
 
 {{< figure src="ancova-coef-plot-1.png" title="Adjusted Treatment–Control effect (95% CI)" alt="Horizontal coefficient plot of the adjusted Treatment vs Control effect with a 95% confidence interval that does not include zero." >}}
 
-# The effect appears to be durable over a period of at least several days
+## The transcripts show persuasion in action and surface useful context for clinicians
 
-A software bug caused the post-intervention survey not to be presented to the first cohort of participants I recruited for this study from Prolific. Unfortunate! But also unintentionally very illuminating. I  
+As in the previous experiment, the LLM conversations were illuminating and occasionally exasperating.
 
+In several cases, correcting a single concrete misconception (e.g. "the MMR vaccine does not contain aluminum, or mRNA") appears to have been sufficient to overcome hesitations:
+
+> I am more likely to allow my child to receive vaccination lnowing it doesnt contain aluminum
+
+In other cases anxiety seemed to soften when parents were given an actionable plan for what to expect. A parent who asked...
+
+> Is there anyway to prepare ahead for these likely side effects?
+
+...received some detailed practical suggestions, and then responded: 
+
+> "I think a preparation plan makes me more eased up"
+
+A subset of parents expressed well-grounded hesitations, like a history of seizures or anaphylaxis. These encounters tended not to yield changes in intent, but they surfaced context that might help a pediatrician better prepare for a complicated conversation. 
+
+## The effect appears to be durable over a period of at least several days
+
+A software bug caused the post-intervention survey not to be presented to the first cohort of 90 participants I recruited for this study. Unfortunate! But also unintentionally illuminating: I re-contacted these parents for a short follow-up survey on Prolific and collected a post-intervention 1-7 intention score from 66 of them. 
+
+The median delay was ~2 days (range ≈ 0.3–7.1 days). Using that delayed post-intent as the outcome, the adjusted Treatment–Control difference was about the same as the immediate effect: β̂ ≈ 1.09 (95% CI 0.52–1.66; N = 66). Slicing the sample into three equal-sized delay windows, the effect is consistent across all three: ~+1.01 for the shortest window (≤1.6 days), +0.94 for 1.6–2.1 days, and +1.59 for >2.1 days. 
+
+This is a smaller, opportunistic sample, so take it with a grain of salt as exploratory, but it points the same direction as the primary result, and suggests that the effect persists over at least several days.
 
 # Next step: a clinical pilot
 
