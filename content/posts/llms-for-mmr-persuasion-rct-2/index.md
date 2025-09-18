@@ -66,6 +66,12 @@ This study, like the first one, has self-reported vaccination intent as its endp
 
 My working plan is to wire something very much like what we tested here into a pediatric clinical workflow: a pre‑visit message routing hesitant parents into the intervention, then feeding a brief summary and context to the pediatric provider. The endpoint would be EHR‑confirmed on‑time MMR within 30 days. 
 
+# By the way, these diseases are horrific
+
+Imagine your child gets measles as an infant, before they're old enough to be vaccinated, in one of our increasingly frequent outbreaks. They're lucky; they don't get encephalitis (~1 in 1,000) or pneumonia (~1 in 20), they're  not hospitalized (~1 in 4 in the U.S.), they don't die (1–3 in 1,000) ([CDC clinical overview](https://www.cdc.gov/measles/hcp/clinical-overview.html#complications). But years later they start forgetting words, nodding off at dinner, then seizing and no longer recognizing your face. They have subacute sclerosing panencephalitis (SSPE), a delayed complication of measles that is almost always fatal. I included a mother's account of SSPE in the materials I asked participants in this experiment to read, and LA County just [reported](https://arstechnica.com/health/2025/09/child-dies-of-horrifying-measles-complication-in-los-angeles/) the death of another child who caught measles in infancy and developed SSPE. The condition is rare (~1 in 10,000) but the risk is far higher (about 1 in 600) when the infection happens in infancy ([LA County public health](http://publichealth.lacounty.gov/phcommon/public/media/mediapubhpdetail.cfm?prid=5135)). Parents see endless myths about vaccine harms but few know about the very real and devastating risks of the virus itself. 
+
+I think we have tools at our disposal that can help them find out and act accordingly. 
+
 # Interested in collaborating?
 
 {{< callout color="blue" >}}
@@ -89,26 +95,6 @@ If you run a pediatric practice and are interested in collaborating on a lightwe
 </form>
 </div>
 {{< /callout >}}
-
-# By the way, these diseases are horrific
-
-It seems pretty clear that us moderns are susceptible to vaccine misinformation partly because we’ve simply forgotten how bad these diseases are. Because they're rare now. Because of vaccines. 
-
-But in fact measles, to take one of our resurgent foes, is a nightmarish disease. I learned something new about its horrors recently. 
-
-Imagine your child gets measles as an infant, before they're old enough to be vaccinated, in one of our increasingly frequent outbreaks. 
-
-They're lucky — high fever a week of misery, but no encephalitis (~1 in 1,000 cases), they’re not hospitalized (~1 in 4 in the U.S.), they don't get pneumonia (~1 in 20), and they don’t die (1–3 in 1,000). [CDC clinical overview](https://www.cdc.gov/measles/hcp/clinical-overview.html#complications), [CDC signs & symptoms](https://www.cdc.gov/measles/signs-symptoms/index.html).
-
-Or rather, they don't die yet. 
-
-A few years later they start having concerning neurological symptoms: forgetting words, nodding off at dinner. Then seizures. One day they don't seem to recognize your face. They have subacute sclerosing panencephalitis (SSPE), a late complication of measles that is almost always fatal.
-
-I included a quote from the mother of a child who had SSPE in the static content in this RCT. And LA County public health officials have [just reported](https://arstechnica.com/health/2025/09/child-dies-of-horrifying-measles-complication-in-los-angeles/) the death of another school‑aged child who died of SSPE from a measles infection in infancy. 
-
-SSPE is rare (~1 in 10,000), but the risk is much higher (1 in 600) when the original infection happens in infancy ([LA County public health department](http://publichealth.lacounty.gov/phcommon/public/media/mediapubhpdetail.cfm?prid=5135)).
-
-Many parents see lots of vivid false information about post-vaccine sequelae. I bet that almost none of them know about this very real and utterly devastating effect of the virus itself. They need to know, and my goal is to help make sure they do.
 
 ## Full analysis and preregistration
 
