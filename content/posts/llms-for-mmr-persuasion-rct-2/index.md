@@ -5,23 +5,7 @@ tags: ["vaccines", "llm", "rct"]
 summary: "A preregistered active‑control RCT finds a clear increase in stated MMR vaccination intent after a short content review and an LLM conversation."
 ---
 
-It seems pretty clear that us moderns are susceptible to vaccine misinformation partly because we’ve simply forgotten how bad these diseases are. Because they’re rare now. Because of vaccines. But in fact measles (just for example) is a nightmarish disease.
-
-# Measles can kill years after the initial infection
-
-Imagine your child catches it as an infant. Either you declined to vaccinate them, under the sway of fear-mongers, or they were infected during one of our increasingly frequent outbreaks, because other people refused to vaccinate *their* children.
-
-Your kid is lucky. They have a high fever and they're miserable for a week, but they don’t get encephalitis (~1 in 1,000 measles cases), they’re not hospitalized (~1 in 4 in the U.S.), they don’t get pneumonia (~1 in 20 children), and they don’t die (1–3 in 1,000). [CDC clinical overview](https://www.cdc.gov/measles/hcp/clinical-overview.html#complications), [CDC signs & symptoms](https://www.cdc.gov/measles/signs-symptoms/index.html).
-
-Or at least, they don't die yet. Because a few years later, they start having concerning neurological symptoms: forgetting words, nodding off at dinner. Then seizures. One day they don’t seem to recognize your face.
-
- They have subacute sclerosing panencephalitis (SSPE), a late complication of measles. It is almost always fatal.
-
-Los Angeles County just reported a school‑aged child who died of SSPE from a measles infection acquired in infancy, [Ars Technica](https://arstechnica.com/health/2025/09/child-dies-of-horrifying-measles-complication-in-los-angeles/)). SSPE is rare (~1 in 10,000 after measles), but the risk is much higher (1 in 600) when the original infection happens in infancy ([LA County public health department](http://publichealth.lacounty.gov/phcommon/public/media/mediapubhpdetail.cfm?prid=5135)).
-
-Many parents see lots of vivid false information about post-vaccine sequelae. I bet that almost none of them know about this *very real* and utterly devastating effect of the *virus itself*.
-
-# If we don't act, it will be very bad
+# If vaccination rates continue to fall, dreadful diseases will roar back 
 
 As vaccination rates continue to drop, epidemiologists have been sounding increasingly loud warnings. [Kiang et al.](https://doi.org/10.1001/jama.2025.6495) modelled re‑emergence under declining vaccination scenarios and found that at today's state‑level coverage, measles may become endemic again. Their model shows that a further 50% drop in childhood vaccination over 25 years would yield ~51 million measles cases (plus 10 million rubella cases and more than 4.3 million polio cases), more than 10 million hospitalizations, and ~160,000 deaths. Because these diseases are so contagious, the effect of declining vaccination rates is highly non-linear. Even a 10% drop plausibly translates into millions of additional cases and thousands of preventable deaths over a generation.
 
@@ -71,6 +55,11 @@ Control group parents' vaccination intent did not meaningfully change (+≈0.03)
 
 {{< figure src="ancova-coef-plot-1.png" title="Adjusted Treatment–Control effect (95% CI)" alt="Horizontal coefficient plot of the adjusted Treatment vs Control effect with a 95% confidence interval that does not include zero." >}}
 
+# The effect appears to be durable over a period of at least several days
+
+A software bug caused the post-intervention survey not to be presented to the first cohort of participants I recruited for this study from Prolific. Unfortunate! But also unintentionally very illuminating. I  
+
+
 # Next step: a clinical pilot
 
 This study, like the first one, has self-reported vaccination intent as its endpoint. It's a good first step, but obviously it's not the same as shots in arms. 
@@ -101,10 +90,30 @@ If you run a pediatric practice and are interested in collaborating on a lightwe
 </div>
 {{< /callout >}}
 
+# By the way, these diseases are horrific
+
+It seems pretty clear that us moderns are susceptible to vaccine misinformation partly because we’ve simply forgotten how bad these diseases are. Because they're rare now. Because of vaccines. 
+
+But in fact measles, to take one of our resurgent foes, is a nightmarish disease. I learned something new about its horrors recently. 
+
+Imagine your child gets measles as an infant, before they're old enough to be vaccinated, in one of our increasingly frequent outbreaks. 
+
+They're lucky — high fever a week of misery, but no encephalitis (~1 in 1,000 cases), they’re not hospitalized (~1 in 4 in the U.S.), they don't get pneumonia (~1 in 20), and they don’t die (1–3 in 1,000). [CDC clinical overview](https://www.cdc.gov/measles/hcp/clinical-overview.html#complications), [CDC signs & symptoms](https://www.cdc.gov/measles/signs-symptoms/index.html).
+
+Or rather, they don't die yet. 
+
+A few years later they start having concerning neurological symptoms: forgetting words, nodding off at dinner. Then seizures. One day they don't seem to recognize your face. They have subacute sclerosing panencephalitis (SSPE), a late complication of measles that is almost always fatal.
+
+I included a quote from the mother of a child who had SSPE in the static content in this RCT. And LA County public health officials have [just reported](https://arstechnica.com/health/2025/09/child-dies-of-horrifying-measles-complication-in-los-angeles/) the death of another school‑aged child who died of SSPE from a measles infection in infancy. 
+
+SSPE is rare (~1 in 10,000), but the risk is much higher (1 in 600) when the original infection happens in infancy ([LA County public health department](http://publichealth.lacounty.gov/phcommon/public/media/mediapubhpdetail.cfm?prid=5135)).
+
+Many parents see lots of vivid false information about post-vaccine sequelae. I bet that almost none of them know about this very real and utterly devastating effect of the virus itself. They need to know, and my goal is to help make sure they do.
+
 ## Full analysis and preregistration
 
 - [R analysis workbook and output (HTML)](/mmr-2-analysis/index.html)
 - [Machine‑readable markdown output (.md)](/mmr-2-analysis/analysis.md)
 - [OSF preregistration](https://osf.io/qx46h)
 
-{{< footnote "1" >}}Specifically Claude 4.0 Sonnet via the Anthropic API (`claude-sonnet-4-20250514`, with thinking enabled. {{< /footnote >}}
+{{< footnote "1" >}}Specifically Claude 4.0 Sonnet via the Anthropic API (`claude-sonnet-4-20250514`, with thinking enabled.{{< /footnote >}}
