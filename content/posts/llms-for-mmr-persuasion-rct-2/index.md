@@ -51,9 +51,11 @@ I made a few other changes as well:
 
 Control group parents' vaccination intent did not meaningfully change (+≈0.03). On average, treatment group parents, by contrast, increased their vaccination intent by more than a full point (+≈1.07). The adjusted Treatment–Control difference was β̂ ≈  1.03; 95% CI 0.72–1.34. Nearly two thirds (~64%) of treatment group parents increased their intention by at least one point vs only about 1 in 10 in the control group.
 
+{{< figure src="ancova-coef-plot-1.png" title="Adjusted Treatment–Control effect (95% CI)" alt="Horizontal coefficient plot of the adjusted Treatment vs Control effect with a 95% confidence interval that does not include zero." >}}
+
 {{< figure src="prepost-plot-1.png" title="Pre vs Post mean intention by arm" alt="Mean pre and post intention for Control and Treatment; Treatment increases by about one point, Control is flat." >}}
 
-{{< figure src="ancova-coef-plot-1.png" title="Adjusted Treatment–Control effect (95% CI)" alt="Horizontal coefficient plot of the adjusted Treatment vs Control effect with a 95% confidence interval that does not include zero." >}}
+{{< figure src="delta-violin-1.png" title="Treatment vs. Control vaccination intent change (violin and box plot)" alt="Side-by-side Control group vs. Treatment group change in intent Post - Pre, showing increase of ~1 point in Treatment group and no change in Control group, with distribution of changes and box and whiskers." >}}
 
 ## The transcripts show persuasion in action and surface useful context for clinicians
 
