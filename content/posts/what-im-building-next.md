@@ -1,11 +1,12 @@
 ---
-title: "What I'm Building Next"
+title: "Why I'm building AI tools for the most frustrating conversations in medicine"
 date: 2026-01-13
 tags: ["calypta", "vaccines", "health", "llm"]
-summary: "I'm starting a company to help people make wiser health decisions. Here's what it is and why I'm doing it."
 ---
 
 I'm starting a company called [Calypta Health](https://www.calyptahealth.com). The short version: we build tools that help people make better decisions about their health, combining curated content with AI-powered conversations. Vaccines first, but the vision is broader.
+
+<!--more-->
 
 Here's why.
 
