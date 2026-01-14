@@ -1,6 +1,6 @@
 ---
 title: "What I'm Building Next"
-date: 2026-01-15
+date: 2026-01-13
 tags: ["calypta", "vaccines", "health", "llm"]
 summary: "I'm starting a company to help people make wiser health decisions. Here's what it is and why I'm doing it."
 ---
