@@ -1,5 +1,5 @@
 ---
-title: "A near-miss in my thirties"
+title: "Don from Reno"
 date: 2026-01-13
 draft: true
 featured: true
@@ -22,6 +22,8 @@ What I had, specifically, was a life-threatening sarcoma, a type of soft-tissue 
 
 Because sarcomas can grow for a while without causing obvious symptoms, many are caught late. I was lucky. Mine was shallow enough to notice, I was in the habit of annual exams, and I (only barely) thought to mention it. I was also extremely fortunate to have family expertise and to be in the care of sarcoma specialists from the beginning.[^sarcoma-specialists]
 
+(PSA: if you ever notice a mass of any kind, especially if it's unilateral/asymmetrical, and even more especially if it's growing slowly but steadily, *get it checked out immediately*).
+
 So off I went into Cancer World. A diagnostic workup, MRIs and CT scans to check for metastasis, fortunately finding none.[^metastasis] The sarcoma team at City of Hope debated whether I ought to have pre-surgery radiation ("neoadjuvant") or post-surgery ("adjuvant"), and wound up recommending the former. I kinda wanted the damn thing gone ASAP, so was somewhat disappointed by this.
 
 But I did as they proposed, and scheduled my five weeks of radiation at Alta Bates. Under the care of the excellent [Dr. Rembert](https://www.hillphysicians.com/doctor/james-lawrence-rembert-md)[^rembert] and a great team, I had a form of radiation therapy called IMRT: intensity-modulated radiation therapy. A brilliant innovation. Inside the machine, dozens of tungsten leaves, each about a centimeter wide, move independently to shape the radiation beam in real time. They do a kind of dance, shaping the beam around the tumor's contours, to maximize the dose to the target while sparing the surrounding tissue. My tumor shrank considerably under the influence of the radiation. Lucky again, to have such radio-sensitive cancer cells.
@@ -30,11 +32,13 @@ I opted to have my surgery in Los Angeles, to have support from family during th
 
 So I count myself fortunate that the extent of my complications were a hematoma and a reluctant-to-heal wound that required minor second and third surgeries (irradiated tissue is vexing for wound healing). During the third surgery, the power at the hospital went out, and the backup generators failed to start. Fortunately, my combat-veteran anesthesiologist had talked to me beforehand and proposed lighter sedation than had been originally planned. Lighter sedation meant no intubation, and no ventilator that otherwise would have suddenly stopped mid-surgery. Another stroke of luck. I would have been fine, of course — manual ventilation would have done the trick — but still, glad to have avoided that hiccup.
 
-And all of this was a near miss. If I hadn't been doing annual PCP visits...if I hadn't remembered to ask about the thing...if my PCP hadn't raised an eyebrow at it.[^onemedical]. I can easily imagine alternate universes where my cancer was diagnosed much later, maybe too late to be fully remediated. I'm alive now because I had access to a medical system with extraordinary technical capabilities. But to benefit from those capabilities, *I had to be an active participant*. If I'd been less savvy or more passive, I might not be alive today.
+And all of this was a near miss. If I hadn't been doing annual PCP visits...if I hadn't remembered to ask about the thing...if my PCP hadn't raised an eyebrow at it[^onemedical]. I can easily imagine alternate universes where my cancer was diagnosed much later, maybe too late to be fully remediated. I'm alive now because I had access to a medical system with extraordinary technical capabilities. But to benefit from those capabilities, *I had to be an active participant*. If I'd been less savvy or more passive, I might not be alive today.
+
+This was 8 years ago. I've had annual CTs and occasional MRIs since then. Other than a minor scare on a chest CT, a little wrinkle in my lung that proved to be ephemeral when repeated a few months later, it's been smooth sailing since then. All I have to show for it now are three tiny tattoo dots (they're used to align the radiation beam), a nasty scar, a meditation practice that has transformed my life for the better, a keen awareness of the fragility and contingency of human lives, and a deep gratitude for modern medicine. 
 
 [^doorknob]: Doctors call these "doorknob questions."
 
-[^mri-cash]: My insurer at the time was dragging their feet on approving the MRI. I had a high deductible plan anyway, so I called around to see if I could just pay out of pocket, and discovered, not for the first time, that (a) it's very hard to get anyone to tell you in advance how much something is going to cost, in this world, but also (b) if you push, you often *can* just pay cash, and you'll be shocked by how much less it costs vs. what your insurer would pay even at whatever their in-network negotiated price is. The whole system is a terrible mess, and the root of much of our pathology is paying for stuff through "insurance" at all.
+[^mri-cash]: My insurer at the time was dragging their feet on approving the MRI. I had a high deductible plan anyway, so I called around to see if I could just pay out of pocket, and discovered, not for the first time, that (a) it's very hard to get anyone to tell you in advance how much something is going to cost in this world, but also (b) if you push, you often *can* just pay cash, and you'll be shocked by how much less it costs vs. what your insurer would pay even at their in-network negotiated price. The whole system is a terrible mess, and the root of much of our pathology is paying for stuff through "insurance" at all.
 
 [^sarcoma-specialists]: This matters. Sarcoma needs careful handling even at the biopsy stage; a biopsy done carelessly can seed cancer cells along the needle track, complicating the planning of future surgery. So seek out specialists early if it's suspected.
 
