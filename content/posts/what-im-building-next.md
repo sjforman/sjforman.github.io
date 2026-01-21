@@ -5,31 +5,31 @@ draft: true
 tags: ["calypta", "vaccines", "health", "llm"]
 ---
 
-Personal update: I'm starting a company called [Calypta Health](https://www.calyptahealth.com), building tools to help people make wiser decisions about their health. We're starting on hard mode with vaccine hesitancy. 
+Personal update: I'm starting a company called [Calypta Health](https://www.calyptahealth.com), building tools to help people make wiser decisions about their health. I'm starting on hard mode with vaccine hesitancy. 
 
 <!--more-->
 
 # This is somewhat personal
 
-I haven't told this story publicly before. In 2017, I went in for an annual physical with a [One Medical]() provider. We covered some run-of-the-mill health topics, she ordered the usual labs, and as I was about to leave — literally, on the way out the door — (I later learned that doctors have a name for this — "doorknob questions.")<- make into footnote — I asked, "hey, by the way, I have this bump, want to take a look?" She asked a few questions, how long had it been there, etc., then palpated the thing — a painless knob-like structure in my left glute — and said, "huh." An ominous "huh." 
+I haven't told this story publicly before. In 2017, I went in for an annual physical with a [One Medical](https://www.onemedical.com/) provider. We covered some run-of-the-mill health topics, she ordered the usual labs, and as I was about to leave — literally, on the way out the door {{< ref "1" >}} — I asked, "hey, by the way, I have this bump, want to take a look?" It was a painless knob-like structure in my left glute. She asked a few questions, how long had it been there, etc., then palpated the thing, and said, ominously "hmph."
 
-A week later, I was paying cash for an MRI at an imaging center, and a few weeks after that I was taking a very long train ride (decided to take the scenic route and give myself some time to think) down to LA for a biopsy at the [City of Hope](). It's a place I know well, having attended many Bone Marrow Transplant reunions there growing up (my Dad is an oncologist and helped start the BMT program there. He's still seeing patients and doing research). 
+A week later, I was paying cash for an MRI at an imaging center{{< ref "2" >}}, and a few weeks after that I was taking a very long train ride down to LA for a biopsy at [City of Hope](https://www.cityofhope.org/). I took the scenic route to give myself time to think. It's a place I know well. [My dad is a hematologist / oncologist there](https://www.cityofhope.org/patients/find-a-doctor/stephen-forman), he helped start their Bone Marrow Transplant program, and is still [seeing patients and doing research](https://www.youtube.com/watch?v=z8WGtTPgQUU). I attended many BMT reunions growing up. I didn't expect I'd be back as a patient in my thirties.
 
-A week later, I got a call from the surgeon: cancer! People are diagnosed with cancer every day. It's routine. But it's really not possible to convey in words just how terrifying the experience is. It's amazing in a way. You're taking in some information — just words, radio waves turned into sound waves and piped into your ear, and the whole apparatus of primal terror, the flood of cortisol and adrenaline, gets activated. Mortal terror is quite a trip.    
+A few days after the biopsy, I got a call from the surgeon: cancer. I remember this conversation only vaguely, because the experience is really quite terrifying. One takes in the information — just words, radio waves turned into sound waves and piped into your ear — and the whole apparatus of primal terror, the flood of cortisol and adrenaline, gets activated. Mortal terror is quite a trip.    
 
-What I had, specifically, is a sarcoma, a type of soft-tissue cancer. A "myxoid liposarcoma with round cells," a moderate-to-highly aggressive type, characterized by a chromosomal translocation in which [x]. 
+What I had, specifically, is a sarcoma — a soft-tissue cancer. A "myxoid liposarcoma with round cells," a moderate-to-highly aggressive type, characterized by a chromosomal translocation in which parts of chromosomes 12 and 16 swap places. What causes this? Nobody knows for sure. A stray cosmic ray strike during cell division sometime in 2015, maybe. A random copying error. The universe rolling dice. 
 
-Because they can grow for a while without causing any obvious symptoms, many sarcomas are caught late. So I was pretty lucky. Mine was shallow enough that it could be noticed, I was in the habit of getting annual exams, and I (just barely) thought to mention it. Then I was fortunate to have family expertise, and to be in the care of sarcoma specialists from the beginning. (this is important, by the way! Sarcoma needs to be handled very carefully, even at the biopsy stage, so it's wise to seek out oncologists who specialize in this as early as possible when sarcoma is suspected). I also had insurance through the ACA (I was working on a startup at the time, so I didn't have normal employer-sponsored health insurance). 
+Because sarcomas can grow for a while without causing obvious symptoms, many are caught late. I was lucky. Mine was shallow enough to notice, I was in the habit of annual exams, and I (just barely) thought to mention it. I was also fortunate to have family expertise and to be in the care of sarcoma specialists from the beginning. (This matters — sarcoma needs careful handling even at the biopsy stage, so seek out specialists early if it's suspected.) I had insurance through the ACA, since I was working on a startup at the time. 
 
-So off I went into Cancer World. The diagnostic workup to see if there was any metastasis (fortunately none: maybe not widely known, but even as much progress as we've made with cancer in the last decades, there's still a start dividing line between "local" and "metastatic" cancers — the latter can be managed but rarely if ever cured). Radiation therapy, surgery, then second and third surgeries to try to get the wound to close (irradiated tissue is vexing for wound healing).   
+So off I went into Cancer World. Diagnostic workup to check for metastasis (fortunately none — maybe not widely known, but there's still a stark dividing line between "local" and "metastatic" cancers; the latter can be managed but rarely cured). Radiation therapy. Surgery. Then second and third surgeries to get the wound to close — irradiated tissue is vexing for wound healing.   
 
 And all of this was a near miss. If I hadn't been doing annual PCP visits. If I hadn't remembered to ask about the thing. If my PCP hadn't raised an eyebrow at it.
 
 So I got lucky. I can easily imagine alternate universes where my cancer was caught much later, maybe too late to be fully remediated. 
 
-All to say: I'm alive now because I'm lucky enough to have access to a medical system with extraordinary technical capabilities. But to avail myself of those capabilities, *I had to be an active participant*, and if I were less savvy about such things, or if some dice had fallen in a slightly different configuration, I might not have. 
+All to say: I'm alive now because I had access to a medical system with extraordinary technical capabilities. But to benefit from those capabilities, *I had to be an active participant*. If I'd been less savvy, or if a few dice had fallen differently, I might not have been.
 
-What does this have to do with my new project? Well the whole experience made me care about health decisions in a pretty visceral. People make choices every day — sometimes because they don't know the facts, sometimes because they know but don't believe, sometimes because they believe but can't act.
+What does this have to do with vaccines? The experience made me care about health decisions viscerally. I survived because I engaged with the system. And now I'm watching millions of people *disengage* from it — refusing vaccines, skipping screenings, ignoring medications — in ways that will hurt them and their children. That's what I want to work on.
 
 # The moment we're in is maddening
 
@@ -76,3 +76,11 @@ The product is live at [app.calyptahealth.com](https://app.calyptahealth.com). Y
 **If you're reading this thinking "I wish this existed for X"** — reach out. Vaccines are where I started, but I've also been talking to OBs about prenatal counseling and GI docs about colonoscopy prep anxiety. The pattern generalizes: any conversation where the evidence is clear but patients resist or delay, and clinicians don't have time to work through it.
 
 [scott@calyptahealth.com](mailto:scott@calyptahealth.com)
+
+{{< footnote "1" >}}
+Doctors call these "doorknob questions."
+{{< /footnote >}}
+
+{{< footnote "2" >}}
+My insurer at the time was dragging their feet on approving the MRI. I had a high deductible plan anyway, so I called around to see if I could just pay out of pocket, and discovered, not for the first time, that (a) it's very hard to get anyone to tell you in advance how much something is going to cost, in this world, but also (b) if you push, you often *can* just pay cash, and you'll be shocked by how much less it costs vs. what your insurer would pay even at whatever their in-network negotiated price is. The whole system is a terrible mess, and the root of much of our pathology is paying for stuff through "insurance" at all.
+{{< /footnote >}}
