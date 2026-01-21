@@ -1423,6 +1423,10 @@ video {
   max-width: 20rem;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .border-collapse {
   border-collapse: collapse;
 }
