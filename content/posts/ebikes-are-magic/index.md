@@ -22,7 +22,7 @@ Driving is quite costly per mile, especially when you include all the easy-to-ig
 
 ### 3. A more affordable purchase than you might think
 
-I think many people have the misconception that an ebike is a roughly five thousand dollar purchase. It certainly can be, but you don't need to spend anywhere near that to get a really solid one. Mine is a Ride1Up — a solid, dependable, well-made Class 3 bike with solid components, a throttle, front shocks, a rear rack, and integrated lights. It's currently available from [Ride1Up](https://go.ride1up.com/aff_c?offer_id=2&aff_id=1056&url=https%3A%2F%2Fride1up.com%2Fproduct%2F700-series%3Ftransaction_id%3D{transaction_id}%26utm_campaign%3D{affiliate_id}){{< ref "1" >}} for $1295.
+I think many people have the misconception that an ebike is a roughly five thousand dollar purchase. It certainly can be, but you don't need to spend anywhere near that to get a really solid one. Mine is a Ride1Up — a solid, dependable, well-made Class 3 bike with solid components, a throttle, front shocks, a rear rack, and integrated lights. It's currently available from [Ride1Up](https://go.ride1up.com/aff_c?offer_id=2&aff_id=1056&url=https%3A%2F%2Fride1up.com%2Fproduct%2F700-series%3Ftransaction_id%3D{transaction_id}%26utm_campaign%3D{affiliate_id})[^affiliate] for $1295.
 
 ### 4. Going faster cuts stress dramatically
 
@@ -38,7 +38,7 @@ A subtle thing, but I often find myself wanting to inch forward a bit from a sta
 
 ### 7. Pairs well with public transit
 
-This depends on where you happen to live of course, but in the Bay Area, BART-plus-ebike works really well. A remarkable turnabout, since bikes on BART were completely banned [until 2013](https://www.bart.gov/news/articles/2013/news20131024). And the new generation train cars have very functional rails to secure them.{{< ref "2" >}} More recently, the pointless rule against taking them on escalators [was repealed](https://www.bart.gov/guide/bikes/bikeRules). So you can usually avoid the slow and often malodorous elevators. My bike even has a walk-assist option that spins the motor at low RPM, that I can use to roll the bike up the rail on the sides of some stairwells, or even in a pinch (if somewhat clunkily) up the stairs.
+This depends on where you happen to live of course, but in the Bay Area, BART-plus-ebike works really well. A remarkable turnabout, since bikes on BART were completely banned [until 2013](https://www.bart.gov/news/articles/2013/news20131024). And the new generation train cars have very functional rails to secure them.[^bart-racks] More recently, the pointless rule against taking them on escalators [was repealed](https://www.bart.gov/guide/bikes/bikeRules). So you can usually avoid the slow and often malodorous elevators. My bike even has a walk-assist option that spins the motor at low RPM, that I can use to roll the bike up the rail on the sides of some stairwells, or even in a pinch (if somewhat clunkily) up the stairs.
 
 ### 8. Integrated lights are a major convenience
 
@@ -52,10 +52,6 @@ If you've ridden a bike, you might think you know what it's like to ride an ebik
 
 So here's my advice: if you have even a glimmer of a desire for an ebike, test ride one. You might be surprised by how much fun they are. If you live in the Bay Area you can [try mine](https://ride1up.com/ambassador-inquiry/?mapid=12753). 
 
-{{< footnote "1" >}}
-This is an affiliate link. Ride1Up makes truly excellent products so I'm very happy to evangelize for them!
-{{< /footnote >}}
+[^affiliate]: This is an affiliate link. Ride1Up makes truly excellent products so I'm very happy to evangelize for them!
 
-{{< footnote "2" >}}
-The original [pincer-type racks](https://sfbike.org/wp-content/uploads/2019/05/BARTbikerack_800px.jpg) worked very poorly and have, mercifully, been abandoned in favor of simple rails and straps.
-{{< /footnote >}}
+[^bart-racks]: The original [pincer-type racks](https://sfbike.org/wp-content/uploads/2019/05/BARTbikerack_800px.jpg) worked very poorly and have, mercifully, been abandoned in favor of simple rails and straps.

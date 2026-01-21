@@ -33,7 +33,7 @@ None of these speak directly to the real-world behaviors that follow from dubiou
 
 ## An experiment to measure LLM impact on vaccination intent
 
-Because the social sciences are littered with splashy p-hacked findings and file-drawer nulls, I preregistered my experiment with OSF: [Leveraging Conversational AI to Reduce MMR Vaccine Hesitancy: A Two-Arm Online Experiment](https://osf.io/7upk5). {{< ref "1" >}}
+Because the social sciences are littered with splashy p-hacked findings and file-drawer nulls, I preregistered my experiment with OSF: [Leveraging Conversational AI to Reduce MMR Vaccine Hesitancy: A Two-Arm Online Experiment](https://osf.io/7upk5).[^irb]
 
 Here's the setup:
 
@@ -147,4 +147,4 @@ If you're a pediatric medical practitioner interested in novel ways of tackling 
 
 The preregistration [was published on OSF](https://osf.io/7upk5). An analysis aligned with that preregistration, along with various exploratory analyses, is available [here](/mmr-persuasion-analysis.html).
 
-{{< footnote "1" >}}The study was self-certified as exempt from IRB review under U.S. 45 CFR 46. A signed attestation is included in the preregistration materials.{{< /footnote >}}
+[^irb]: The study was self-certified as exempt from IRB review under U.S. 45 CFR 46. A signed attestation is included in the preregistration materials.

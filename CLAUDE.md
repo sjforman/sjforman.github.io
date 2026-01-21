@@ -56,6 +56,16 @@ summary: "Optional"
 
 Use `<!--more-->` to mark the summary cutoff point.
 
+### Footnotes
+Use standard Markdown footnote syntax (auto-numbered by Goldmark):
+```markdown
+Some text with a footnote[^label] and another[^other].
+
+[^label]: Footnote content here.
+[^other]: Another footnote.
+```
+Labels can be any descriptive string. Hugo auto-numbers based on order of appearance.
+
 ## Git Workflow
 
 - `develop` - Development branch

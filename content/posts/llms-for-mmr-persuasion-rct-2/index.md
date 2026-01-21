@@ -37,7 +37,7 @@ Those who remained were mostly young, conservative-leaning women. The randomized
 
 # I applied some lessons from the first experiment 
 
-In RCT1, both of the interventions I tried seemed to work, leading me to wonder...why not both? So this time I combined them. Parents in the treatment group were asked to review some factual material about the MMR vaccine, and then to engage in a brief chat with an LLM (Claude 4 Sonnet).{{< ref "1" >}} Parents in the control completed a parallel experience, matched in structure, but covering a topic unrelated to vaccines (car seat safety). 
+In RCT1, both of the interventions I tried seemed to work, leading me to wonder...why not both? So this time I combined them. Parents in the treatment group were asked to review some factual material about the MMR vaccine, and then to engage in a brief chat with an LLM (Claude 4 Sonnet).[^claude-model] Parents in the control completed a parallel experience, matched in structure, but covering a topic unrelated to vaccines (car seat safety). 
 
 The control group in this experiment is thus a much closer match to the pre-appointment experience for most parents, namely no particular preparation for the vaccine discussion and decision at all!
 
@@ -125,4 +125,4 @@ If you run a pediatric practice and are interested in collaborating on a lightwe
 - [Machine‑readable markdown output (.md)](/mmr-2-analysis/analysis.md)
 - [OSF preregistration](https://osf.io/qx46h)
 
-{{< footnote "1" >}}Specifically Claude 4.0 Sonnet via the Anthropic API (`claude-sonnet-4-20250514`, with thinking enabled.{{< /footnote >}}
+[^claude-model]: Specifically Claude 4.0 Sonnet via the Anthropic API (`claude-sonnet-4-20250514`), with thinking enabled.
