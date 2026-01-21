@@ -19,9 +19,7 @@
             <p class="text-sm text-gray-500 mb-2">Most recent post: {{ if .Date }}{{ .Date | time.Format ":date_long"
                 }}{{ end }}</p>
             <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h2>
-            <div class="post-summary mb-4">
-                {{ .Summary }}
-            </div>
+            <div class="post-summary mb-4">{{ .Summary | plainify }}</div>
         </a>
         {{ end }}
     </div>
