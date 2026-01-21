@@ -8,6 +8,17 @@ This is the source code for my personal blog, built with [Hugo](https://gohugo.i
 *   **Styling:** Tailwind CSS
 *   **Hosting:** GitHub Pages
 
+## Development
+
+```bash
+# Start development server with Tailwind CSS watch (recommended)
+npm run dev
+
+# Or run individually:
+npm run dev:server    # Hugo server on port 1314, drafts enabled
+npm run watch:css     # Tailwind CSS file watcher
+```
+
 ## Content Management
 
 Posts are located in the `content/posts` directory. Posts with images should be in their own folders (a "leaf bundle") containing an `index.md` file and any associated images. Posts without images can be placed directly in the `content/posts` directory as markdown files.
@@ -16,23 +27,39 @@ Posts are located in the `content/posts` directory. Posts with images should be 
 
 There is a helper script in the `bin` directory to simplify post creation.
 
-To create a new post, you can run:
-
 ```bash
 ./bin/make-post.sh "Your Post Title" "tag1, tag2"
+./bin/make-post.sh "Your Post Title" "tag1, tag2" custom-slug --dir  # With images (leaf bundle)
 ```
-
-This will create a new file `content/posts/your-post-title.md`.
-
-To create a post with its own directory for images (a leaf bundle), use the `--dir` or `-d` flag:
-
-```bash
-./bin/make-post.sh "Your Post Title" "tag1, tag2" your-post-title --dir
-```
-
-This will create `content/posts/your-post-title/index.md`.
 
 All new posts are created as drafts.
+
+### Post Frontmatter
+
+```yaml
+title: "Post Title"
+date: 2024-01-15
+draft: true          # Remove or set false to publish
+featured: true       # Show on homepage (optional)
+tags: ["tag1", "tag2"]
+subtitle: "Optional"
+summary: "Optional"
+```
+
+Use `<!--more-->` to mark the summary cutoff point.
+
+### Footnotes
+
+Use standard Markdown footnote syntax (auto-numbered by Hugo/Goldmark):
+
+```markdown
+Some text with a footnote[^label] and another[^other].
+
+[^label]: Footnote content here.
+[^other]: Another footnote.
+```
+
+Labels can be any descriptive string. Hugo auto-numbers based on order of appearance.
 
 ### Handling Images
 
@@ -47,15 +74,8 @@ To ensure images are processed correctly for optimal performance and display pro
 {{< imgproc path="my-image.jpg" command="resize 800x" alt="A descriptive alt text" >}}
 ```
 
-This shortcode finds the image within the post's bundle and processes it according to the command. Using this method is essential for images to appear on post preview cards (e.g., on the `/posts` page).
+This shortcode finds the image within the post's bundle and processes it according to the command.
 
-## Development
+## Deployment
 
-To run the site locally, you need to have Hugo installed.
-
-```bash
-# Serve the site with live reload
-hugo -D serve
-```
-
-The site will be available at `http://localhost:1313`.
+Pushes to the `production` branch trigger GitHub Actions deployment to GitHub Pages.

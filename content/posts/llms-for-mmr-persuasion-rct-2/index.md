@@ -1,6 +1,7 @@
 ---
 title: "LLMs can help persuade parents to vaccinate their kids."
 date: 2025-09-15
+featured: true
 tags: ["vaccines", "llm", "rct"]
 summary: "A preregistered active‑control RCT finds a clear increase in stated MMR vaccination intent after a short content review and an LLM conversation."
 ---

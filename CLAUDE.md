@@ -49,6 +49,7 @@ Always use these instead of raw Markdown image syntax:
 title: "Post Title"
 date: 2024-01-15
 draft: true          # Remove or set false to publish
+featured: true       # Show on homepage (optional)
 tags: ["tag1", "tag2"]
 subtitle: "Optional"
 summary: "Optional"

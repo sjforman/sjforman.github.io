@@ -11,13 +11,16 @@
     <div class="text-center">
         {{ .Content }}
     </div>
-    <div class="mt-6 w-full max-w-3xl">
-        {{ $recentPost := first 1 .Site.RegularPages }}
-        {{ range $recentPost }}
+    <div class="mt-6 w-full max-w-3xl space-y-4">
+        {{ $featured := where .Site.RegularPages ".Params.featured" true }}
+        {{ $posts := $featured }}
+        {{ if not $posts }}
+            {{ $posts = first 1 .Site.RegularPages }}
+        {{ end }}
+        {{ range $posts.ByDate.Reverse }}
         <a href="{{ .RelPermalink }}"
             class="block bg-white rounded-xl p-8 shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
-            <p class="text-sm text-gray-500 mb-2">Most recent post: {{ if .Date }}{{ .Date | time.Format ":date_long"
-                }}{{ end }}</p>
+            <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date | time.Format ":date_long" }}{{ end }}</p>
             <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h2>
             <div class="post-summary mb-4">{{ .Summary | plainify }}</div>
         </a>

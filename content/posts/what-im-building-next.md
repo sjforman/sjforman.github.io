@@ -2,6 +2,7 @@
 title: "Why I'm building AI tools for the most frustrating conversations in medicine"
 date: 2026-01-13
 draft: true
+featured: true
 tags: ["calypta", "vaccines", "health", "llm"]
 ---
 
