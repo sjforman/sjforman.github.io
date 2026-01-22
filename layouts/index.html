@@ -1,12 +1,7 @@
 {{ define "main" }}
 <div class="flex flex-col items-center min-h-screen mx-auto mt-4 sm:mt-6 px-4">
-    <div class="relative group inline-block">
-        <img id="profileImage" src="/images/profile.jpg" alt="Profile Photo by Kari Orvik Tintype Studio"
-            class="rounded-full mx-auto mb-4 mt-6 w-48 sm:w-64 max-w-xs">
-        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-center py-1 px-3 text-xs text-gray-500 dark:text-gray-400 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-full opacity-100 sm:opacity-0 transition-opacity duration-300 sm:group-hover:opacity-100 whitespace-nowrap">
-            Photo: <a href="http://www.kariorviktintypestudio.com" class="hover:text-gray-700 dark:hover:text-gray-200 underline">Kari Orvik</a>
-        </div>
-    </div>
+    <img id="profileImage" src="/images/profile.jpg" alt="Profile Photo by Kari Orvik Tintype Studio"
+        class="rounded-full mx-auto mb-4 mt-6 w-48 sm:w-64 max-w-xs">
     <h1 class="text-2xl sm:text-3xl font-bold">{{ .Title }}</h1>
     <div class="text-center">
         {{ .Content }}
