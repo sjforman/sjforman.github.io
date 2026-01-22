@@ -1,13 +1,13 @@
 {{ define "main" }}
-<div class="flex flex-col items-center min-h-screen mx-auto mt-6">
-    <div class="relative group">
+<div class="flex flex-col items-center min-h-screen mx-auto mt-4 sm:mt-6 px-4">
+    <div class="relative group inline-block">
         <img id="profileImage" src="/images/profile.jpg" alt="Profile Photo by Kari Orvik Tintype Studio"
-            class="rounded-full mx-auto mb-4 mt-6 max-w-xs">
-        <div class="fixed bottom-0 left-0 right-0 text-center py-2 text-sm text-gray-400/75 bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm opacity-0 transition-opacity duration-300 group-hover:opacity-100 photo-credit">
-            Tintype portrait by <a href="http://www.kariorviktintypestudio.com" class="hover:text-gray-600 dark:hover:text-gray-300">Kari Orvik Tintype Studio</a>
+            class="rounded-full mx-auto mb-4 mt-6 w-48 sm:w-64 max-w-xs">
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-center py-1 px-3 text-xs text-gray-500 dark:text-gray-400 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-full opacity-100 sm:opacity-0 transition-opacity duration-300 sm:group-hover:opacity-100 whitespace-nowrap">
+            Photo: <a href="http://www.kariorviktintypestudio.com" class="hover:text-gray-700 dark:hover:text-gray-200 underline">Kari Orvik</a>
         </div>
     </div>
-    <h1 class="text-3xl font-bold">{{ .Title }}</h1>
+    <h1 class="text-2xl sm:text-3xl font-bold">{{ .Title }}</h1>
     <div class="text-center">
         {{ .Content }}
     </div>
@@ -19,44 +19,32 @@
         {{ end }}
         {{ range $posts.ByDate.Reverse }}
         <a href="{{ .RelPermalink }}"
-            class="block bg-white rounded-xl p-8 shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
+            class="block bg-white rounded-xl p-4 sm:p-8 shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
             <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date | time.Format ":date_long" }}{{ end }}</p>
-            <h2 class="text-2xl font-semibold mb-4">{{ .Title }}</h2>
+            <h2 class="text-xl sm:text-2xl font-semibold mb-4">{{ .Title }}</h2>
             <div class="post-summary mb-4">{{ .Summary | replaceRE `<sup[^>]*>.*?</sup>` "" | replaceRE `</?p[^>]*>` "" | replaceRE `<a [^>]*>|</a>` "" | replaceRE `</?em>|</?strong>` "" | safeHTML }}</div>
         </a>
         {{ end }}
     </div>
-    <div class="w-full max-w-3xl text-right">
-        <a href="/posts" class="text-sm text-gray-500 hover:text-gray-600"
-            style="padding-top: 1rem; display: inline-block;">See all posts ></a>
+    <div class="w-full max-w-3xl text-right px-4 sm:px-0">
+        <a href="/posts" class="inline-block py-3 text-sm text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">See all posts &rarr;</a>
     </div>
 </div>
 <style>
     .post-summary {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-gap: 10px; 
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 8px;
         justify-content: center;
         align-items: center;
-        max-width: 800px;
+        max-width: 100%;
         margin: 0 auto;
     }
 
-    @media (min-width: 200px) {
-        .post-summary p {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-
-    @media (min-width: 400px) {
-        .post-summary p {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    @media (min-width: 800px) {
-        .post-summary p {
-            grid-template-columns: repeat(4, 1fr);
+    @media (min-width: 640px) {
+        .post-summary {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
         }
     }
 
