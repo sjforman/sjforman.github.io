@@ -1,35 +1,35 @@
 {{ define "main" }}
 <main class="flex flex-col items-center min-h-screen px-4 py-8 space-y-4 sm:space-y-8 dark:bg-gray-900 dark:text-slate-50">
     <!-- Tags Filter -->
-    <div class="tags-filter text-sm mb-4">
+    <div class="tags-filter text-sm mb-4 flex flex-wrap items-center justify-center gap-2 max-w-3xl">
         {{ if .Data.Term }}
             <span>Filtered for: <span class="font-mono">{{ .Data.Term }}</span></span>
-            <a href="/posts/" class="ml-1 underline">See all posts</a>
+            <a href="/posts/" class="underline py-1">See all posts</a>
         {{ else }}
             <span>Filter for:</span>
             {{ range .Site.Taxonomies.tags }}
-                <a href="{{ .Page.Permalink }}" class="ml-1 font-mono">{{ .Page.Title | lower }}</a>
+                <a href="{{ .Page.Permalink }}" class="font-mono py-1 px-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded">{{ .Page.Title | lower }}</a>
             {{ end }}
         {{ end }}
     </div>
     
     {{ $currentPageTag := .Params.tag }}
     {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $currentPageTag) }}
-        <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
+        <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-4 sm:p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
             <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-            <h2 class="text-2xl font-semibold mb-2">{{ .Title }}</h2>
+            <h2 class="text-xl sm:text-2xl font-semibold mb-2">{{ .Title }}</h2>
             {{ if .Params.subtitle }}
-            <p class="text-lg text-gray-600 dark:text-gray-300 mb-4 italic">{{ .Params.subtitle }}</p>
+            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-4 italic">{{ .Params.subtitle }}</p>
             {{ end }}
             <div class="mb-4 post-summary">{{ .Summary | replaceRE `<sup[^>]*>.*?</sup>` "" | replaceRE `</?p[^>]*>` "" | replaceRE `<a [^>]*>|</a>` "" | replaceRE `</?em>|</?strong>` "" | safeHTML }}</div>
         </a>
     {{ else }}
         {{ range .Pages }}
-            <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
+            <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-4 sm:p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
                 <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-                <h2 class="text-2xl font-semibold mb-2">{{ .Title }}</h2>
+                <h2 class="text-xl sm:text-2xl font-semibold mb-2">{{ .Title }}</h2>
                 {{ if .Params.subtitle }}
-                <p class="text-lg text-gray-600 dark:text-gray-300 mb-4 italic">{{ .Params.subtitle }}</p>
+                <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-4 italic">{{ .Params.subtitle }}</p>
                 {{ end }}
                 <div class="mb-4 post-summary">{{ .Summary | replaceRE `<sup[^>]*>.*?</sup>` "" | replaceRE `</?p[^>]*>` "" | replaceRE `<a [^>]*>|</a>` "" | replaceRE `</?em>|</?strong>` "" | safeHTML }}</div>
             </a>
@@ -39,29 +39,18 @@
 <style>
     .post-summary {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-gap: 10px; 
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 8px;
         justify-content: center;
         align-items: center;
-        max-width: 800px;
+        max-width: 100%;
         margin: 0 auto;
     }
 
-    @media (min-width: 200px) {
-        .post-summary p {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-
-    @media (min-width: 400px) {
-        .post-summary p {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    @media (min-width: 800px) {
-        .post-summary p {
-            grid-template-columns: repeat(4, 1fr);
+    @media (min-width: 640px) {
+        .post-summary {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
         }
     }
 

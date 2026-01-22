@@ -6,7 +6,8 @@
       "Bash(hugo:*)",
       "Bash(ls:*)",
       "Bash(npm ls:*)",
-      "Bash(npm audit)"
+      "Bash(npm audit)",
+      "Bash(npm run build:*)"
     ]
   }
 }
