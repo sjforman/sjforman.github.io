@@ -4,7 +4,9 @@
       "Bash(head:*)",
       "Bash(grep:*)",
       "Bash(hugo:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm audit)"
     ]
   }
 }
