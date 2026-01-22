@@ -6,7 +6,7 @@
         const darkModeToggleMobile = document.getElementById("darkModeToggleMobile");
         const toggleIcon = document.getElementById("toggleIcon");
         const toggleIconMobile = document.getElementById("toggleIconMobile");
-        const fermata = document.getElementById("fermata");
+        const fermatas = document.querySelectorAll(".fermata");
         const mobileMenuToggle = document.getElementById("mobileMenuToggle");
         const mobileNav = document.getElementById("mobileNav");
         const menuIcon = document.getElementById("menuIcon");
@@ -16,7 +16,7 @@
             const filterValue = isDarkMode ? 'invert(1)' : 'invert(0)';
             if (toggleIcon) toggleIcon.style.filter = filterValue;
             if (toggleIconMobile) toggleIconMobile.style.filter = filterValue;
-            if (fermata) fermata.style.filter = filterValue;
+            fermatas.forEach(f => f.style.filter = filterValue);
         };
 
         // Check for saved preference
@@ -55,20 +55,24 @@
 
 <div class="bg-gray-50">
     <div class="dark:bg-gray-900 dark:text-slate-50">
-        <header class="relative p-4 text-base sm:text-xl md:text-2xl items-center mx-auto flex flex-col">
-            <!-- Mobile menu button -->
-            <button id="mobileMenuToggle" class="sm:hidden absolute right-4 top-4 p-2 w-11 h-11 flex items-center justify-center" aria-label="Toggle menu">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path id="menuIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-
-            <nav class="flex items-center">
-                <a href="/"><img id="fermata" src="{{ $image.Permalink }}" alt="fermata symbol"
+        <header class="p-4 text-base sm:text-xl md:text-2xl mx-auto flex flex-col">
+            <!-- Mobile header row -->
+            <div class="flex sm:hidden items-center justify-between w-full">
+                <a href="/"><img class="fermata" src="{{ $image.Permalink }}" alt="fermata symbol"
                         style="width: var(--image-size); height: auto;" class="inline-block"></a>
+                <button id="mobileMenuToggle" class="p-2 w-11 h-11 flex items-center justify-center" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menuIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop nav -->
+            <nav class="hidden sm:flex items-center justify-center">
+                <a href="/"><img class="fermata" src="{{ $image.Permalink }}" alt="fermata symbol"
+                        style="width: var(--image-size); height: auto;"></a>
                 {{ $currentPage := . }}
-                <!-- Desktop nav -->
-                <div id="desktopNav" class="hidden sm:flex items-center">
+                <div id="desktopNav" class="flex items-center">
                 {{ range .Site.Menus.main }}
                 <a class="mx-2 md:mx-4 whitespace-nowrap min-h-[44px] flex items-center {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}"
                     href="{{ .URL }}">
@@ -76,7 +80,7 @@
                 </a>
                 {{ end }}
                 </div>
-                <button id="darkModeToggle" class="p-2 w-11 h-11 toggleIcon hidden sm:block">
+                <button id="darkModeToggle" class="p-2 w-11 h-11 toggleIcon">
                     <svg id="toggleIcon" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g fill="#000000">
