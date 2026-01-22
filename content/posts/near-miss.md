@@ -14,7 +14,7 @@ A week later, I was paying cash for an MRI at an imaging center[^mri-cash], the 
 
 And shortly after that I was taking a very slow train ride down to LA (I took the scenic route to give myself some time to reflect) for a biopsy at [The City of Hope](https://www.cityofhope.org/). 
 
-City of Hope is a familiar place for me. [My dad is a hematologist / oncologist there](https://www.cityofhope.org/patients/find-a-doctor/stephen-forman), he helped start their bone marrow transplant program, and is still [seeing patients and doing research](https://www.youtube.com/watch?v=z8WGtTPgQUU). I attended many BMT reunions growing up. But I never expected to be back as a patient in my thirties.
+City of Hope is a familiar place for me. [My dad is a hematologist / oncologist there](https://www.cityofhope.org/patients/find-a-doctor/stephen-forman), he helped start their bone marrow transplant program[^coh-story], and is still seeing patients and doing research). I attended many BMT reunions growing up. But I never expected to be back as a patient in my thirties.
 
 A few days after the biopsy, I got a call from my sarcoma surgeon, Dr. Dom Femino. He left a voicemail. It got transcribed as "Hi Scott, it's Don from Reno." I remember that, but I don't remember hardly any of what he said when I called him back, because the experience was so viscerally terrifying. Sound waves get piped into the ear, and somehow a whole apparatus of primal terror, a flood of cortisol and adrenaline, gets activated. Mortal terror is quite a trip.
 
@@ -47,3 +47,5 @@ This was 8 years ago. I've had annual CTs and occasional MRIs since then. Other 
 [^onemedical]: I'm eternally grateful to One Medical, for providing what for me turned out to be life-saving primary care, and to [Dr. Susan Stone](https://willowhealthdpc.com/about-us) in particular for taking seriously something that could easily have been missed.
 
 [^rembert]: I was somewhat daffily amused by the aptonymism of "Rembert," which, it struck me, could easily be an SI unit, the child of a [Rem](https://en.wikipedia.org/wiki/Roentgen_equivalent_man) and a [Sievert](https://en.wikipedia.org/wiki/Sievert). I mentioned this, and don't remember his reaction really, but I don't recall him being amused.
+
+[^coh-story]: Dr. Forman discusses the arc of cancer treatment progress over the decades, up to and including tremendously promising advances happening now, with one of his colleagues: [https://www.youtube.com/watch?v=z8WGtTPgQUU](https://www.youtube.com/watch?v=z8WGtTPgQUU)
