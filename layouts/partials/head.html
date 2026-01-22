@@ -16,6 +16,8 @@
     {{ .Title }} | {{ .Site.Title }}
     {{ end }}
   </title>
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
   <!-- Umami Analytics -->
   <script
     defer
