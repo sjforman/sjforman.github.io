@@ -1260,6 +1260,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   inset: 0px;
 }
@@ -1298,6 +1302,10 @@ video {
 
 .left-1\/2 {
   left: 50%;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-10 {
@@ -1587,6 +1595,10 @@ video {
 
 .bg-white\/80 {
   background-color: rgb(255 255 255 / 0.8);
+}
+
+.bg-gray-50\/95 {
+  background-color: rgb(249 250 251 / 0.95);
 }
 
 .bg-opacity-50 {
@@ -1884,6 +1896,10 @@ video {
   background-color: rgb(17 24 39 / 0.8);
 }
 
+:is(.dark .dark\:bg-gray-900\/95) {
+  background-color: rgb(17 24 39 / 0.95);
+}
+
 :is(.dark .dark\:text-gray-300) {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -1952,6 +1968,10 @@ video {
 
   .sm\:p-8 {
     padding: 2rem;
+  }
+
+  .sm\:p-4 {
+    padding: 1rem;
   }
 
   .sm\:px-0 {

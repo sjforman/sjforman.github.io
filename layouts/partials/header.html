@@ -53,9 +53,7 @@
     });
 </script>
 
-<div class="bg-gray-50">
-    <div class="dark:bg-gray-900 dark:text-slate-50">
-        <header class="p-4 text-base sm:text-xl md:text-2xl mx-auto flex flex-col">
+<header class="sticky top-0 z-50 bg-gray-50/95 dark:bg-gray-900/95 backdrop-blur-sm py-2 px-4 sm:p-4 text-base sm:text-xl md:text-2xl mx-auto flex flex-col dark:text-slate-50">
             <!-- Mobile header row -->
             <div class="flex sm:hidden items-center justify-between w-full">
                 <a href="/"><img class="fermata" src="{{ $image.Permalink }}" alt="fermata symbol"
@@ -154,9 +152,9 @@
                     </svg>
                 </button>
             </div>
-        </header>
+</header>
 
-        <style>
+<style>
             .is-active {
                 text-decoration: underline;
             }
@@ -170,7 +168,7 @@
 
                 /* Tailwind's sm breakpoint */
                 :root {
-                    --image-size: 40px;
+                    --image-size: 32px;
                 }
             }
 
@@ -181,4 +179,4 @@
                     --image-size: 32px;
                 }
             }
-        </style>
+</style>
