@@ -1,7 +1,6 @@
 ---
 title: "Don from Reno"
-date: 2026-01-13
-draft: false
+date: 2026-01-21
 featured: true
 tags: ["health", "cancer", "personal"]
 ---
