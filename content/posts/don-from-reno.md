@@ -1,13 +1,15 @@
 ---
-title: "Don from Reno"
+title: "'Hi Scott, it's Don from Reno, call me back as soon as you can.'"
 date: 2026-01-21
 featured: true
 tags: ["health", "cancer", "personal"]
 ---
 
-In 2017, I went in for an annual physical with a [One Medical](https://www.onemedical.com/) provider. We covered some run-of-the-mill health topics, she ordered the usual labs, and on the way out the door [^doorknob] I asked, "hey, by the way, I have this bump, want to take a look?" It was a painless knob-like structure in my left glute. She asked a few questions, how long had it been there, palpated the thing, and said, ominously "hmph."
+I haven't told this story publicly before. But I've been thinking a lot lately about how people engage with the healthcare system, and figured it might be of some use to share. 
 
 <!--more-->
+
+In 2017, I went in for an annual physical with a [One Medical](https://www.onemedical.com/) provider. We covered some run-of-the-mill health topics, she ordered the usual labs, and on the way out the door [^doorknob] I asked, "hey, by the way, I have this bump, want to take a look?" It was a painless knob-like structure in my left glute. She asked a few questions, how long had it been there, palpated the thing, and said, ominously "hmph."
 
 A week later, I was paying cash for an MRI at an imaging center[^mri-cash], the results of which were inconclusive but not reassuring. 
 
@@ -15,19 +17,19 @@ And shortly after that I was taking a very slow train ride down to LA (I took th
 
 City of Hope is a familiar place for me. [My dad is a hematologist / oncologist there](https://www.cityofhope.org/patients/find-a-doctor/stephen-forman), he helped start their bone marrow transplant program[^coh-story], and is still seeing patients and doing research. I attended many BMT reunions growing up.[^bmt] But I never expected to be back as a patient in my thirties.
 
-A few days after the biopsy, I got a call from my sarcoma surgeon, Dr. Dom Femino. He left a voicemail. It got transcribed as "Hi Scott, it's Don from Reno." I remember that, but I don't remember hardly any of what he said when I called him back, because the experience was so viscerally terrifying. Sound waves get piped into the ear, and somehow a whole apparatus of primal terror, a flood of cortisol and adrenaline, gets activated. Mortal terror is quite a trip.
+A few days after the biopsy, I got a call from my sarcoma surgeon, Dr. J. Dominic (Dom) Femino. He left a voicemail. It got transcribed as "Hi Scott, it's Don from Reno." I remember that, but I don't remember hardly any of what he said when I called him back, because the experience was so viscerally terrifying. Sound waves get piped into the ear, and somehow a whole apparatus of primal terror, a flood of cortisol and adrenaline, gets activated. Mortal terror is quite a trip.
 
 What I had, specifically, was a life-threatening sarcoma, a type of soft-tissue cancer. A "myxoid liposarcoma with round cells," to be specific, a moderate-to-highly aggressive type, characterized by a translocation in which parts of chromosomes 12 and 16 get swapped. What causes this? Who knows. Maybe a stray cosmic ray strike during cell division a few years previously. Just a bad roll of the dice.
 
 Because sarcomas can grow for a while without causing obvious symptoms, many are caught late. I was lucky. Mine was shallow enough to notice, I was in the habit of annual exams, and I (only barely) thought to mention it. I was also extremely fortunate to have family expertise and to be in the care of sarcoma specialists from the beginning.[^sarcoma-specialists]
 
-(PSA: if you ever notice a mass of any kind, especially if it's unilateral/asymmetrical, and even more especially if it's growing slowly but steadily, *get it checked out immediately*).
+PSA: if you ever notice a mass of any kind, especially if it's unilateral/asymmetrical, and even more especially if it's growing slowly but steadily, *get it checked out immediately*.
 
 So off I went into Cancer World. A diagnostic workup, MRIs and CT scans to check for metastasis, fortunately finding none.[^metastasis] The sarcoma team at City of Hope debated whether I ought to have pre-surgery radiation ("neoadjuvant") or post-surgery ("adjuvant"), and wound up recommending the former. I kinda wanted the damn thing gone ASAP, so was somewhat disappointed by this.
 
 But I did as they proposed, and scheduled my five weeks of radiation at Alta Bates. Under the care of the excellent [Dr. Rembert](https://www.hillphysicians.com/doctor/james-lawrence-rembert-md)[^rembert] and a great team, I had a form of radiation therapy called IMRT: intensity-modulated radiation therapy. A brilliant innovation. Inside the machine, dozens of tungsten leaves, each about a centimeter wide, move independently to shape the radiation beam in real time. They do a kind of dance, shaping the beam around the tumor's contours, to maximize the dose to the target while sparing the surrounding tissue. My tumor shrank considerably under the influence of the radiation. Lucky again, to have such radio-sensitive cancer cells.
 
-I opted to have my surgery in Los Angeles, to have support from family during the recovery period. So Don From Reno performed my surgery to remove what remained of the tumor. I remember seeing quite a few amputees in the waiting room, many of them young. Sarcoma isn't the most well-known of cancers, but I've known about it since I was a kid. It always struck me as especially horrifying, often requiring amputation to cure. This still happens, though much less often than it used to. Without modern oncology, the only remedy for my cancer might have been a hemi-pelvectomy (Google this with caution if you're squeamish).
+I opted to have my surgery in Los Angeles, to have support from family during the recovery period. So Don From Reno performed my surgery to remove what remained of the tumor. I remember seeing quite a few amputees in the waiting room, many of them young. Sarcoma isn't the most well-known of cancers, but I've known about it since I was a kid. It always struck me as especially horrifying, often requiring amputation to cure. This still happens, though much less often than it used to. Without modern oncology, and with further progression before discovery, my cancer might have required hemipelvectomy to remove (Google this with caution if you're squeamish).
 
 So I count myself fortunate that the extent of my complications were a hematoma and a reluctant-to-heal wound that required minor second and third surgeries (irradiated tissue is vexing for wound healing). During the third surgery, the power at the hospital went out, and the backup generators failed to start. Fortunately, my combat-veteran anesthesiologist had talked to me beforehand and proposed lighter sedation than had been originally planned. Lighter sedation meant no intubation, and no ventilator that otherwise would have suddenly stopped mid-surgery. Another stroke of luck. I would have been fine, of course — manual ventilation would have done the trick — but still, glad to have avoided that hiccup.
 

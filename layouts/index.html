@@ -17,7 +17,7 @@
             class="block bg-white rounded-xl p-4 sm:p-8 shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
             <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date | time.Format ":date_long" }}{{ end }}</p>
             <h2 class="text-xl sm:text-2xl font-semibold mb-4">{{ .Title }}</h2>
-            <div class="post-summary mb-4">{{ .Summary | replaceRE `<sup[^>]*>.*?</sup>` "" | replaceRE `</?p[^>]*>` "" | replaceRE `<a [^>]*>|</a>` "" | replaceRE `</?em>|</?strong>` "" | safeHTML }}</div>
+            <div class="post-summary">{{ .Summary | replaceRE `<sup[^>]*>.*?</sup>` "" | replaceRE `</?p[^>]*>` "" | replaceRE `<a [^>]*>|</a>` "" | replaceRE `</?em>|</?strong>` "" | safeHTML }}</div>
         </a>
         {{ end }}
     </div>
@@ -26,18 +26,27 @@
     </div>
 </div>
 <style>
+    /* Text typography - matches prose styling */
     .post-summary {
+        line-height: 1.75;
+        color: #374151;
+    }
+
+    .dark .post-summary {
+        color: #d1d5db;
+    }
+
+    /* Grid layout only when images are present */
+    .post-summary:has(img) {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 8px;
         justify-content: center;
         align-items: center;
-        max-width: 100%;
-        margin: 0 auto;
     }
 
     @media (min-width: 640px) {
-        .post-summary {
+        .post-summary:has(img) {
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 10px;
         }

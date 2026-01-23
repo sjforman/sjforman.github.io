@@ -1,5 +1,5 @@
 ---
-title: "Tehipite Valley Trip Report — October 2024"
+title: "Tehipite Valley Trip Report, October 2024"
 date: "2024-10-27"
 description: "A five-day backpacking trip into the remote Tehipite Valley in Kings Canyon National Park"
 tags: ['outdoors']

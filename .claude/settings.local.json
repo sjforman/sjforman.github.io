@@ -7,7 +7,10 @@
       "Bash(ls:*)",
       "Bash(npm ls:*)",
       "Bash(npm audit)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(perl -0777 -e:*)",
+      "Bash(perl -0777 -pe:*)",
+      "Bash(/Users/scott/Projects/sjforman.github.io/bin/md-to-clipboard.sh:*)"
     ]
   }
 }
