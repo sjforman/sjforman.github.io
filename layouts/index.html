@@ -1,6 +1,13 @@
 {{ define "main" }}
+{{ $profile := resources.Get "images/profile.jpg" }}
+{{ $profileSmall := $profile.Fill "384x384 q85" }}
+{{ $profileLarge := $profile.Fill "512x512 q85" }}
 <div class="flex flex-col items-center min-h-screen mx-auto mt-4 sm:mt-6 px-4">
-    <img id="profileImage" src="/images/profile.jpg" alt="Profile Photo by Kari Orvik Tintype Studio"
+    <img id="profileImage"
+        src="{{ $profileSmall.RelPermalink }}"
+        srcset="{{ $profileSmall.RelPermalink }} 1x, {{ $profileLarge.RelPermalink }} 2x"
+        width="192" height="192"
+        alt="Profile Photo by Kari Orvik Tintype Studio"
         class="rounded-full mx-auto mb-4 mt-6 w-48 sm:w-64 max-w-xs">
     <h1 class="text-2xl sm:text-3xl font-bold">{{ .Title }}</h1>
     <div class="text-center">

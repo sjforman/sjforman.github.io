@@ -5,7 +5,7 @@ featured: true
 tags: ["health", "cancer", "personal"]
 ---
 
-I haven't told this story publicly before. But I've been thinking a lot lately about how people engage with the healthcare system, and figured it might be of some use to share. 
+I haven’t told this story publicly before. But I’ve been thinking a lot lately about how  our healthcare system does and doesn’t work for us, and figured it might be of some use to share.
 
 <!--more-->
 
@@ -17,7 +17,7 @@ And shortly after that I was taking a very slow train ride down to LA (I took th
 
 City of Hope is a familiar place for me. [My dad is a hematologist / oncologist there](https://www.cityofhope.org/patients/find-a-doctor/stephen-forman), he helped start their bone marrow transplant program[^coh-story], and is still seeing patients and doing research. I attended many BMT reunions growing up.[^bmt] But I never expected to be back as a patient in my thirties.
 
-A few days after the biopsy, I got a call from my sarcoma surgeon, Dr. J. Dominic (Dom) Femino. He left a voicemail. It got transcribed as "Hi Scott, it's Don from Reno." I remember that, but I don't remember hardly any of what he said when I called him back, because the experience was so viscerally terrifying. Sound waves get piped into the ear, and somehow a whole apparatus of primal terror, a flood of cortisol and adrenaline, gets activated. Mortal terror is quite a trip.
+A few days after the biopsy, back at home in Oakland, I got a call in the evening. It went to voicemail, and transcribed as “Hi Scott, it’s Don from Reno.” I remember that, and I remember thinking “Do I know anyone named Don…from Reno?” But I don’t remember hardly any of what he (Dr. J. Dominic (Dom) Femino) said when I called him back. Some sound waves in the ear are all it takes to trigger a whole ancient apparatus of fear, a flood of cortisol and adrenaline. Mortal terror is quite a trip.
 
 What I had, specifically, was a life-threatening sarcoma, a type of soft-tissue cancer. A "myxoid liposarcoma with round cells," to be specific, a moderate-to-highly aggressive type, characterized by a translocation in which parts of chromosomes 12 and 16 get swapped. What causes this? Who knows. Maybe a stray cosmic ray strike during cell division a few years previously. Just a bad roll of the dice.
 
@@ -33,7 +33,7 @@ I opted to have my surgery in Los Angeles, to have support from family during th
 
 So I count myself fortunate that the extent of my complications were a hematoma and a reluctant-to-heal wound that required minor second and third surgeries (irradiated tissue is vexing for wound healing). During the third surgery, the power at the hospital went out, and the backup generators failed to start. Fortunately, my combat-veteran anesthesiologist had talked to me beforehand and proposed lighter sedation than had been originally planned. Lighter sedation meant no intubation, and no ventilator that otherwise would have suddenly stopped mid-surgery. Another stroke of luck. I would have been fine, of course — manual ventilation would have done the trick — but still, glad to have avoided that hiccup.
 
-And all of this was a near miss. If I hadn't been doing annual PCP visits...if I hadn't remembered to ask about the thing...if my PCP hadn't raised an eyebrow at it[^onemedical]. I can easily imagine alternate universes where my cancer was diagnosed much later, maybe too late to be fully remediated. I'm alive now because I had access to a medical system with extraordinary technical capabilities. But to benefit from those capabilities, *I had to be an active participant*. If I'd been less savvy or more passive, I might not be alive today.
+And all of this was a near miss. If I hadn’t been doing annual PCP visits…if I hadn’t remembered to ask about the thing…if my PCP hadn’t raised an eyebrow at it. I can easily imagine alternate universes where my cancer was diagnosed much later, maybe too late to be fully remediated. I’m lucky to have had access to a medical system with extraordinary technical capabilities. But to benefit from those capabilities, *I had to be an active participant.* If I’d been less savvy or more passive, I might not be alive today.
 
 This was 8 years ago. I've had annual CTs and occasional MRIs since then. Other than a minor scare on a chest CT, a little wrinkle in my lung that proved to be ephemeral when repeated a few months later, it's been smooth sailing since then. All I have to show for it now are three tiny tattoo dots (they're used to align the radiation beam), a nasty scar, a meditation practice that has transformed my life for the better, a keen awareness of the fragility and contingency of human lives, and a deep gratitude for modern medicine. 
 
