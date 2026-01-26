@@ -44,7 +44,9 @@ They have other virtues too. They're infinitely patient and non-judgmental. They
 
 So far, though, there's something structurally missing. Patients and clinicians are mostly using these tools in disconnected fashion. There's no connective tissue; it's basically ad hoc. What I'm building: *curated* experiences that can be *prescribed* for specific situations, that guide people through the evidence, address their specific concerns without judgment, and then close the loop with the clinician.
 
-Here's how it works in practice: a clinician sends a patient a link before or after any appointment where a contentious or time-consuming topic is on the agenda. The patient reviews carefully curated content about the decision. For vaccines, that includes clear explanations of the risks of the diseases, without pulling any punches.[^DIS] Then they have an open-ended conversation with a frontier LLM about their specific concerns — non-judgmental, unhurried, empathetic. With EHR integration, clinicians get a short briefing on what was discussed.  
+Here's how it works in practice: a clinician sends a patient a link before or after any appointment where a contentious or time-consuming topic is on the agenda. The patient reviews carefully curated content about the decision. For vaccines, that includes clear explanations of the risks of the diseases, without pulling any punches.[^DIS] Then they have an open-ended conversation with a frontier LLM about their specific concerns — non-judgmental, unhurried, empathetic. With EHR integration, clinicians get a short briefing on what was discussed.
+
+The result for clinicians: patients arrive more informed. Lengthy, stressful, contentious conversations are avoided. Visits are more productive.
 
 [^DIS]: This part serves as a sort of "Disease Information Sheet." We have VIS, and VIS does mention the diseases. But VIS is primarily a legal document designed for consent — it's not really trying to convey *just how bad the diseases being prevented really were* (or...increasingly and alarmingly *are*). We have the *consent* without ever really doing the *informed* part, except via heroic clinicians going above-and-beyond.
 
@@ -64,13 +66,17 @@ But I'm betting the incentives are not *completely* broken — that there are ac
 
 # Interested?
 
-I have a beta system live at [app.calyptahealth.com](https://app.calyptahealth.com). You can try it yourself.
+I have a beta system live at [app.calyptahealth.com](https://app.calyptahealth.com). You can try it yourself — signup takes a minute.
+
+These conversations are about to get harder, not easier. Patients are more confused than ever, and public health messaging is actively making it worse. This is the right time to try new tools.
 
 **If you're a clinician** who spends too much time on difficult conversations about vaccines, screenings, or medications...
 
 **If you work at a health system, payer, or public health department** and you're on the hook for preventive care metrics that you struggle to move...
 
 **If you're a researcher** who studies health communication, vaccine hesitancy, or behavior change...
+
+**If you run a preventive care advocacy organization** and want better tools for reaching your audience...
 
 **If you're reading this thinking "I wish this existed for X"** — reach out. I'm starting with vaccines because they're an urgent crisis, but the pattern generalizes: any conversation where the evidence is clear but patients are misled by misinformation or for whatever reason resist or delay...
 
