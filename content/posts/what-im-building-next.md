@@ -60,9 +60,7 @@ The chat transcripts were illuminating. In several cases, correcting a single mi
 
 # The incentives are mostly broken
 
-In the American system, few actors have strong incentives to improve health behaviors at scale.
-
-But I'm betting the incentives are not *completely* broken — that there are actors who will adopt tools that actually work to shift behaviors in health- and cost-saving directions. Perhaps Medicare Advantage plans on the hook for Stars metrics, integrated systems, or self-insured employers who benefit when their people stay healthy.
+In the American system, few actors have strong incentives to improve health behaviors at scale. But the incentives aren't *completely* broken. Medicare Advantage plans need to hit Stars metrics. Integrated systems and self-insured employers benefit when their people stay healthy. New models like [Crowdhealth](https://www.crowdhealth.com) are experimenting with direct alignment.
 
 # Interested?
 
