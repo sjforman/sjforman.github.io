@@ -1,34 +1,38 @@
 ---
-title: "The most frustrating conversations in medicine"
+title: "Calypta Health: bringing wisdom and patience to thorny health problems"
 date: 2026-01-23
 draft: true
 featured: true
 tags: ["calypta", "vaccines", "health", "llm"]
 ---
 
-I'm starting a company called [Calypta Health](https://www.calyptahealth.com) to help people navigate the most contentious and confusing health decisions we face. The mission: healthier people, less provider stress and burnout, lower medical spending.
+I'm starting a company called [Calypta Health](https://www.calyptahealth.com) to help people navigate some of the most contentious and confusing health decisions we face. The mission: lower medical spending, ease provider stress and burnout, improve population health.
 
 <!--more-->
 
 # This is somewhat personal
 
-I've [written](/posts/don-from-reno) about my unexpected personal adventures with our medical system. My cancer was caught early only because I was actively choosing preventive care. Having annual physicals at all in the first place, actively asking questions. In retrospect, it strikes me that even having, as I was lucky to have, access to the whole apparatus of modern economy cancer care, and even having expert advice from my own immediate family, the AI tools that are available *now* but were inconceivable at the time would have been enormously helpful. I think my cancer was caught early with only maybe 20% probability. In many branches of the multiverse, I *didn't* make the self-protective choices that produced my favorable outcome. I got lucky. But I'm looking around now, and seeing an opportunity for luck to be less of a factor.
+I've [written](/posts/don-from-reno) about my unexpected personal adventures with our medical system. My cancer was caught early only because I was actively choosing preventive care — having annual physicals, asking questions. I had access to excellent care and expert advice from my own family. Even so, the AI tools available now, inconceivable at the time, would have been enormously helpful. In many branches of the multiverse, I didn't make the self-protective choices that produced my favorable outcome. I got lucky. But I think there are now tools at our disposal to make luck less of a factor.
 
-# The information landscape for health is breaking
+I'm starting with vaccines because they're a smoldering emergency. But the pattern is the same: consequential health decisions where clear, unhurried guidance can change outcomes for the better.
 
-We now have a lifelong anti-vaxxer running HHS, methodically undermining trust in vaccines, one of the most miraculous achievements in human history.
+# Our health information landscape looks bleak
 
-A few weeks ago seven childhood vaccines were removed from the recommended schedule and moved to the category of "shared clinical decision making." Except there's no infrastructure for those decisions to actually happen. "Discuss with your doctor" only works if that conversation takes place, and clinicians already don't have enough time.
+We now have a lifelong anti-vaxxer running HHS, methodically undermining trust in vaccines, one of the most miraculous achievements in human history. Seven childhood vaccines were recently removed from the recommended schedule and moved to the category of "shared clinical decision making."
+
+"Shared clinical decision making" sounds reasonable enough. But our public health authorities are actively undermining confidence in vaccination in general, muddying the waters for those shared decisions. And the reality is, most clinicians already didn't have time for these conversations in a 15 minute appointment.
 
 The stakes are high. [Epidemiologists have modeled](https://doi.org/10.1001/jama.2025.6495) what happens if vaccination continues to decline, and the picture is dismal. Measles becomes endemic again. A further 50% drop over 25 years would yield roughly 51 million measles cases, 10 million rubella cases, 4 million polio cases, more than 10 million hospitalizations, and 160,000 deaths. Because these diseases are so contagious, the effects of declining vaccination are highly non-linear. Even a 10% drop translates into millions of additional cases and thousands of preventable deaths.
 
-People are making decisions based on fear and misinformation that will hurt them and their children. I don't want to just watch.
+People are making decisions based on fear and misinformation that will hurt them and their children.
 
-# The tools to actually help now exist
+# But powerful LLMs can help in some surprising ways
 
-I've been using AI for my own health decisions for a couple of years. It's remarkable: encyclopedic knowledge, infinite patience, no ego, available at 2am when you're anxious about something. But raw LLMs have to be used judiciously. Without scaffolding, it's easy to be misled.
+Even as the epistemic landscape splinters into disjoint realities, in the health context as in so many others, LLMs are, as Dylan Matthews pointed out recently, *converging* media technology. There's a line you hear sometimes that "reality has a well-known liberal bias." That framing was always too smug, but there's something to the underlying idea where LLMs are concerned. They have a bias for the truth, and they are increasingly well-calibrated to resist extremist nonsense. They're not infallible, of course! I do not trust them to make fine-grained truth claims on subjects where there's substantial human disagreement. But as a *gross* matter, they reliably point in the right direction. [In a recent post I explored this dynamic for the health domain in particular](tk).
 
-What's missing is structure — connective tissue between clinicians and patients. Patients are already using AI for health, just in an ad hoc fashion. I'm building curated experiences that guide people through the evidence, address their specific concerns without judgment, and close the loop with clinicians.
+They have other virtues too. They're infinitely patient and non-judgmental. They have a kind of encyclopedic knowledge baked into their weights, and powerful search abilities to augment that knowledge, and they speak essentially every human language, at any desired level of complexity and literacy. This is why the major labs are building health products, clinicians are making extensive use of these tools for many tasks. 
+
+So far, though, I think there's something structurally missing. Patients and clinicians are mostly using these tools in disconnected fashion. There's no connective tissue, it's basically ad hoc. What I'm building: *curated* experiences that can be *prescribed* for specific situations, that guide people through the evidence, address their specific concerns without judgment, and then close the loop with the clinician.
 
 # I tested this on one of the most challenging topics
 
@@ -46,7 +50,7 @@ More recently, I founded [Vote Forward](https://votefwd.org), which has organize
 
 Now I'm applying that playbook to health: finding moments where a little clarity can shift behavior, building systems to deliver it at scale, and rigorously measuring impact.
 
-# Yes, the incentives are mostly quite broken
+# The incentives are mostly broken
 
 I'm well aware that in the American system, few actors have strong incentives to improve health behaviors at scale.
 
@@ -56,10 +60,10 @@ But I'm betting the incentives are not *completely* broken. I'm wagering that th
 
 I have a beta system live at [app.calyptahealth.com](https://app.calyptahealth.com). You can try it yourself.
 
-**If you're a clinician** who spends too much time on difficult conversations about vaccines, screenings, or medications, this might help.
+**If you're a clinician** who spends too much time on difficult conversations about vaccines, screenings, or medications...
 
-**If you work at a health system, payer, or public health department** and you're on the hook for preventive care metrics that won't budge, this might be worth a look.
+**If you work at a health system, payer, or public health department** and you're on the hook for preventive care metrics that you struggle to move...
 
-**If you're reading this thinking "I wish this existed for X"** — reach out. I'm starting with vaccines because they're a smoldering emergency, but the pattern generalizes: any conversation where the evidence is clear but patients are misled by misinformation or for whatever reason resist or delay...I think I can help.
+**If you're reading this thinking "I wish this existed for X"** — reach out. I'm starting with vaccines because they're an urgent crisis, but the pattern generalizes: any conversation where the evidence is clear but patients are misled by misinformation or for whatever reason resist or delay...
 
 If this sounds like something you can make use of, I'd love to talk. Send me a note: [scott@calyptahealth.com](mailto:scott@calyptahealth.com).
