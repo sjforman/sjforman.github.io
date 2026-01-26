@@ -12,7 +12,7 @@ I'm starting a company called [Calypta Health](https://www.calyptahealth.com) to
 
 # This is personal
 
-I've [written](/posts/don-from-reno) about my unexpected personal adventures with our medical system. My cancer was caught early because I was actively choosing preventive care — having annual physicals, asking questions. And I had access to excellent care and expert advice from my own family. I might easily not have made the self-protective choices that produced my favorable outcome. I got lucky. But there are now tools that can make luck less of a factor.
+I've [written](/posts/don-from-reno) about my unexpected personal adventures with our medical system. My cancer was caught early because I was actively choosing preventive care — having annual physicals, asking questions. And I had access to excellent care and expert advice from my own family. I might not have made the self-protective choices that produced my favorable outcome. I got lucky. But there are now tools that can make luck less of a factor.
 
 # Large-scale behavior change is what I do
 
@@ -38,9 +38,9 @@ This is one place where the "MAHA" impulse deserves some credit: bad choices *re
 
 # Powerful LLMs can help in some surprising ways
 
-The epistemic landscape is splintering into disjoint realities. But LLMs, as Dylan Matthews recently pointed out, are *converging* media technology. There's a line that "reality has a well-known liberal bias." That framing was always too smug, but there's something to the underlying idea for LLMs. They have a bias for the truth, and they are increasingly well-calibrated to resist extremist nonsense. They're not infallible, of course! I don't trust them to make fine-grained truth claims on subjects where there's substantial human disagreement. But on the big questions, they reliably point in the right direction. [In a recent post I explored this dynamic for the health domain in particular](tk).
+The epistemic landscape is splintering into disjoint realities. But LLMs, as [Dylan Matthews recently pointed out](https://substack.com/home/post/p-184342590), are *converging* media technology. There's a line that "reality has a well-known liberal bias." That framing was always too smug, but there's something to the underlying idea for LLMs. They have a bias for the truth, and they are increasingly well-calibrated to resist extremist nonsense. They're not infallible, of course! I don't trust them to make fine-grained truth claims on subjects where there's substantial human disagreement. But on the big questions, they reliably point in the right direction.
 
-They have other virtues too. They're infinitely patient and non-judgmental. They have encyclopedic knowledge baked into their weights, and powerful search abilities to augment that knowledge, and they speak every human language, at any reading level. This is why the major labs are building health products, and clinicians are already making extensive use of these tools. 
+They have other virtues too. They're infinitely patient and non-judgmental. They have encyclopedic knowledge baked into their weights and powerful search abilities to augment it. They speak every human language, at any reading level. This is why the major labs are building health products, and clinicians are already making extensive use of these tools. 
 
 So far, though, there's something structurally missing. Patients and clinicians are mostly using these tools in isolation. There's no connective tissue; it's ad hoc. What I'm building: *curated* experiences that can be *prescribed* for specific situations, that guide people through the evidence, address their specific concerns without judgment, and then close the loop with the clinician.
 
