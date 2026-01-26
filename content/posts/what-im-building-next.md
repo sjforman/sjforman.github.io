@@ -60,7 +60,7 @@ The chat transcripts were illuminating. In several cases, correcting a single mi
 
 # The incentives are mostly broken
 
-In the American system, few actors have strong incentives to improve health behaviors at scale. But the incentives aren't *completely* broken. Medicare Advantage plans need to hit Stars metrics. Integrated systems and self-insured employers benefit when their people stay healthy. New models like [Crowdhealth](https://www.crowdhealth.com) are experimenting with direct alignment.
+In the American system, few actors have strong incentives to improve health behaviors at scale. But the incentives aren't *completely* broken. Medicare Advantage plans need to hit Stars metrics. Integrated systems and self-insured employers benefit when their people stay healthy. New models like [Crowdhealth](https://www.crowdhealth.com) are emerging, where each member has a financial interest in the health of every other member.
 
 # Interested?
 
@@ -76,6 +76,6 @@ These conversations are about to get harder, not easier. Patients are more confu
 
 **If you run a preventive care advocacy organization** and want better tools for reaching your audience...
 
-**If you're reading this thinking "I wish this existed for X"** — reach out. I'm starting with vaccines because they're an urgent crisis, but the pattern generalizes: any conversation where the evidence is clear but patients are misled by misinformation or resist or delay...
+**If you're reading this thinking "I wish this existed for statins" or "for GLP-1s" or "for blood pressure"**...
 
-If this sounds like something you can make use of, I'd love to talk. Send me a note: [scott@calyptahealth.com](mailto:scott@calyptahealth.com).
+...I'd love to talk. I'm starting with vaccines and CRC screening, but the pattern generalizes to any conversation where the evidence is clear but patients resist or delay. Send me a note: [scott@calyptahealth.com](mailto:scott@calyptahealth.com).
