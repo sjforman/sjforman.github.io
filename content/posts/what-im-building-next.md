@@ -34,7 +34,7 @@ There's a similar epistemic crisis brewing across other health topics. We have g
 
 # Unwise health choices cost us dearly
 
-This is one place where the "MAHA" impulse deserves some credit: bad choices *really do* sacrifice health and well-being, not to mention oceans of cash. Consider just a few behavior-driven gaps: 28 million adults eligible for statins but not taking them. 28 million age-eligible adults who have never been screened for colorectal cancer. 90 million adults with uncontrolled hypertension. More than 100 million obese adults, most of whom aren't receiving effective pharmacotherapy. These gaps represent roughly 100 million lost quality-adjusted life years and $1.5 trillion per year in total economic burden in the U.S. alone. The scale of harm is so great that even small behavioral shifts would be valuable.
+This is one place where the "MAHA" impulse deserves some credit: bad choices *really do* sacrifice health and well-being, not to mention oceans of cash. Consider just a few behavior-driven gaps: 28 million adults eligible for statins but not taking them. 28 million age-eligible adults who have never been screened for colorectal cancer. 90 million adults with uncontrolled hypertension. More than 100 million obese adults, most of whom aren't receiving effective pharmacotherapy. These gaps represent roughly 100 million lost quality-adjusted life years and $1.5 trillion per year in total economic burden in the U.S. alone. The scale of harm is so great that even small behavioral shifts would be enormously valuable.
 
 # Powerful LLMs can help in some surprising ways
 
