@@ -32,6 +32,10 @@ They have other virtues too. They're infinitely patient and non-judgmental. They
 
 So far, though, I think there's something structurally missing. Patients and clinicians are mostly using these tools in disconnected fashion. There's no connective tissue, it's basically ad hoc. What I'm building: *curated* experiences that can be *prescribed* for specific situations, that guide people through the evidence, address their specific concerns without judgment, and then close the loop with the clinician.
 
+Here's how it works in practice: a clinician sends a patient a link before or after any appointment where a contentious or time-consuming topic is on the agenda. The patient reviews carefully curated content about the decision. For vaccines, that includes clear explanations of the risks of the diseases, without pulling any punches.[^DIS] Then they have an open-ended conversation with a frontier LLM about their specific concerns, in a non-judgmental, unhurried, and empathetic fashion. Partners who opt for EHR integration can automatically receive a short note-style briefing on what was discussed.  
+
+[^DIS]: This part serves as a sort of "Disease Information Sheet." We have VIS. But the VIS is about legal liability and consent. Nowhere in our standard processes does anyone actually try to convey *just how bad the diseases being prevented really were* (or...increasingly and alarmingly *are*). We have the *consent* without ever *really* doing the *informed* part, except via heroic clinicians going above-and-beyond.
+
 # I tested this on one of the most challenging topics
 
 Last year I ran [an experiment](/posts/llms-for-mmr-persuasion-rct-2) with vaccine-hesitant parents. Parents who reviewed carefully designed content and then chatted with an LLM increased their MMR vaccination intent by more than a full point on a 7-point scale versus control. Nearly two-thirds moved at least one point, and the effect persisted for several days.
