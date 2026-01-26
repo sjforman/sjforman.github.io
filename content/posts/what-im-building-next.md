@@ -14,8 +14,6 @@ I'm starting a company called [Calypta Health](https://www.calyptahealth.com) to
 
 I've [written](/posts/don-from-reno) about my unexpected personal adventures with our medical system. My cancer was caught early only because I was actively choosing preventive care — having annual physicals, asking questions. I had access to excellent care and expert advice from my own family. Even so, the AI tools available now, inconceivable at the time, would have been enormously helpful. In many branches of the multiverse, I didn't make the self-protective choices that produced my favorable outcome. I got lucky. But I think there are now tools at our disposal to make luck less of a factor.
 
-I'm starting with vaccines because they're a smoldering emergency. But the pattern is the same: consequential health decisions where clear, unhurried guidance can change outcomes for the better.
-
 # Our health information landscape looks bleak
 
 We now have a lifelong anti-vaxxer running HHS, methodically undermining trust in vaccines, one of the most miraculous achievements in human history. Seven childhood vaccines were recently removed from the recommended schedule and moved to the category of "shared clinical decision making."
