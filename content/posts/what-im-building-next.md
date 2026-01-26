@@ -6,11 +6,13 @@ featured: true
 tags: ["calypta", "vaccines", "health", "llm"]
 ---
 
-I'm starting a company called [Calypta Health](https://www.calyptahealth.com) to help people navigate the most contentious and confusing health decisions. 
+I'm starting a company called [Calypta Health](https://www.calyptahealth.com) to help people navigate the most contentious and confusing health decisions we face. The mission: healthier people, less provider stress and burnout, lower medical spending.
 
 <!--more-->
 
-I've [written](/posts/don-from-reno) about why health decisions matter to me personally. A cancer diagnosis in my thirties taught me that benefiting from modern medicine requires being an active participant — asking questions, navigating a system that doesn't make it easy. I was lucky: I had family expertise, good insurance, and enough medical literacy to advocate for myself. Most people don't. The tools I'm building are meant to help level that field.
+# This is somewhat personal
+
+I've [written](/posts/don-from-reno) about my unexpected personal adventures with our medical system. My cancer was caught early only because I was actively choosing preventive care. Having annual physicals at all in the first place, actively asking questions. In retrospect, it strikes me that even having, as I was lucky to have, access to the whole apparatus of modern economy cancer care, and even having expert advice from my own immediate family, the AI tools that are available *now* but were inconceivable at the time would have been enormously helpful. I think my cancer was caught early with only maybe 20% probability. In many branches of the multiverse, I *didn't* make the self-protective choices that produced my favorable outcome. I got lucky. But I'm looking around now, and seeing an opportunity for luck to be less of a factor.
 
 # The information landscape for health is breaking
 
