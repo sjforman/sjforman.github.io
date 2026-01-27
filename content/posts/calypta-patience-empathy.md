@@ -13,7 +13,7 @@ I'm starting a company called [Calypta Health](https://www.calyptahealth.com) to
 
 I've [written](/posts/don-from-reno) about my unexpected personal adventures with our medical system. My cancer was caught early because I was actively choosing preventive care — having annual physicals, asking questions. Even so, I almost didn't mention the symptom that led to my diagnosis. I had access to excellent care and expert advice from my own family, and I *still* nearly missed it. Tools like the one I'm building can change those odds.
 
-# Large-scale behavior change is what I do
+# I've spent my career on large-scale behavior change
 
 At [Opower](https://opower.com) I helped build software that's saved more than 41 terawatt-hours of energy to date. The insight was simple: give people clear, personalized information about their own behavior and how it compares to the norm, and many of them will change it.
 
@@ -21,7 +21,7 @@ More recently, I founded [Vote Forward](https://votefwd.org), which has organize
 
 Now I'm applying that playbook to problems in the health domain. The goal: shift behavior with clarity and empathy, rigorously measure impact, scale up what works.
 
-# Our health information landscape looks bleak
+# Our health information landscape is collapsing
 
 We now have a lifelong anti-vaxxer running HHS, methodically undermining trust in vaccines — one of the most miraculous achievements in human history. HHS recently removed seven childhood vaccines from the recommended schedule, moving them to the category of "shared clinical decision making."
 
@@ -31,11 +31,11 @@ The stakes are high. [Epidemiologists have modeled](https://doi.org/10.1001/jama
 
 There's a similar epistemic crisis brewing across other health topics. We have grifters claiming that statins are pointless, that ASCVD can be cured by buying their supplements, and that ivermectin is a miracle cancer treatment. None of this is new, but it's all getting worse, and it's alarming to see so many people making decisions based on fear and misinformation.
 
-# Unwise health choices cost us dearly
+# The cost is staggering
 
 This is one place where the "MAHA" impulse deserves some credit: bad choices *really do* sacrifice health and well-being, not to mention oceans of cash. Consider just a few behavior-driven gaps: 28 million adults eligible for statins but not taking them. 28 million age-eligible adults who have never been screened for colorectal cancer. 90 million adults with uncontrolled hypertension. More than 100 million obese adults, most of whom aren't getting effective treatment. These gaps represent roughly 100 million lost quality-adjusted life years and $1.5 trillion per year in total economic burden in the U.S. alone. The scale of harm is so great that even small behavioral shifts would be enormously valuable.
 
-# LLMs have a bias for the truth
+# LLMs can help — they have a bias for the truth
 
 The epistemic landscape is splintering into disjoint realities. But LLMs, as [Dylan Matthews recently pointed out](https://substack.com/home/post/p-184342590), are *converging* media technology. There's a line that "reality has a well-known liberal bias." That framing was always too smug, but the underlying idea holds for LLMs. They have a bias for the truth, and they are increasingly well-calibrated to resist extremist nonsense. They're not infallible, of course! I don't trust them to make fine-grained truth claims on subjects where there's substantial human disagreement. But on the big questions, they reliably point in the right direction.
 
@@ -49,7 +49,7 @@ The result for clinicians: patients arrive more informed. They spend less time o
 
 [^DIS]: This part of my system augments the obligatory "VIS" (Vaccine Information Statement). VIS handouts, as mandated by federal law and produced by the CDC, do mention the diseases being prevented. But they are primarily legal documents designed for consent. They don't even try to convey *just how bad the diseases being prevented really were* (or...increasingly and alarmingly *are*). We have the *consent* without ever doing the *informed* part, except via heroic clinicians going above-and-beyond.
 
-# I tested this on one of the most challenging topics
+# I tested this on vaccine-hesitant parents, and it worked
 
 Last year I ran [an experiment](/posts/llms-for-mmr-persuasion-rct-2) with vaccine-hesitant parents. Those who reviewed carefully designed content and then chatted with an LLM increased their MMR vaccination intent by more than a full point on a 7-point scale versus control. Nearly two-thirds moved at least one point, and the effect persisted for several days.
 
@@ -57,7 +57,7 @@ That's an unusually large effect for a brief informational intervention.
 
 The chat transcripts were illuminating. In several cases, correcting a single misconception was enough: "I am more likely to allow my child to receive vaccination knowing it doesn't contain aluminum." In others, providing an actionable plan helped: "I think a preparation plan makes me more eased up." Parents with well-grounded medical concerns (seizure history, anaphylaxis) revealed context that would help a pediatrician prepare for a complicated conversation.
 
-# The incentives are mostly broken
+# The incentives are warped, but they exist
 
 In the American system, few actors have strong incentives to improve health behaviors at scale. But the incentives aren't *all* broken. Medicare Advantage plans need to hit Stars metrics. Integrated systems and self-insured employers benefit when their people stay healthy. New models like [Crowdhealth](https://www.crowdhealth.com) are emerging, where each member has a financial interest in the health of every other member.
 
