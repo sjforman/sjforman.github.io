@@ -1,7 +1,6 @@
 ---
 title: "Calypta Health: bringing wisdom and patience to thorny health problems"
 date: 2026-01-23
-draft: true
 featured: true
 tags: ["calypta", "vaccines", "health", "llm"]
 ---
