@@ -20,7 +20,7 @@ At [Opower](https://opower.com) I helped build software that's saved more than 4
 
 More recently, I founded [Vote Forward](https://votefwd.org), which has organized volunteers to send more than 40 million handwritten letters to their fellow citizens. We ran dozens of RCTs to figure out what actually moves people to vote.
 
-Now I'm applying that playbook to health: finding moments where a little clarity can shift behavior, building systems to deliver it at scale, and rigorously measuring impact.
+Now I'm applying that playbook to problems in the health domain. The goal: shift behavior with clarity and empathy, rigorously measure impact, scale up what works.
 
 # Our health information landscape looks bleak
 
@@ -48,7 +48,7 @@ Here's how it works in practice: a clinician sends a patient a link before or af
 
 The result for clinicians: patients arrive more informed. Lengthy, stressful, contentious conversations are avoided. Visits are more productive.
 
-[^DIS]: This part serves as a "Disease Information Sheet." We have VIS, which does mention the diseases. But VIS is primarily a legal document designed for consent — it's not trying to convey *just how bad the diseases being prevented really were* (or...increasingly and alarmingly *are*). We have the *consent* without ever doing the *informed* part, except via heroic clinicians going above-and-beyond.
+[^DIS]: This part of my system is intended to augment the obligatory "VIS" (Vaccine Information Statement). VIS handouts, as mandated by federal law and produced by the CDC, do mention the diseases being prevented. But they are primarily legal documents designed for consent. They don't even try to convey *just how bad the diseases being prevented really were* (or...increasingly and alarmingly *are*). We have the *consent* without ever doing the *informed* part, except via heroic clinicians going above-and-beyond.
 
 # I tested this on one of the most challenging topics
 
