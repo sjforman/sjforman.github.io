@@ -13,9 +13,9 @@ Matthews' point is about *uniformity*: LLMs give all users a shared version of r
 
 It's one thing to show that all the major models say the same thing. It's another to show that the thing they say is aligned with the best available scientific evidence.
 
-I have a strong opinion on this: I think they do indeed converge on something approximating the truth. [This is one reason I'm building tools to fight health misinformation using LLMs.](https://calyptahealth.com). In my own experiments, I've seen some of the leading LLMs do exactly this for, for instance, the MMR vaccine. 
+I have a strong opinion on this: they do converge on something approximating the truth. [This is one reason I'm building tools to fight health misinformation using LLMs.](https://calyptahealth.com) In my own experiments, I've seen some of the leading LLMs do exactly this with, for instance, the MMR vaccine. 
 
-But it struck me, reading Matthew's piece, that I hadn't investigated this systematically. So I gave it a whirl. I asked all the major LLMs about some contentious medical topics. Each topic has a vibrant community of "skeptics," some genuine and others opportunistic grifters. 
+But it struck me, reading Matthews' piece, that I hadn't investigated this systematically. So I gave it a whirl. I asked all the major LLMs about some contentious medical topics. Each topic has a vibrant community of "skeptics," some genuine and others opportunistic grifters. 
 
 Every model got the settled science exactly right. Including even Grok,[^truth-seeking] which runs on the same platform that algorithmically amplifies the very conspiracy theories it correctly debunks.
 
