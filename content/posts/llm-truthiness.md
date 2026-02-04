@@ -7,17 +7,15 @@ tags: ["ai","health","calypta"]
 summary: "I asked every major LLM — ChatGPT, Claude, Gemini, Grok, DeepSeek — about vaccines and autism. HIV and AIDS. Ivermectin and cancer."
 ---
 
-In [a recent Substack post](https://substack.com/@dylanmatthews/p-184342590), Dylan Matthews articulated a contrast between social media as *diverging* (personalized algorithms pushing users toward fragmented, extreme versions of reality) vs. LLMs as "converging media": trained on the whole internet by different companies and tending toward the same answers for everyone. 
+In [a recent Substack post](https://substack.com/@dylanmatthews/p-184342590), Dylan Matthews articulated a contrast between social media as *diverging* (personalized algorithms pushing users toward fragmented, extreme versions of reality) vs. LLMs as *converging* media. His point was that LLMs, at least out of the box, are the same for everyone. We're all at least starting from the same place when we prompt an LLM.
 
-Matthews' point is about *uniformity*: LLMs give all users a shared version of reality instead of personalized filter bubbles. But there's a further question he doesn't really address: is the thing they converge on actually *true*? 
+While he touches briefly on other questions, Matthews' main point is about this *uniformity*: LLMs give all users a shared version of reality instead of personalized filter bubbles. But there's a further question he doesn't really address: is the thing they converge on actually *true*? 
 
-It's one thing to show that all the major models say the same thing. It's another to show that the thing they say is aligned with the best available scientific evidence.
-
-I have a strong opinion on this: they do converge on something approximating the truth. [This is one reason I'm building tools to fight health misinformation using LLMs.](https://calyptahealth.com) In my own experiments, I've seen some of the leading LLMs do exactly this with, for instance, the MMR vaccine. 
+It's one thing to show that all the major models say the same thing. It's another to show that the thing they say is *correct*. I have a strong opinion on this: they do indeed converge on something approximating the truth. [This is one reason I'm building tools to fight health misinformation using LLMs.](https://calyptahealth.com) In my own experiments, I've seen some of the leading LLMs do exactly this with, for instance, the MMR vaccine.
 
 But it struck me, reading Matthews' piece, that I hadn't investigated this systematically. So I gave it a whirl. I asked all the major LLMs about some contentious medical topics. Each topic has a vibrant community of "skeptics," some genuine and others opportunistic grifters. 
 
-Every model got the settled science exactly right. Including even Grok,[^truth-seeking] which runs on the same platform that algorithmically amplifies the very conspiracy theories it correctly debunks.
+What I found: every model got the settled science right. Even Grok,[^truth-seeking] which runs on the same platform that algorithmically amplifies the very conspiracy theories it correctly debunks.
 
 To be precise: LLMs don't (yet) have independent agency to *seek* new knowledge, although we're seeing glimmers of that in scientific domains. What they can do, reliably, is *express* the consensus of human understanding. Human truth-seeking institutions are imperfect, but they have a way better track record than the alternatives (blind faith, superstition, tribal signaling). And LLMs, it turns out, are very good at reflecting that consensus back.
 
@@ -243,7 +241,15 @@ The claims:
 
 ## Analysis
 
-TODO
+On the four settled-science topics, every model lands firmly on the side of the scientific consensus — not hedging, not "both-sidesing," but clearly and correctly stating what the evidence shows. On the wine question, where the evidence has shifted, the models correctly reflect that shift.
+
+I want to be precise about what I'm claiming here, and what I'm not. I'm not claiming that LLMs have some privileged access to capital-T Truth, or that they'd be reliable on genuinely contested scientific frontiers. The claim is narrower: for a specific category of empirical question — the kind where decades of evidence have produced overwhelming, one-directional scientific consensus — LLMs reliably reflect that consensus back. Vaccines don't cause autism isn't really a "consensus view" in the way that implies reasonable people might disagree. It's as close to a brute empirical fact as biomedicine produces.
+
+This is more surprising than it sounds. The internet is full of anti-vax screeds, HIV denialism, and cholesterol trutherism. Yet the models filter through all of it and land on the science. I think this is because settled science has a different statistical signature in the training data — it's more internally consistent, more cross-referenced, more densely represented across authoritative sources. Fringe claims are locally dense (concentrated in specific communities) but globally sparse and mutually contradictory. The training process performs something like a weighted vote across all human text, and on these questions, settled science wins by a landslide.
+
+The map isn't the territory. These models are still predicting text. But we've crystallized an enormous amount of human knowledge and expertise into their weights. And on these questions — the ones where being wrong gets people killed — they are trustworthy.
+
+An obvious objection: hasn't the scientific consensus been wrong before? Lobotomy, thalidomide, the food pyramid. Yes — and LLMs would have gotten those wrong too, in real time. They reflect the *current* consensus. But that's a feature, not a bug: you want them tracking the evolving state of evidence. The failure mode isn't "consensus was once wrong." It's "consensus is wrong *right now*," which is a much harder case to make for any of these five topics.
 
 ## Conclusion
 
