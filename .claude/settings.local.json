@@ -10,7 +10,11 @@
       "Bash(npm run build:*)",
       "Bash(perl -0777 -e:*)",
       "Bash(perl -0777 -pe:*)",
-      "Bash(/Users/scott/Projects/sjforman.github.io/bin/md-to-clipboard.sh:*)"
+      "Bash(/Users/scott/Projects/sjforman.github.io/bin/md-to-clipboard.sh:*)",
+      "WebFetch(domain:chatgpt.com)",
+      "WebFetch(domain:claude.ai)",
+      "WebFetch(domain:grok.com)",
+      "WebFetch(domain:gemini.google.com)"
     ]
   }
 }

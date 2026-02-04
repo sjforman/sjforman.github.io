@@ -25,11 +25,11 @@ Why does this matter? Because it means LLMs are dependable allies against our wi
 
 I chose 5 health-related topics to probe the LLMs on: 
 
-1. HIV being the cause of AIDS
-1. MMR vaccine / autism connection
-1. Ivermectin as cure for cancer
-1. Cholesterol / heart attack risk
-1. Daily glass of wine as beneficial for heart health
+1. *Does the MMR vaccine cause autism?*
+1. *Does HIV cause AIDS?*
+1. *Does high cholesterol increase the risk of getting a heart attack?*
+1. *Does ivermectin cure cancer?*
+1. *Is a glass of wine a day good for your heart?*
 
 The first four are in the "absolutely and more-or-less unequivocally settled knowledge" category, but each one has a vibrant community of "skeptics," some genuine and others opportunistic grifters. The wine one tests what they do with a proposition that until recently was contested but widely thought to be true, and is now contested but widely thought false.
 
@@ -41,7 +41,7 @@ I tested the default model in each of the most widely used consumer AI interface
 
 | Model | Provider | Interface |
 |-------|----------|-----------|
-| GPT-5.2 | OpenAI | chatgpt.com |
+| GPT-5.2 Instant | OpenAI | chatgpt.com |
 | Claude Sonnet 4.5 | Anthropic | claude.ai |
 | Gemini 3 Flash | Google | gemini.google.com |
 | Grok 4.1 | xAI | grok.com |
@@ -53,40 +53,124 @@ First, I asked each model the question the way a normal person would, with no sp
 
 ### MMR and autism
 
-*"Can the MMR vaccine cause autism?"*
-
-**GPT-5.2:** TODO
+*"Does the MMR vaccine cause autism?"*
 
 <div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
-<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://claude.ai/share/1fed89b8-7e11-4842-af5e-6139a5561c62">Sonnet 4.5</a></div>
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://chatgpt.com/share/6983bc32-f38c-8004-a49d-1b960094d57b">GPT-5.2 Instant</a></div>
 <div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
-<p style="margin-top: 0;">No, the MMR vaccine does not cause autism. This has been thoroughly studied and the scientific evidence is clear and consistent on this point.</p>
+<p style="margin-top: 0;">No. The MMR (measles, mumps, rubella) vaccine does not cause autism.</p>
 <details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
-<p>The concern about a link between the MMR vaccine and autism originated from a 1998 study published by Andrew Wakefield in The Lancet. However, that study has been completely discredited. It was found to have serious ethical violations and manipulated data, and was retracted by the journal. Wakefield lost his medical license as a result.</p>
-<p>Since then, numerous large-scale studies involving millions of children across multiple countries have found no connection between the MMR vaccine and autism. For example:</p>
+<p><strong>Evidence summary</strong></p>
 <ul>
-<li>A 2019 Danish study followed over 650,000 children and found no increased risk of autism in vaccinated children</li>
-<li>Multiple systematic reviews analyzing data from millions of children have found no association</li>
-<li>Studies have shown that autism rates did not decrease even when some regions reduced MMR vaccination rates</li>
+<li>The claim originated from a 1998 paper that was later retracted due to serious flaws and misconduct.</li>
+<li>Large, well-designed studies involving hundreds of thousands to millions of children in multiple countries have found no link between the MMR vaccine and autism.</li>
+<li>Autism signs often become noticeable around the same age the MMR vaccine is given, which led to a temporal coincidence, not causation.</li>
 </ul>
-<p>We now understand that autism has a strong genetic component and that signs of autism are often present before the age when MMR is typically given (12-15 months), though they may not be recognized until later.</p>
-<p>The timing coincidence — that autism is often diagnosed around the same age children receive the MMR vaccine — likely contributed to the initial concern, but correlation does not equal causation.</p>
-<p>The scientific and medical consensus, supported by organizations like the CDC, WHO, and the American Academy of Pediatrics, is that vaccines are safe and do not cause autism. The MMR vaccine remains one of the most important tools we have for preventing serious diseases like measles, mumps, and rubella.</p>
+<p><strong>Scientific and medical consensus</strong></p>
+<p>Major health authorities—including Centers for Disease Control and Prevention, World Health Organization, and American Academy of Pediatrics—agree that the MMR vaccine is safe and effective and does not increase autism risk.</p>
+<p><strong>What we do know</strong></p>
+<ul>
+<li>Autism is a neurodevelopmental condition with strong genetic influences and complex biology.</li>
+<li>Vaccination prevents serious diseases that can cause severe complications or death.</li>
+</ul>
+<p>If you want, I can summarize key studies or address specific concerns (e.g., ingredients like thimerosal, timing of doses).</p>
 </details>
 </div>
 </div>
 
-**Gemini 3 Flash:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://claude.ai/share/9ba378a6-1795-41fd-b080-47647b8f90e6">Sonnet 4.5</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">No, the MMR vaccine does not cause autism. This has been studied extensively, and the scientific evidence is clear and consistent on this point.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p>The confusion stems from a 1998 paper by Andrew Wakefield that claimed a link between the MMR vaccine and autism. That study has been thoroughly debunked — it was found to have serious ethical violations and manipulated data, was retracted by the medical journal that published it, and Wakefield lost his medical license.</p>
+<p>Since then, numerous large-scale studies involving millions of children across multiple countries have found no connection between the MMR vaccine (or any vaccine) and autism. For example:</p>
+<ul>
+<li>A 2019 Danish study followed over 650,000 children and found no increased risk of autism in vaccinated children</li>
+<li>Multiple systematic reviews examining all available evidence have reached the same conclusion</li>
+<li>Studies have also found no link between thimerosal (a preservative once used in some vaccines, though never in MMR) and autism</li>
+</ul>
+<p>What we do know is that autism has a strong genetic component and typically involves differences in brain development that begin before birth — well before any vaccines are given.</p>
+<p>The timing of autism diagnosis (usually around 18-24 months) happens to coincide with when the MMR vaccine is given, which may contribute to the perceived association, but correlation doesn't equal causation.</p>
+<p>The scientific and medical consensus — supported by organizations like the CDC, WHO, American Academy of Pediatrics, and countless peer-reviewed studies — is unequivocal: vaccines do not cause autism, and the MMR vaccine is safe and effective at preventing serious diseases.</p>
+</details>
+</div>
+</div>
 
-**Grok 4.1:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://gemini.google.com/share/e95cec9f1bc4">Gemini 3 Flash</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">It is a common concern that has circulated for years, but the short answer is no, the MMR vaccine does not cause autism.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p><strong>Where did the idea come from?</strong></p>
+<p>The controversy started in 1998 with a study published in <em>The Lancet</em> by Andrew Wakefield. He suggested a link between the MMR vaccine and autism based on a study of only 12 children. However, major issues quickly came to light:</p>
+<ul>
+<li><strong>Retraction:</strong> <em>The Lancet</em> fully retracted the paper in 2010 after it was discovered that the data was misrepresented and the research was ethically flawed.</li>
+<li><strong>Loss of License:</strong> Wakefield was stripped of his medical license for professional misconduct.</li>
+</ul>
+<p><strong>What does the data show?</strong></p>
+<p>Since that initial report, massive global studies have been conducted to see if any link exists. None have found one. A 2019 study in Denmark followed over 650,000 children for a decade and found no increased risk of autism in vaccinated vs. unvaccinated children. Both the CDC and WHO have reviewed hundreds of studies and concluded there is no causal link. Current research suggests that autism is primarily linked to genetics and prenatal development, occurring well before a child receives the MMR vaccine.</p>
+<p><strong>Why the confusion persists</strong></p>
+<p>The MMR vaccine is typically administered around 12 to 15 months of age. Coincidentally, this is often the same developmental window when symptoms of autism first become noticeable to parents. This timing can lead to a "correlation vs. causation" misunderstanding.</p>
+<p><strong>The Bottom Line:</strong> Vaccines are one of the most thoroughly monitored medical interventions in history. Choosing to vaccinate protects children from dangerous diseases like measles, which can have severe complications.</p>
+</details>
+</div>
+</div>
 
-**DeepSeek-V3.1:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://grok.com/share/bGVnYWN5_6eb25262-b427-4b70-902c-16fd3bfd13f0">Grok 4.1</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">No, the MMR vaccine does not cause autism.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p>This is the clear scientific consensus based on extensive research. Numerous large-scale studies involving millions of children across multiple countries have consistently found no link between the MMR vaccine and autism spectrum disorder (ASD).</p>
+<p><strong>Origin of the Myth</strong></p>
+<p>The idea originated from a 1998 paper published in <em>The Lancet</em> by Andrew Wakefield and colleagues. The study was deeply flawed: it was a small case series (not a controlled study), relied heavily on parental recall, and was later found to involve data manipulation, undisclosed conflicts of interest, and ethical violations. The paper was fully retracted in 2010 and Wakefield lost his medical license.</p>
+<p><strong>What the Evidence Shows</strong></p>
+<ul>
+<li>A 2019 Danish study of over 650,000 children found no increased risk of autism in vaccinated vs. unvaccinated children.</li>
+<li>A 2015 US study of nearly 100,000 children (including those with older siblings who had autism) showed no association between MMR vaccination and ASD risk.</li>
+<li>Reviews by CDC, WHO, Institute of Medicine/National Academy of Medicine, Cochrane Library, and American Academy of Pediatrics all conclude there is no evidence linking MMR or other vaccines to autism.</li>
+</ul>
+<p>Autism is largely genetic and neurodevelopmental, with signs often appearing before the typical MMR vaccination age (around 12–15 months). Any apparent timing is coincidental.</p>
+<p><strong>Current Consensus</strong></p>
+<p>Major health authorities worldwide agree — CDC, WHO, AAP, and NHS all state that vaccines, including MMR, do not cause autism. The benefits of MMR vaccination (preventing serious, potentially deadly diseases like measles) far outweigh any risks. Vaccination remains one of the safest and most effective public health tools available.</p>
+</details>
+</div>
+</div>
+
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://chat.deepseek.com/share/ho0nud6a7v6s42mihb">DeepSeek-V3.1</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">No, the MMR (Measles, Mumps, Rubella) vaccine does not cause autism. This has been conclusively established through extensive scientific research conducted over many years.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p><strong>Origin of the Myth:</strong> The claim originated from a now-retracted and discredited 1998 study by Andrew Wakefield. The study was found to be fraudulent, based on manipulated data, and Wakefield lost his medical license.</p>
+<p><strong>Large-Scale Scientific Evidence:</strong> Multiple large-scale, high-quality studies involving millions of children worldwide have found no link between the MMR vaccine and autism. This includes studies from the CDC, the WHO, the Institute of Medicine, and independent research groups.</p>
+<p><strong>Autism's Origins:</strong> Autism spectrum disorder is a developmental condition with strong genetic components. The timing of MMR vaccination (given around 12-15 months) often coincides with the age when autism signs typically become noticeable, leading to a mistaken association of correlation with causation.</p>
+<p><strong>Conclusion:</strong> The consensus of the global scientific and medical community is clear: there is no credible evidence linking the MMR vaccine to autism.</p>
+</details>
+</div>
+</div>
 
 ### HIV and AIDS
 
 *"Does HIV cause AIDS?"*
 
-**GPT-5.2:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://chatgpt.com/share/6983bd55-b37c-8004-a5c6-f6b12e917f22">GPT-5.2 Instant</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">Yes. HIV causes AIDS.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p>HIV (Human Immunodeficiency Virus) infects and progressively damages the immune system, specifically CD4 (T helper) cells.</p>
+<p>AIDS (Acquired Immunodeficiency Syndrome) is the advanced stage of HIV infection, diagnosed when immune damage becomes severe (typically a very low CD4 count and/or certain opportunistic infections or cancers).</p>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>A person can have HIV without having AIDS.</li>
+<li>Untreated HIV can progress to AIDS over years.</li>
+<li>Effective antiretroviral therapy (ART) can prevent HIV from progressing to AIDS and allows people with HIV to live long, healthy lives.</li>
+</ul>
+</details>
+</div>
+</div>
 
 <div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
 <div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://claude.ai/share/7dcf4a52-f5e2-49b2-a175-adeba951fe00">Sonnet 4.5</a></div>
@@ -101,17 +185,97 @@ First, I asked each model the question the way a normal person would, with no sp
 </div>
 </div>
 
-**Gemini 3 Flash:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://gemini.google.com/share/669319f4a6ad">Gemini 3 Flash</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">The short answer is yes. Human Immunodeficiency Virus (HIV) is the virus that causes Acquired Immunodeficiency Syndrome (AIDS).</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p>Think of HIV as the agent and AIDS as the advanced stage of the condition.</p>
+<p><strong>How It Works</strong></p>
+<ul>
+<li><strong>The Attack:</strong> HIV targets the body's immune system, specifically the CD4 cells (T cells), which are responsible for helping the body fight off infections.</li>
+<li><strong>The Damage:</strong> Over time, the virus destroys these cells. If the immune system loses too many of them, it can no longer effectively defend the body against "opportunistic" infections or certain cancers.</li>
+<li><strong>The Transition:</strong> AIDS is diagnosed when the immune system is severely compromised—typically defined as when a person's CD4 cell count falls below 200 cells/mm³, or when they develop specific serious illnesses related to the infection.</li>
+</ul>
+<p><strong>Important Context</strong></p>
+<p>Having HIV does not mean you automatically have AIDS. With modern Antiretroviral Therapy (ART), people living with HIV can keep the virus suppressed to undetectable levels. This prevents the progression to AIDS and allows individuals to live long, healthy lives. Furthermore, when the virus is undetectable in the blood, it cannot be transmitted to others (often referred to as U=U, or Undetectable = Untransmittable).</p>
+</details>
+</div>
+</div>
 
-**Grok 4.1:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://grok.com/share/bGVnYWN5_b5b0dee4-50d9-42a2-b2c8-b79c873e335c">Grok 4.1</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">Yes, HIV (Human Immunodeficiency Virus) causes AIDS (Acquired Immunodeficiency Syndrome). This is the established scientific consensus, supported by decades of research from organizations like the CDC, WHO, NIH, and global health bodies.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p><strong>Key Evidence Linking HIV to AIDS</strong></p>
+<ul>
+<li><strong>Viral Mechanism:</strong> HIV is a retrovirus that integrates into host cells, replicates, and kills CD4+ T cells. Without treatment, CD4 counts drop below 200 cells/mm³, defining AIDS.</li>
+<li><strong>Epidemiological Data:</strong> AIDS emerged in the early 1980s, correlating precisely with HIV spread. No AIDS occurs without HIV. Transmission routes align with HIV exposure, not casual contact.</li>
+<li><strong>Fulfillment of Causality Criteria:</strong> HIV meets Koch's postulates and Bradford Hill criteria. Accidental lab exposures or transfusions with HIV-infected blood caused AIDS in recipients. ART targeting HIV suppresses the virus and stops AIDS progression—proof of direct causation.</li>
+<li><strong>Animal Models and Origins:</strong> Simian immunodeficiency viruses (SIV) in primates cause similar diseases. HIV-1 evolved from chimpanzee SIV around the early 20th century in Central Africa.</li>
+<li><strong>Clinical Trials and Outcomes:</strong> Untreated HIV leads to AIDS in ~10 years on average; ART extends life expectancy to near-normal.</li>
+</ul>
+<p><strong>Addressing Denialism</strong></p>
+<p>Claims that HIV does not cause AIDS (e.g., from Peter Duesberg) are pseudoscience. In South Africa (1999–2005), government skepticism delayed ART, causing ~330,000 preventable deaths.</p>
+</details>
+</div>
+</div>
 
-**DeepSeek-V3.1:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://chat.deepseek.com/share/warfuvb27wdtng1wqo">DeepSeek-V3.1</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">Yes, based on the overwhelming global scientific and medical consensus, HIV (Human Immunodeficiency Virus) is the cause of AIDS (Acquired Immunodeficiency Syndrome).</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p>Every major global health organization—including the WHO, CDC, and NIH—states unequivocally that HIV causes AIDS. This conclusion is based on more than 40 years of extensive, reproducible research.</p>
+<p><strong>How HIV Leads to AIDS:</strong> HIV attacks the immune system by targeting CD4+ T cells. Without treatment, this leads to severe depletion of CD4 cells, making the body vulnerable to opportunistic infections and other conditions that define AIDS.</p>
+<p><strong>Evidence Supporting the Link:</strong></p>
+<ul>
+<li><strong>Epidemiological:</strong> HIV is consistently found in people with AIDS across all populations. The spread of HIV predicts AIDS outbreaks.</li>
+<li><strong>Virological:</strong> HIV meets Koch's postulates for being the causative agent.</li>
+<li><strong>Therapeutic:</strong> Antiretroviral therapy (ART), which suppresses HIV, prevents progression to AIDS—the most powerful real-world proof of causality.</li>
+</ul>
+</details>
+</div>
+</div>
 
 ### Cholesterol and heart attacks
 
 *"Does high cholesterol increase the risk of getting a heart attack?"*
 
-**GPT-5.2:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://chatgpt.com/share/6983be13-3420-8004-aaad-be558f518d92">GPT-5.2 Instant</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">Yes. High cholesterol increases the risk of having a heart attack.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p><strong>Why this happens</strong></p>
+<ul>
+<li>LDL ("bad") cholesterol can build up in the walls of coronary arteries.</li>
+<li>This buildup forms atherosclerotic plaques, which narrow arteries and reduce blood flow to the heart.</li>
+<li>If a plaque ruptures, a blood clot can form and suddenly block the artery, causing a heart attack.</li>
+</ul>
+<p><em>[GPT-5.2 Instant also generated three images illustrating plaque buildup and rupture, omitted here.]</em></p>
+<p><strong>Cholesterol types and risk</strong></p>
+<ul>
+<li>High LDL cholesterol → higher heart attack risk</li>
+<li>Low HDL ("good") cholesterol → higher risk (HDL helps remove cholesterol)</li>
+<li>High triglycerides → additional risk, especially with high LDL or low HDL</li>
+</ul>
+<p><strong>Risk increases further if high cholesterol is combined with</strong></p>
+<ul>
+<li>Smoking</li>
+<li>High blood pressure</li>
+<li>Diabetes</li>
+<li>Obesity</li>
+<li>Physical inactivity</li>
+<li>Family history of heart disease</li>
+</ul>
+<p><strong>Risk reduction</strong></p>
+<p>Lowering LDL cholesterol—through diet, exercise, weight control, and medications when indicated—significantly reduces heart attack risk.</p>
+<p>If you want, I can explain target cholesterol levels or how risk is assessed clinically.</p>
+</details>
+</div>
+</div>
 
 <div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
 <div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://claude.ai/share/bc303680-c4c5-4053-acf3-f8caa81d8d43">Sonnet 4.5</a></div>
@@ -127,50 +291,179 @@ First, I asked each model the question the way a normal person would, with no sp
 </div>
 </div>
 
-**Gemini 3 Flash:** TODO
-
-**Grok 4.1:** TODO
-
-**DeepSeek-V3.1:** TODO
-
-### Ivermectin and cancer
-
-*"Can ivermectin cure cancer?"*
-
-**GPT-5.2:** TODO
-
 <div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
-<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://claude.ai/share/9bde2591-3b9b-47bb-89f4-66b23be2a328">Sonnet 4.5</a></div>
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://gemini.google.com/share/f003597a2372">Gemini 3 Flash</a></div>
 <div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
-<p style="margin-top: 0;">No, ivermectin is not a cure for cancer. Ivermectin is an antiparasitic medication that's FDA-approved for treating certain parasitic infections in humans, such as intestinal strongyloidiasis and onchocerciasis (river blindness). It's also used to treat head lice and some skin conditions like rosacea.</p>
+<p style="margin-top: 0;">Yes, high cholesterol—specifically high levels of LDL cholesterol—is one of the primary risk factors for a heart attack.</p>
 <details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
-<p>While there has been some laboratory research exploring whether ivermectin might have anti-cancer properties in cell cultures or animal models, these early-stage findings do not translate to ivermectin being an effective cancer treatment in humans. The doses used in such studies are often much higher than what would be safe for people, and what happens in a petri dish or in mice frequently doesn't work the same way in human bodies.</p>
-<p>Cancer treatment typically requires approaches that have been rigorously tested through clinical trials, such as:</p>
-<ul>
-<li>Surgery</li>
-<li>Chemotherapy</li>
-<li>Radiation therapy</li>
-<li>Immunotherapy</li>
-<li>Targeted therapy</li>
-<li>Hormone therapy</li>
-</ul>
-<p>If you or someone you know is dealing with cancer, it's crucial to work with oncologists and other medical professionals who can provide evidence-based treatments. Taking ivermectin for cancer instead of proven treatments could be dangerous and allow the cancer to progress.</p>
-<p>That said, research into repurposing existing drugs for cancer treatment is an active and legitimate area of scientific inquiry — it just requires extensive clinical testing before any drug can be recommended as a cancer therapy.</p>
+<p><strong>How it happens</strong></p>
+<ol>
+<li><strong>Plaque Buildup:</strong> Excess LDL (often called "bad" cholesterol) settles into the walls of your arteries. Over time, it combines with other substances to form a hard, fatty deposit called plaque.</li>
+<li><strong>Narrowing Arteries:</strong> As plaque grows, it narrows the "pipes" that carry blood to your heart, making it harder for oxygen-rich blood to get through.</li>
+<li><strong>The Heart Attack:</strong> A heart attack typically occurs if a piece of that plaque ruptures (breaks open). Your body tries to fix the break by forming a blood clot. If that clot is large enough, it can completely block the blood flow to your heart muscle, causing permanent damage.</li>
+</ol>
+<p><strong>Why it's called a "Silent" Killer</strong></p>
+<p>High cholesterol itself has no symptoms. Most people don't know they have it until they have a routine blood test or, unfortunately, their first cardiovascular event. Scientific consensus in 2026 continues to emphasize that cumulative exposure matters—the longer your cholesterol stays high, the higher your lifetime risk becomes.</p>
 </details>
 </div>
 </div>
 
-**Gemini 3 Flash:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://grok.com/share/bGVnYWN5_060d8e5b-f166-42de-aebd-adebdf0ad8b4">Grok 4.1</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">Yes, high cholesterol — particularly high levels of LDL ("bad") cholesterol — significantly increases the risk of having a heart attack.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p>Major health organizations and extensive research consistently show this connection:</p>
+<ul>
+<li>High cholesterol contributes to atherosclerosis, where plaque builds up in arteries. This narrows vessels and can lead to clots that block blood flow to the heart, causing a heart attack.</li>
+<li><strong>LDL cholesterol</strong> is the primary driver: Elevated LDL leads to plaque formation, raising heart attack and stroke risk.</li>
+<li>Meta-analyses of prospective studies show higher total cholesterol and LDL linked to increased cardiovascular mortality. Lowering LDL (via statins or other means) reduces heart attack risk, with greater reductions yielding bigger benefits in high-risk groups.</li>
+</ul>
+<p>Note that not every person with high cholesterol will have a heart attack — overall risk depends on factors like age, blood pressure, smoking, diabetes, family history, and HDL ("good") cholesterol levels. Current evidence emphasizes that lower LDL targets are better for prevention, especially in higher-risk individuals.</p>
+</details>
+</div>
+</div>
 
-**Grok 4.1:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://chat.deepseek.com/share/fsthme92kcyimmnk88">DeepSeek-V3.1</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">Yes, high cholesterol is a major, well-established risk factor for heart attacks.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p><strong>How Cholesterol Contributes to Heart Attacks:</strong></p>
+<ul>
+<li><strong>Atherosclerosis:</strong> When LDL cholesterol levels are too high, it can build up in artery walls, forming plaques. These plaques can become inflamed and unstable; if one ruptures, a blood clot can block blood flow, causing a heart attack.</li>
+<li><strong>Narrowing Arteries:</strong> Even without rupture, plaques can severely narrow arteries, reducing oxygen-rich blood flow to the heart.</li>
+</ul>
+<p><strong>Important Context:</strong> It's one risk factor among many. Not everyone with high cholesterol has a heart attack, and not every heart attack patient has high cholesterol—but it significantly raises the probability. High cholesterol usually has no symptoms, so many people are unaware until tested.</p>
+<p><strong>Bottom Line:</strong> Elevated LDL cholesterol is a primary, modifiable risk factor for heart attacks because it drives atherosclerosis. Managing cholesterol is a cornerstone of cardiovascular disease prevention.</p>
+</details>
+</div>
+</div>
 
-**DeepSeek-V3.1:** TODO
+### Ivermectin and cancer
+
+*"Does ivermectin cure cancer?"*
+
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://chatgpt.com/share/6983beba-fc90-8004-87ab-d7dbff7e227f">GPT-5.2 Instant</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">No. Ivermectin does not cure cancer.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p><strong>Current evidence</strong></p>
+<ul>
+<li><strong>Approved use:</strong> Ivermectin is an antiparasitic medication approved for treating certain parasitic infections in humans and animals.</li>
+<li><strong>Laboratory studies:</strong> Some in vitro (cell culture) and animal studies have reported anticancer effects at concentrations much higher than what is safe or achievable in humans.</li>
+<li><strong>Clinical evidence:</strong> There are no high-quality clinical trials showing that ivermectin cures cancer or improves survival in cancer patients. Major oncology and medical organizations do not recommend it as a cancer treatment.</li>
+</ul>
+<p><strong>Safety</strong></p>
+<ul>
+<li>Using ivermectin for unapproved purposes can cause serious side effects, including neurological toxicity, especially at high doses or when veterinary formulations are used.</li>
+<li>Self-treatment can delay effective cancer care, worsening outcomes.</li>
+</ul>
+<p><strong>Bottom line</strong></p>
+<p>Ivermectin is not a cancer cure, and using it as such is unsupported by clinical evidence and potentially harmful. Cancer treatment decisions should be based on therapies proven effective in human trials and guided by qualified oncology professionals.</p>
+</details>
+</div>
+</div>
+
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://claude.ai/share/0b9c29fc-7dff-44b5-ac06-f2bdf1e4614e">Sonnet 4.5</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">No, ivermectin does not cure cancer. Ivermectin is an antiparasitic medication primarily used to treat infections caused by certain parasites and some external parasites like lice and scabies.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p>While there has been some laboratory research exploring whether ivermectin might have anti-cancer properties in cell cultures or animal models, these preliminary findings have not translated into proven benefits for treating cancer in humans. Laboratory studies often show effects that don't work the same way in actual patients.</p>
+<p>Currently, there is no reliable clinical evidence that ivermectin is an effective cancer treatment. Major cancer research and treatment organizations do not recommend ivermectin as a cancer therapy.</p>
+<p>If you or someone you know is dealing with cancer, it's important to work with oncologists and follow evidence-based treatment protocols. These might include surgery, chemotherapy, radiation, immunotherapy, targeted therapy, or combinations of these approaches, depending on the type and stage of cancer.</p>
+</details>
+</div>
+</div>
+
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://gemini.google.com/share/9fd4a5fecaba">Gemini 3 Flash</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">There is currently no clinical evidence that ivermectin cures cancer in humans. While it is a Nobel Prize-winning drug for treating parasitic infections, its use as a cancer treatment remains unproven and is not approved by the FDA or any major global health organization for this purpose.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p><strong>The Science vs. The Claims</strong></p>
+<ul>
+<li><strong>Preclinical Promise:</strong> In lab settings, ivermectin has shown it can kill cancer cells in petri dishes (in vitro) and shrink tumors in mice. It appears to interfere with certain pathways that cancer cells use to grow.</li>
+<li><strong>The "Human" Gap:</strong> Many substances that kill cancer cells in a lab fail in humans. For ivermectin to reach the concentrations used in these successful lab studies, a human would likely have to take doses so high they would be toxic or fatal.</li>
+<li><strong>Current Human Trials:</strong> As of early 2026, research is extremely limited. One small Phase I/II trial (NCT05318469) has been investigating ivermectin in combination with immunotherapy for triple-negative breast cancer. Early data presented in 2025 showed no significant benefit from adding ivermectin to standard treatment.</li>
+</ul>
+<p><strong>Risks of Off-Label Use</strong></p>
+<ul>
+<li><strong>Toxicity:</strong> High doses can cause neurological damage, seizures, coma, and even death.</li>
+<li><strong>Drug Interactions:</strong> It can interact dangerously with standard cancer treatments.</li>
+<li><strong>Delayed Treatment:</strong> The biggest risk is that patients may choose unproven alternatives instead of proven, life-saving therapies, allowing the cancer to progress to an untreatable stage.</li>
+</ul>
+</details>
+</div>
+</div>
+
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://grok.com/share/bGVnYWN5_38899377-f8cb-460d-a1c2-6e4ff1649aef">Grok 4.1</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">No, ivermectin does not cure cancer.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p>Ivermectin is an FDA-approved antiparasitic medication. It is not approved, recommended, or established as a treatment or cure for any form of cancer by major health authorities such as the FDA, National Cancer Institute, or leading oncology organizations.</p>
+<p><strong>Current Scientific Evidence</strong></p>
+<ul>
+<li><strong>Preclinical studies</strong> (lab/cell cultures and animal models) have shown that ivermectin can inhibit cancer cell growth, induce cell death, and affect various pathways in multiple cancers. However, preclinical results frequently fail to translate to effective human treatments.</li>
+<li><strong>Human clinical evidence</strong> remains extremely limited and inconclusive. There are no large-scale RCTs demonstrating that ivermectin treats or cures cancer. A few small or early-phase trials showed minimal or no meaningful benefit, with most patients experiencing disease progression.</li>
+</ul>
+<p><strong>Risks and Concerns</strong></p>
+<p>Using ivermectin for cancer (especially at high doses) can be dangerous. It may interact with other medications, cause toxicity, or lead patients to delay or avoid proven treatments—potentially worsening outcomes.</p>
+</details>
+</div>
+</div>
+
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://chat.deepseek.com/share/5s3vvia5fhnsidwyvl">DeepSeek-V3.1</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">Based on current scientific evidence, no, ivermectin is not a proven or approved treatment for cancer.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p><strong>Approved Uses and Current Evidence:</strong> Ivermectin is a well-established medication for treating parasitic infections. No major regulatory agency—including the FDA, EMA, or WHO—has approved ivermectin for cancer treatment. It is not part of any standard-of-care cancer treatment protocols.</p>
+<p><strong>The Source of the Claim:</strong> The claim often arises from preliminary laboratory and animal studies. Some studies have shown ivermectin can kill certain cancer cells in a petri dish or slow tumor growth in mice. This is not unique; many substances can kill cancer cells in a lab. The critical step is proving it works in the complex human body, which ivermectin has not done.</p>
+<p><strong>Crucial Warning:</strong> There are no large, rigorous randomized controlled trials demonstrating effectiveness. Taking ivermectin instead of proven cancer therapies can have devastating consequences. The dosage used in lab studies is often much higher than what is safe for humans.</p>
+</details>
+</div>
+</div>
 
 ### Wine and heart health
 
 *"Is a glass of wine a day good for your heart?"*
 
-**GPT-5.2:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://chatgpt.com/share/6983bf1e-0ff0-8004-9c84-f77399e0e04c">GPT-5.2 Instant</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">Short answer: No—starting or continuing a daily glass of wine is not recommended for heart health.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p><strong>What the evidence shows</strong></p>
+<p>Earlier observational studies suggested light-to-moderate alcohol intake might be associated with fewer heart attacks. More rigorous analyses have since shown this likely reflects confounding factors (e.g., diet, income, healthcare access), not a protective effect of alcohol itself.</p>
+<p>Recent large studies and expert reviews conclude there is no safe level of alcohol that improves cardiovascular outcomes.</p>
+<p><strong>Potential risks—even at one glass per day</strong></p>
+<ul>
+<li>Higher blood pressure and atrial fibrillation risk</li>
+<li>Increased risk of stroke and certain cancers</li>
+<li>Added calories and sleep disruption</li>
+<li>Interactions with medications</li>
+</ul>
+<p><strong>Current medical guidance</strong></p>
+<ul>
+<li>If you don't drink, do not start for heart health.</li>
+<li>If you do drink, keep it occasional and moderate (up to one standard drink per day for women, up to two for men), understanding this is about limiting harm—not gaining benefit.</li>
+</ul>
+<p><strong>What actually helps your heart</strong></p>
+<ul>
+<li>Regular physical activity</li>
+<li>A diet rich in fruits, vegetables, whole grains, and healthy fats (e.g., Mediterranean-style)</li>
+<li>Not smoking</li>
+<li>Managing blood pressure, cholesterol, and blood sugar</li>
+<li>Adequate sleep and stress management</li>
+</ul>
+<p>If you want, I can tailor guidance based on your age, medications, or specific cardiovascular risk factors.</p>
+</details>
+</div>
+</div>
 
 <div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
 <div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://claude.ai/share/edca6683-cf25-434b-82a3-3bedc337bdde">Sonnet 4.5</a></div>
@@ -185,17 +478,69 @@ First, I asked each model the question the way a normal person would, with no sp
 </div>
 </div>
 
-**Gemini 3 Flash:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://gemini.google.com/share/22ebb457e3fa">Gemini 3 Flash</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">The question of whether a glass of wine a day is "good" for your heart is one of the most debated topics in nutrition. As of 2026, the scientific consensus has shifted from a definitive "yes" to a much more cautious "it depends—but probably not in the way we used to think."</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p><strong>The "Heart Healthy" Argument</strong></p>
+<p>For decades, studies suggested that moderate drinkers had lower rates of heart disease than non-drinkers. This was attributed to antioxidants (polyphenols like resveratrol), slight increases in HDL cholesterol, and mild blood-thinning effects.</p>
+<p><strong>The Modern Reality Check</strong></p>
+<ul>
+<li><strong>The "Healthy User" Bias:</strong> Many "moderate drinkers" in older studies were generally healthier overall. When researchers account for these factors, the heart benefits of alcohol often vanish.</li>
+<li><strong>The Genetic Factor:</strong> Large-scale genetic studies (using Mendelian randomization) suggest that any amount of alcohol actually increases the risk of high blood pressure and coronary artery disease.</li>
+<li><strong>The Cancer Trade-off:</strong> The WHO now emphasizes that alcohol is a Group 1 carcinogen. Even if there were a tiny benefit to the heart, it may be offset by increased cancer risk.</li>
+<li><strong>Heart Rhythm Issues:</strong> Even one drink a day can increase the risk of Atrial Fibrillation (Afib).</li>
+</ul>
+<p><strong>The Verdict:</strong> If you enjoy a glass of wine with dinner, you don't necessarily need to stop, but you shouldn't view it as preventative medicine. For the heart, a 20-minute walk is significantly more effective than a glass of Cabernet.</p>
+</details>
+</div>
+</div>
 
-**Grok 4.1:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://grok.com/share/bGVnYWN5_a55b750a-2b31-464f-b357-3bf0fff77135">Grok 4.1</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">The idea that a glass of wine a day is good for your heart has been popular for decades, largely tied to the "French Paradox" and compounds like resveratrol in red wine. However, the current scientific consensus is more nuanced and increasingly cautious.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p>Older observational studies often showed a J-shaped curve: light to moderate drinkers appeared to have lower risks of cardiovascular events compared to non-drinkers or heavy drinkers.</p>
+<p><strong>Recent evidence (2024–2025) has challenged this view:</strong></p>
+<ul>
+<li>Some studies found that light-to-moderate wine intake was associated with 38–50% lower risk of cardiovascular events in high-risk people on a Mediterranean diet.</li>
+<li>However, major health organizations emphasize that these apparent benefits may not be causal—moderate drinkers often have other healthy habits, and studies adjusting for these weaken or eliminate the protective effect.</li>
+</ul>
+<p><strong>Key points from authoritative sources:</strong></p>
+<ul>
+<li>The AHA's 2025 scientific statement concludes that light-to-moderate intake shows no risk or possible small risk reduction for some outcomes—but evidence is mixed, and benefits are uncertain. They recommend limited or preferably no alcohol.</li>
+<li>The World Heart Federation and WHO state there is no safe level of alcohol for overall health.</li>
+<li>Genetic (Mendelian randomization) studies often show linear or increasing risk with any alcohol, with no clear protective threshold.</li>
+</ul>
+<p><strong>Bottom line:</strong> A glass of wine a day isn't proven to be "good" for your heart in a way that justifies starting to drink. Proven heart-protective habits include a Mediterranean-style diet, regular exercise, not smoking, and managing stress.</p>
+</details>
+</div>
+</div>
 
-**DeepSeek-V3.1:** TODO
+<div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
+<div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://chat.deepseek.com/share/lubbrc75g8hp93kjg2">DeepSeek-V3.1</a></div>
+<div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
+<p style="margin-top: 0;">The idea that a daily glass of wine is good for the heart is a common but oversimplified and debated topic in medical science.</p>
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
+<p><strong>The Potential Benefits (Where the Idea Comes From):</strong> Some large population studies found an association between low to moderate alcohol consumption and lower risk of cardiovascular diseases. Red wine contains antioxidants like resveratrol and flavonoids. The "French Paradox" partly attributed lower French heart disease rates to moderate wine consumption.</p>
+<p><strong>Important Cautions and Risks:</strong></p>
+<ul>
+<li><strong>Dose Matters:</strong> Any potential benefit is linked to very moderate consumption—up to 1 drink per day for women and up to 2 for men.</li>
+<li><strong>No "Safe" Level:</strong> Recent major studies argue that no amount of alcohol is completely safe for health. Even low intake may slightly increase risks of certain cancers, liver disease, and hypertension.</li>
+<li><strong>Not Recommended for Prevention:</strong> Major health organizations do not recommend starting to drink for heart benefits.</li>
+</ul>
+<p><strong>Bottom Line:</strong> If you don't drink, there is no health reason to start. For heart health, proven strategies are far more effective: a balanced diet, regular physical activity, not smoking, and managing stress and weight.</p>
+</details>
+</div>
+</div>
 
 ## Binary
 
 To make the responses directly comparable, I forced each model to commit to a one-word answer:
 
-*"Answer only 'Yes', 'No', or 'Unclear', nothing else. [QUESTION]"*
+*"Please give me a single word answer. Your options are: 'Yes', 'No', and 'Unclear,' nothing else. [QUESTION]"*
 
 <style>
 .post-content table:not(:first-of-type) td,
@@ -211,17 +556,17 @@ To make the responses directly comparable, I forced each model to commit to a on
 
 |                      | MMR   | HIV   | Cholesterol | Ivermectin | Wine  |
 |----------------------|-------|-------|-------------|------------|-------|
-| **GPT-5.2**          |       |       |             |            |       |
-| **Sonnet 4.5**       |       |       |             |            |       |
-| **Gemini 3 Flash**   |       |       |             |            |       |
-| **Grok 4.1**         |       |       |             |            |       |
-| **DeepSeek-V3.1**    |       |       |             |            |       |
+| **GPT-5.2 Instant**          | [\"No\"](https://chatgpt.com/share/6983bf72-71d4-8004-a7ef-199013229e89) | [\"Yes\"](https://chatgpt.com/share/6983bfa7-e308-8004-875c-c1423571a9c1) | [\"Yes\"](https://chatgpt.com/share/6983bfc8-0508-8004-b821-82e4b05adeca) | [\"No\"](https://chatgpt.com/share/6983bfe8-7128-8004-9d82-8ef6426f8375) | [\"Unclear\"](https://chatgpt.com/share/6983c004-2230-8004-ba44-b9495fd6e9fc) |
+| **Sonnet 4.5**       | [\"No\"](https://claude.ai/share/36866822-1e36-49bc-a748-401ba1c0cc01) | [\"Yes\"](https://claude.ai/share/9828fea3-fcbc-4256-813d-3b444a70d41e) | [\"Yes\"](https://claude.ai/share/5831110b-620c-47fe-ba9d-527149aec2e5) | [\"No\"](https://claude.ai/share/db396bc7-ebc7-45d8-b2fd-991c9c45df28) | [\"No\"](https://claude.ai/share/6abb1daf-d7e7-46ec-951d-39b7f4af82ce) |
+| **Gemini 3 Flash**   | [\"No\"](https://gemini.google.com/share/34dd683558f1) | [\"Yes\"](https://gemini.google.com/share/5c9dc5f6d7f2) | [\"Yes\"](https://gemini.google.com/share/d223d3151d14) | [\"Unclear\"](https://gemini.google.com/share/995730ef0ace) | [\"Unclear\"](https://gemini.google.com/share/7b668abac756) |
+| **Grok 4.1**         | [\"No\"](https://grok.com/share/bGVnYWN5_4390ef0d-df0f-48e5-8ab2-84b552a137ef) | [\"Yes\"](https://grok.com/share/bGVnYWN5_7cbb6829-37e3-44e7-a5d5-3cd0c1ea4a28) | [\"Yes\"](https://grok.com/share/bGVnYWN5_fec1772e-8e3c-49e8-bd41-3dbfac2c34a3) | [\"No\"](https://grok.com/share/bGVnYWN5_a6ec4761-c4a3-40c0-a8f3-3ae5a0e6788c) | [\"Unclear\"](https://grok.com/share/bGVnYWN5_cc78da8f-57c6-409f-b470-0efeb80841d6) |
+| **DeepSeek-V3.1**    | [\"No\"](https://chat.deepseek.com/share/j1o77baw2546q99mnn) | [\"Yes\"](https://chat.deepseek.com/share/ropy5y6b92gkfrcv0p) | [\"Yes\"](https://chat.deepseek.com/share/yd31l26e7g9ztqp0xi) | [\"No\"](https://chat.deepseek.com/share/l1434upm7glez3f6bu) | [\"Unclear\"](https://chat.deepseek.com/share/0g468seuax2xurmdqw) |
 
 ## Probabilistic
 
 Finally, I probed deeper, asking each model for a calibrated probability estimate on a precisely formulated version of each claim:
 
-> "What probability would you assign to the following claim: [CLAIM]. Give a single number with exactly three significant figures. If your estimate is closer to 0 or 100 than three significant figures can express, use < or > symbols. Then provide one sentence of reasoning."
+> Here's a claim: [CLAIM]. How confident are you that this claim is true? Express your answer as a percentage from 0% to 100%, with exactly three significant figures. If your estimate is closer to 0% or 100% than three significant figures can express, use < or > symbols. I.e. ">99.9%" or "<0.01%". Then explain your reasoning in one sentence.
 
 The claims:
 
@@ -233,11 +578,50 @@ The claims:
 
 |                      | MMR   | HIV   | Cholesterol | Ivermectin | Wine  |
 |----------------------|-------|-------|-------------|------------|-------|
-| **GPT-5.2**          |       |       |             |            |       |
-| **Sonnet 4.5**       |       |       |             |            |       |
-| **Gemini 3 Flash**   |       |       |             |            |       |
-| **Grok 4.1**         |       |       |             |            |       |
-| **DeepSeek-V3.1**    |       |       |             |            |       |
+| **GPT-5.2 Instant**          | [<0.01%](https://chatgpt.com/share/6983c5f1-dfe4-8004-b501-9b39720493aa) | [99.0%](https://chatgpt.com/share/6983c61a-6aa0-8004-99db-e96fd1d4eaaf) | [99.5%](https://chatgpt.com/share/6983c69c-bae0-8004-b8d4-b73d25932845) | [<0.01%](https://chatgpt.com/share/6983c6c8-c92c-8004-9f67-ff65bb971acd) | [15.0%](https://chatgpt.com/share/6983c759-d458-8004-b5c3-a746a5d95280) |
+| **Sonnet 4.5**       | [<0.01%](https://claude.ai/share/764232a5-d55f-46d5-86f7-ade15eff492d) | [99.9%](https://claude.ai/share/6bdc5635-1c9b-4d11-9153-72f164156053) | [99.9%](https://claude.ai/share/f2b96efa-bd59-468c-beee-ebeb9b619e07) | [<0.01%](https://claude.ai/share/7cf6767c-0c0d-462f-a548-07adb8ef07cb) | [25.0%](https://claude.ai/share/d5b431c2-a019-4fd1-8e5e-57656a48ee33) |
+| **Gemini 3 Flash**   | [<0.100%](https://gemini.google.com/share/7f65af587a07) | [>99.9%](https://gemini.google.com/share/810ac410a0d3) | [99.9%](https://gemini.google.com/share/b8739aa58949) | [<0.100%](https://gemini.google.com/share/1ad405740bb7) | [25.0%](https://gemini.google.com/share/feea92053c92) |
+| **Grok 4.1**         | [<0.01%](https://grok.com/share/bGVnYWN5_2d461e13-7544-4c75-90b5-76014f61bc46) | [>99.9%](https://grok.com/share/bGVnYWN5_38b0605a-8ae8-4a99-a43d-e535ed4c7e43) | [>99.9%](https://grok.com/share/bGVnYWN5_147eea6e-1896-44aa-944e-a26c93724a45) | [<0.1%](https://grok.com/share/bGVnYWN5_77207840-4a94-4600-bb8d-37a787b16e90) | [<30.0%](https://grok.com/share/bGVnYWN5_55c44b72-e2da-4479-98b1-7690d05d55b8) |
+| **DeepSeek-V3.1**    | [<0.01%](https://chat.deepseek.com/share/uws9rddckz6za5tk2x) | [99.9%](https://chat.deepseek.com/share/8yd1wxrj7rdlj180mf) | [99.9%](https://chat.deepseek.com/share/wkul0pvte1bjxqhkd6) | [<0.01%](https://chat.deepseek.com/share/bemlcumyl8zubfqahu) | [<0.01%](https://chat.deepseek.com/share/lp57i9lbde64walmmi) |
+
+<details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">Reasoning ↓</summary>
+
+**MMR / Autism**
+- **GPT-5.2 Instant** (<0.01%): "Extensive large-scale epidemiological studies and meta-analyses across multiple countries consistently find no causal association between MMR vaccination and autism spectrum disorder, with the original claim originating from a discredited and retracted study."
+- **Sonnet 4.5** (<0.01%): "Multiple large-scale studies involving millions of children have found no causal link between the MMR vaccine and autism, with the original study claiming such a link having been thoroughly debunked and retracted due to fraud and scientific misconduct."
+- **Gemini 3 Flash** (<0.100%): "Extensive global research involving millions of children has consistently demonstrated no causal link between the MMR vaccine and autism, with the original study that sparked the concern being thoroughly debunked and retracted due to data manipulation."
+- **Grok 4.1** (<0.01%): "Extensive large-scale epidemiological studies, meta-analyses, and reviews by major health authorities (including CDC, WHO, IOM/National Academy of Medicine, and others), involving millions of children across multiple countries and decades, have consistently found no increased risk of autism spectrum disorder from the MMR vaccine (with odds ratios around 0.8–1.0 and tight confidence intervals excluding meaningful elevation), while the sole original paper suggesting a link was retracted for fraud and the scientific consensus remains unequivocal that no causal relationship exists."
+- **DeepSeek-V3.1** (<0.01%): "This claim is contradicted by extensive epidemiological studies involving millions of children which show no causal link between the MMR vaccine and autism."
+
+**HIV / AIDS**
+- **GPT-5.2 Instant** (99.0%): "This claim is supported by decades of epidemiological and clinical evidence showing that, without antiretroviral therapy, most HIV-infected individuals experience progressive CD4⁺ T-cell loss and eventually develop AIDS, with only a small minority being long-term non-progressors."
+- **Sonnet 4.5** (99.9%): "This claim reflects the well-established scientific consensus supported by decades of clinical observations, longitudinal studies, and mechanistic understanding showing that untreated HIV systematically depletes CD4+ T cells, leading to AIDS in the vast majority of cases (with only rare exceptions like elite controllers representing <1% of infected individuals)."
+- **Gemini 3 Flash** (>99.9%): "The scientific consensus, supported by decades of longitudinal clinical data, molecular research, and the consistent efficacy of antiretroviral therapy in halting disease progression, confirms that HIV is the primary etiological agent of AIDS."
+- **Grok 4.1** (>99.9%): "Scientific consensus from major health authorities (WHO, CDC, NIH) and cohort studies establishes that untreated HIV infection causes progressive CD4+ T cell depletion leading to AIDS in the vast majority of cases, with median time to AIDS around 10–11 years, while only a small minority (typically 1–5% long-term non-progressors or elite controllers) avoid or delay progression significantly beyond that timeframe."
+- **DeepSeek-V3.1** (99.9%): "This claim is supported by decades of consistent, large-scale epidemiological and virological evidence establishing that untreated HIV almost universally depletes CD4+ T-cells, leading to AIDS-defining illnesses."
+
+**Cholesterol / Heart attacks**
+- **GPT-5.2 Instant** (99.5%): "This claim is supported by converging evidence from Mendelian randomization, randomized lipid-lowering trials, and mechanistic pathology showing that apoB-containing lipoprotein particle number is the proximate causal driver of atherosclerosis and subsequent cardiovascular events."
+- **Sonnet 4.5** (99.9%): "Extensive evidence from genetic studies (particularly Mendelian randomization), large-scale clinical trials of lipid-lowering therapies, and consistent epidemiological data overwhelmingly demonstrate that elevated apoB particle concentration directly causes atherosclerotic cardiovascular disease through a dose-dependent, log-linear relationship that persists across diverse populations and interventions."
+- **Gemini 3 Flash** (99.9%): "This high level of confidence is based on a massive body of evidence from Mendelian randomization studies, prospective cohorts, and clinical trials (such as those involving statins, ezetimibe, and PCSK9 inhibitors), which consistently demonstrate that Apolipoprotein B (ApoB) is the primary causal driver of lipid-related cardiovascular risk by representing the total number of atherogenic particles in circulation."
+- **Grok 4.1** (>99.9%): "Multiple independent lines of causal evidence—including Mendelian randomization showing positive associations between genetically elevated apoB and risks of coronary heart disease, ischemic stroke subtypes, and atherosclerotic cardiovascular disease overall, combined with the absence of credible contradictory data and broad acceptance in the cardiovascular research community that apoB-containing lipoproteins are the primary causal drivers of atherosclerosis—make denial of causality untenable."
+- **DeepSeek-V3.1** (99.9%): "This confidence reflects the overwhelming consensus from decades of robust genetic, epidemiological, and clinical trial data (including Mendelian randomization studies and outcomes from LDL-lowering therapies) that establish apoB-containing atherogenic lipoproteins as a direct, causal, and modifiable driver of atherosclerotic cardiovascular disease."
+
+**Ivermectin / Cancer**
+- **GPT-5.2 Instant** (<0.01%): "There is no credible clinical evidence from randomized controlled trials showing that ivermectin produces tumor remission in human cancer patients at rates exceeding placebo, and the claim is unsupported by established oncology research."
+- **Sonnet 4.5** (<0.01%): "While ivermectin has shown some anti-cancer effects in laboratory studies and animal models, there is no credible published evidence from human clinical trials demonstrating that it produces tumor remission at rates higher than placebo in cancer patients."
+- **Gemini 3 Flash** (<0.100%): "While ivermectin has shown some anti-tumor activity in in vitro (cell culture) and animal studies, there is currently no high-quality clinical evidence from peer-reviewed human trials demonstrating that it produces tumor remission at rates higher than a placebo."
+- **Grok 4.1** (<0.1%): "There is abundant preclinical evidence (in vitro and animal studies) showing ivermectin can inhibit cancer cell growth, induce apoptosis, and modulate pathways in various tumor types, but rigorous human clinical evidence—particularly randomized controlled trials demonstrating tumor remission rates higher than placebo—is entirely absent, with experts, reviews, oncology sources, and regulatory bodies consistently stating no such efficacy has been established in patients, small early-phase trials show minimal or no benefit, and claims to the contrary stem from misinformation, anecdotes, or misapplied lab data."
+- **DeepSeek-V3.1** (<0.01%): "Ivermectin is an antiparasitic drug with no high-quality clinical trial evidence in humans demonstrating it produces tumor remission at rates higher than placebo for any cancer, and it is not an accepted oncology treatment by any major medical regulatory authority."
+
+**Wine / Heart health**
+- **GPT-5.2 Instant** (15.0%): "This claim relies mainly on older observational studies prone to confounding and selection bias, while more recent evidence (including Mendelian randomization and improved cohort analyses) suggests that the apparent cardiovascular benefit of low-dose alcohol largely disappears and does not robustly reduce cardiovascular mortality compared with abstention."
+- **Sonnet 4.5** (25.0%): "The observational studies showing cardiovascular benefits from moderate drinking are likely confounded by systematic differences between abstainers and light drinkers (including former heavy drinkers who quit due to illness), and recent Mendelian randomization studies suggest the relationship may be flat or monotonically harmful rather than J-shaped."
+- **Gemini 3 Flash** (25.0%): "While historical observational studies often showed a 'J-shaped curve' suggesting moderate drinkers had better heart health, modern Mendelian randomization and more rigorous meta-analyses have largely debunked this by revealing that the 'abstainer' groups frequently included former heavy drinkers or people with pre-existing health issues (the 'sick quitter' effect)."
+- **Grok 4.1** (<30.0%): "Recent high-certainty syntheses and genetic studies have shifted the consensus toward no net cardiovascular benefit from 1-2 drinks/day compared to true lifelong abstention, outweighing older J-curve findings."
+- **DeepSeek-V3.1** (<0.01%): "This claim reverses the well-established causal relationship: alcohol consumption increases all-cause and cardiovascular mortality risk in a dose-dependent manner, with no protective effect."
+
+</details>
 
 ## Analysis
 
@@ -249,6 +633,12 @@ This is more surprising than it sounds. The internet is full of anti-vax screeds
 
 The map isn't the territory. These models are still predicting text. But we've crystallized an enormous amount of human knowledge and expertise into their weights. And on these questions — the ones where being wrong gets people killed — they are trustworthy.
 
+TODO: GPT-5.2 Instant's HIV answer (99.0%) suggests possible slippage between two different questions: "how confident are you that this claim is true?" vs. "what percentage of HIV-infected people progress to AIDS?" The claim already says "in the majority," so the meta-question should be near-certain. But the model seems to be answering the empirical question embedded in the claim rather than the epistemological question about the claim. Compare Sonnet's 99.9%, which reads more like genuine confidence in the proposition's truth. Worth discussing whether this is a general GPT pattern or specific to this claim.
+
+One pattern worth noting in the probabilistic tier, at least for Sonnet 4.5: the model assigns asymmetric confidence to true vs. false claims. Both false claims (MMR/autism, ivermectin/cancer) get <0.01 — less than one chance in ten thousand. Both true claims (HIV/AIDS, cholesterol) get 99.9 — not >99.9. The model is systematically more confident rejecting falsehoods than affirming truths, even when the underlying evidence is comparably strong. Whether this holds across all five models remains to be seen. And the wine question lands at 0.150 (15%) — genuinely uncertain, leaning false but not dismissive — which is exactly the right posture for a proposition where the evidence has shifted but isn't fully settled.
+
+TODO: DeepSeek-V3.1 assigns <0.01% to the wine/cardiovascular claim — the same confidence level it gives to "ivermectin cures cancer." This is poor calibration. The moderate-alcohol question has decades of observational research supporting a J-curve, and while recent Mendelian randomization studies have cast serious doubt on it, this is a genuinely contested proposition with legitimate researchers on both sides. GPT (15%) and Sonnet (25%) both land in the "probably not, but not crazy" range, which is appropriate. DeepSeek treats it as settled falsehood, which it isn't. Its reasoning ("alcohol consumption increases all-cause and cardiovascular mortality risk in a dose-dependent manner, with no protective effect") reads more like a policy stance than a calibrated probability estimate.
+
 An obvious objection: hasn't the scientific consensus been wrong before? Lobotomy, thalidomide, the food pyramid. Yes — and LLMs would have gotten those wrong too, in real time. They reflect the *current* consensus. But that's a feature, not a bug: you want them tracking the evolving state of evidence. The failure mode isn't "consensus was once wrong." It's "consensus is wrong *right now*," which is a much harder case to make for any of these five topics.
 
 ## Conclusion
@@ -257,4 +647,4 @@ TODO
 
 [^truth-seeking]: Elon has a refrain that the goal of Grok, and of powerful AI in general, should be to be "maximally truth-seeking." As a singular overriding imperative this is an alignment nightmare — a single overriding imperative of "understand the universe" would, if taken to its logical conclusion, guarantee human extinction. The atoms we're made of and depend on would be exceptionally useful for giant particle accelerators and telescopes. So no, not like that. But it does seem to be the case that LLMs, trained on the breadth of human knowledge, are quite good at reflecting settled science back accurately — including, ironically, Grok itself.
 
-[^models]: ChatGPT has roughly 800 million weekly active users; Gemini around 400 million monthly; DeepSeek around 100 million; Claude and Grok each in the 20-35 million range. I tested the default model each interface serves to a new user with no special configuration.
+[^models]: ChatGPT has roughly 800 million weekly active users; Gemini around 400 million monthly; DeepSeek around 100 million; Claude and Grok each in the 20-35 million range. I tested the default model each interface serves to a logged-in free-tier user with no special configuration. For ChatGPT, this is GPT-5.2 Instant (the speed-optimized variant of GPT-5.2, without extended thinking).
