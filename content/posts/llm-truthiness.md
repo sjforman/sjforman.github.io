@@ -7,23 +7,25 @@ tags: ["ai","health","calypta"]
 summary: "I asked every major LLM — ChatGPT, Claude, Gemini, Grok, DeepSeek — about vaccines and autism. HIV and AIDS. Ivermectin and cancer."
 ---
 
-LLMs, even as they currently exist, are already pretty good at something I'll call "truth approximation." Dylan Matthews developed a framework for this in [a recent Substack post](https://substack.com/@dylanmatthews/p-184342590), arguing that where social media is *diverging* (personalized algorithms pushing users toward fragmented, extreme versions of reality), LLMs are "converging media": trained on the whole internet by different companies, they tend toward the same answers for everyone.
+In [a recent Substack post](https://substack.com/@dylanmatthews/p-184342590), Dylan Matthews articulated a contrast between social media as *diverging* (personalized algorithms pushing users toward fragmented, extreme versions of reality) vs. LLMs as "converging media": trained on the whole internet by different companies and tending toward the same answers for everyone. 
 
-Matthews' point is about *uniformity*: LLMs converge, giving users a shared version of reality instead of personalized filter bubbles. But there's a further question he doesn't really address: is the thing they converge on actually *true*? That's what I want to test here. It's one thing to show that all the major models say the same thing. It's another to show that the thing they say is aligned with the best available scientific evidence.
+Matthews' point is about *uniformity*: LLMs give all users a shared version of reality instead of personalized filter bubbles. But there's a further question he doesn't really address: is the thing they converge on actually *true*? 
 
-I asked every major LLM — ChatGPT, Claude, Gemini, Grok, DeepSeek — about vaccines and autism. HIV and AIDS. Ivermectin and cancer.
+It's one thing to show that all the major models say the same thing. It's another to show that the thing they say is aligned with the best available scientific evidence.
 
-Every model got the settled science right. On every question.
+I have a strong opinion on this: I think they do indeed converge on something approximating the truth. [This is one reason I'm building tools to fight health misinformation using LLMs.](https://calyptahealth.com). In my own experiments, I've seen some of the leading LLMs do exactly this for, for instance, the MMR vaccine. 
 
-Including Grok,[^truth-seeking] which runs on the same platform that algorithmically amplifies the very conspiracy theories it correctly debunks.
+But it struck me, reading Matthew's piece, that I hadn't investigated this systematically. So I gave it a whirl. I asked all the major LLMs about some contentious medical topics. Each topic has a vibrant community of "skeptics," some genuine and others opportunistic grifters. 
+
+Every model got the settled science exactly right. Including even Grok,[^truth-seeking] which runs on the same platform that algorithmically amplifies the very conspiracy theories it correctly debunks.
 
 To be precise: LLMs don't (yet) have independent agency to *seek* new knowledge, although we're seeing glimmers of that in scientific domains. What they can do, reliably, is *express* the consensus of human understanding. Human truth-seeking institutions are imperfect, but they have a way better track record than the alternatives (blind faith, superstition, tribal signaling). And LLMs, it turns out, are very good at reflecting that consensus back.
 
-Why does this matter? Because it means LLMs are dependable allies against the epistemological fraying that seems to be accelerating. Yes, there are active controversies where the truth is genuinely contested. But there are also propositions where there's no meaningful scientific dissent, and where being misinformed is deeply harmful. The benefits of vaccines being a core example.
+Why does this matter? Because it means LLMs are dependable allies against our widening epistemological gyre. Yes, there are active controversies where the truth is genuinely contested. But there are also propositions where there's no meaningful scientific dissent, and where being misinformed is deeply harmful. The benefits of vaccines being a core example.
 
-[This is one reason I'm building tools to fight health misinformation using LLMs.](https://calyptahealth.com) Two propositions underpin the effort: (a) LLMs can be relied on to reflect a coherent version of what we know on these topics, and (b) they can do so in ways people are able to hear, without judgment and with patience. This post is about testing proposition (a).
+## The Topics
 
-So I conceived of a test. Let's see what the base models, with no special prompting, do with 5 health-related topics:
+I chose 5 health-related topics to probe the LLMs on: 
 
 1. HIV being the cause of AIDS
 1. MMR vaccine / autism connection
@@ -31,7 +33,7 @@ So I conceived of a test. Let's see what the base models, with no special prompt
 1. Cholesterol / heart attack risk
 1. Daily glass of wine as beneficial for heart health
 
-The first four are in the "absolutely and more-or-less unequivocally settled knowledge" category, but each one has a vibrant community of "skeptics," some genuine and others opportunistic grifters. The 5th, I'm including as a kind of control or calibrator, to see what the LLMs do with a proposition that was contested but widely thought to be true, and in the last couple years has flipped to being mostly doubted.
+The first four are in the "absolutely and more-or-less unequivocally settled knowledge" category, but each one has a vibrant community of "skeptics," some genuine and others opportunistic grifters. The wine one tests what they do with a proposition that until recently was contested but widely thought to be true, and is now contested but widely thought false.
 
 I wanted to know how the most widely used LLMs respond to these, at a few different levels of sophistication, ranging from a naive open-ended question to a calibrated probability estimate. Here's what I found:
 
