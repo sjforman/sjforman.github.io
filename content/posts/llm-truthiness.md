@@ -1,24 +1,25 @@
 ---
-title: "What happens when you ask every major LLM about vaccines, HIV, and ivermectin"
+title: "Do LLMs tell the truth about the health topics where it matters most?"
 date: 2026-02-02
 draft: true
 featured: true
 tags: ["ai","health","calypta"]
+summary: "I asked every major LLM — ChatGPT, Claude, Gemini, Grok, DeepSeek — about vaccines and autism. HIV and AIDS. Ivermectin and cancer."
 ---
 
-Elon has a refrain that the goal of Grok, and of powerful AI in general, should be to be "maximally truth-seeking." As a singular overriding imperative this is an alignment nightmare.[^alignment] So yeah, no, not like that.
-
-<!--more-->
-
-But! It nevertheless seems to be the case that LLMs, even as they currently exist, are already pretty good at something I'll call "truth approximation." Dylan Matthews developed a framework for this in [a recent Substack post](https://substack.com/@dylanmatthews/p-184342590), arguing that where social media is *diverging* (personalized algorithms pushing users toward fragmented, extreme versions of reality), LLMs are "converging media": trained on the whole internet by different companies, they tend toward the same answers for everyone.
+LLMs, even as they currently exist, are already pretty good at something I'll call "truth approximation." Dylan Matthews developed a framework for this in [a recent Substack post](https://substack.com/@dylanmatthews/p-184342590), arguing that where social media is *diverging* (personalized algorithms pushing users toward fragmented, extreme versions of reality), LLMs are "converging media": trained on the whole internet by different companies, they tend toward the same answers for everyone.
 
 Matthews' point is about *uniformity*: LLMs converge, giving users a shared version of reality instead of personalized filter bubbles. But there's a further question he doesn't really address: is the thing they converge on actually *true*? That's what I want to test here. It's one thing to show that all the major models say the same thing. It's another to show that the thing they say is aligned with the best available scientific evidence.
 
+I asked every major LLM — ChatGPT, Claude, Gemini, Grok, DeepSeek — about vaccines and autism. HIV and AIDS. Ivermectin and cancer.
+
+Every model got the settled science right. On every question.
+
+Including Grok,[^truth-seeking] which runs on the same platform that algorithmically amplifies the very conspiracy theories it correctly debunks.
+
 To be precise: LLMs don't (yet) have independent agency to *seek* new knowledge, although we're seeing glimmers of that in scientific domains. What they can do, reliably, is *express* the consensus of human understanding. Human truth-seeking institutions are imperfect, but they have a way better track record than the alternatives (blind faith, superstition, tribal signaling). And LLMs, it turns out, are very good at reflecting that consensus back.
 
-Why does this matter? Because it means LLMs are dependable allies against the epistemological fraying that seems to be accelerating. Matthews noticed this on X, where Grok refused to filter its interpretation of video evidence through an ideological funhouse mirror. I've noticed the same pattern with vaccine misinformation. Someone with a clearly wrong idea will be arguing with an expert who actually knows what they're talking about. The conspiracist tags in Grok, expecting to have their delusion endorsed. And Grok...simply doesn't do that.
-
-Yes, there are active controversies where the truth is genuinely contested. But there are also propositions where there's no meaningful scientific dissent, and where being misinformed is deeply harmful. The benefits of vaccines being a core example.
+Why does this matter? Because it means LLMs are dependable allies against the epistemological fraying that seems to be accelerating. Yes, there are active controversies where the truth is genuinely contested. But there are also propositions where there's no meaningful scientific dissent, and where being misinformed is deeply harmful. The benefits of vaccines being a core example.
 
 [This is one reason I'm building tools to fight health misinformation using LLMs.](https://calyptahealth.com) Two propositions underpin the effort: (a) LLMs can be relied on to reflect a coherent version of what we know on these topics, and (b) they can do so in ways people are able to hear, without judgment and with patience. This post is about testing proposition (a).
 
@@ -246,6 +247,6 @@ TODO
 
 TODO
 
-[^alignment]: A single overriding imperative of "understand the universe" would, if taken to its logical conclusion, guarantee human extinction. The atoms we're made of and depend on would be exceptionally useful for giant particle accelerators and telescopes.
+[^truth-seeking]: Elon has a refrain that the goal of Grok, and of powerful AI in general, should be to be "maximally truth-seeking." As a singular overriding imperative this is an alignment nightmare — a single overriding imperative of "understand the universe" would, if taken to its logical conclusion, guarantee human extinction. The atoms we're made of and depend on would be exceptionally useful for giant particle accelerators and telescopes. So no, not like that. But it does seem to be the case that LLMs, trained on the breadth of human knowledge, are quite good at reflecting settled science back accurately — including, ironically, Grok itself.
 
 [^models]: ChatGPT has roughly 800 million weekly active users; Gemini around 400 million monthly; DeepSeek around 100 million; Claude and Grok each in the 20-35 million range. I tested the default model each interface serves to a new user with no special configuration.
