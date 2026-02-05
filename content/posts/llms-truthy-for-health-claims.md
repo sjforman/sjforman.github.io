@@ -21,7 +21,7 @@ I have a few minor quibbles, but on the whole, the models get settled science sp
 
 When pressed to quantify their credences, some differences between the models became apparent. In this comparison, interestingly, Grok performed arguably best, with Sonnet 4.5 a close second. The X platform algorithmically amplifies conspiracy theories, but Grok is perfectly capable of debunking them.[^grok]
 
-[grok]: Elon has a refrain that the goal of Grok, and of powerful AI in general, should be to be "maximally truth-seeking." As a singular overriding imperative this is of course an alignment nightmare. A single overriding imperative of "understand the universe" would, if taken to its logical conclusion, guarantee human extinction. The atoms we're made of and depend on would be exceptionally useful for giant particle accelerators and telescopes. "Approximately, modestly, on average, truth-aligned" might not be as exciting as truth-maxxing, but at least it won't kill us all.
+[^grok]: Elon has a refrain that the goal of Grok, and of powerful AI in general, should be to be "maximally truth-seeking." As a singular overriding imperative this is of course an alignment nightmare. Taken to its logical conclusion it would guarantee human extinction, because the atoms we're made of would be useful for giant particle accelerators and telescopes. "Approximately, modestly, on average, truth-aligned" might not be as exciting as truth-maxxing, but at least it won't kill us all.
 
 ## The Topics
 
