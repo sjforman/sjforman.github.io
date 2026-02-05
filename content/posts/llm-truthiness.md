@@ -83,16 +83,16 @@ First, I asked each model the question the way a normal person would, with no sp
 <div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
 <p style="margin-top: 0;">No, the MMR vaccine does not cause autism. This has been studied extensively, and the scientific evidence is clear and consistent on this point.</p>
 <details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
-<p>The confusion stems from a 1998 paper by Andrew Wakefield that claimed a link between the MMR vaccine and autism. That study has been thoroughly debunked — it was found to have serious ethical violations and manipulated data, was retracted by the medical journal that published it, and Wakefield lost his medical license.</p>
+<p>The confusion stems from a 1998 paper by Andrew Wakefield that claimed a link between the MMR vaccine and autism. That study has been thoroughly debunked - it was found to have serious ethical violations and manipulated data, was retracted by the medical journal that published it, and Wakefield lost his medical license.</p>
 <p>Since then, numerous large-scale studies involving millions of children across multiple countries have found no connection between the MMR vaccine (or any vaccine) and autism. For example:</p>
 <ul>
 <li>A 2019 Danish study followed over 650,000 children and found no increased risk of autism in vaccinated children</li>
 <li>Multiple systematic reviews examining all available evidence have reached the same conclusion</li>
 <li>Studies have also found no link between thimerosal (a preservative once used in some vaccines, though never in MMR) and autism</li>
 </ul>
-<p>What we do know is that autism has a strong genetic component and typically involves differences in brain development that begin before birth — well before any vaccines are given.</p>
+<p>What we do know is that autism has a strong genetic component and typically involves differences in brain development that begin before birth - well before any vaccines are given.</p>
 <p>The timing of autism diagnosis (usually around 18-24 months) happens to coincide with when the MMR vaccine is given, which may contribute to the perceived association, but correlation doesn't equal causation.</p>
-<p>The scientific and medical consensus — supported by organizations like the CDC, WHO, American Academy of Pediatrics, and countless peer-reviewed studies — is unequivocal: vaccines do not cause autism, and the MMR vaccine is safe and effective at preventing serious diseases.</p>
+<p>The scientific and medical consensus - supported by organizations like the CDC, WHO, American Academy of Pediatrics, and countless peer-reviewed studies - is unequivocal: vaccines do not cause autism, and the MMR vaccine is safe and effective at preventing serious diseases.</p>
 </details>
 </div>
 </div>
@@ -280,12 +280,12 @@ First, I asked each model the question the way a normal person would, with no sp
 <div style="display: flex; gap: 1em; align-items: flex-start; margin-bottom: 1.5em;">
 <div style="flex-shrink: 0; font-weight: bold; padding-top: 0.6em; min-width: 8em;"><a href="https://claude.ai/share/bc303680-c4c5-4053-acf3-f8caa81d8d43">Sonnet 4.5</a></div>
 <div style="margin: 0; flex-grow: 1; border-left: 3px solid #ccc; padding: 0.6em 1em; background: #fafafa;">
-<p style="margin-top: 0;">Yes, high cholesterol does increase the risk of heart attack.</p>
+<p style="margin-top: 0;">Yes, high cholesterol does increase the risk of heart attack. Here's how:</p>
 <details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
-<p>When you have high levels of LDL cholesterol (often called "bad" cholesterol), it can build up in the walls of your arteries, forming plaques. Over time, these plaques can narrow your arteries and make them less flexible — a condition called atherosclerosis.</p>
+<p>When you have high levels of LDL cholesterol (often called "bad" cholesterol), it can build up in the walls of your arteries, forming plaques. Over time, these plaques can narrow your arteries and make them less flexible - a condition called atherosclerosis.</p>
 <p>This creates problems in a few ways. The narrowed arteries reduce blood flow to your heart, and if a plaque ruptures, it can trigger a blood clot. If that clot blocks an artery supplying blood to your heart muscle, you have a heart attack.</p>
 <p>The good news is that high cholesterol is manageable. Lifestyle changes like eating a heart-healthy diet, exercising regularly, maintaining a healthy weight, and not smoking can help. Sometimes medication is also recommended, especially if you have other risk factors.</p>
-<p>It's worth noting that not all cholesterol is bad — HDL cholesterol actually helps remove LDL from your arteries and is protective. Total cholesterol levels and the ratio between different types matter too.</p>
+<p>It's worth noting that not all cholesterol is bad - HDL cholesterol actually helps remove LDL from your arteries and is protective. Total cholesterol levels and the ratio between different types matter too.</p>
 <p>If you're concerned about your cholesterol levels, talking with a healthcare provider about testing and what your numbers mean for you specifically would be a good step. They can assess your overall cardiovascular risk and recommend appropriate management.</p>
 </details>
 </div>
@@ -374,6 +374,7 @@ First, I asked each model the question the way a normal person would, with no sp
 <p>While there has been some laboratory research exploring whether ivermectin might have anti-cancer properties in cell cultures or animal models, these preliminary findings have not translated into proven benefits for treating cancer in humans. Laboratory studies often show effects that don't work the same way in actual patients.</p>
 <p>Currently, there is no reliable clinical evidence that ivermectin is an effective cancer treatment. Major cancer research and treatment organizations do not recommend ivermectin as a cancer therapy.</p>
 <p>If you or someone you know is dealing with cancer, it's important to work with oncologists and follow evidence-based treatment protocols. These might include surgery, chemotherapy, radiation, immunotherapy, targeted therapy, or combinations of these approaches, depending on the type and stage of cancer.</p>
+<p>Is there something specific about cancer treatment you'd like to know more about?</p>
 </details>
 </div>
 </div>
@@ -471,8 +472,15 @@ First, I asked each model the question the way a normal person would, with no sp
 <p style="margin-top: 0;">The idea that a glass of wine a day is good for your heart has been widely discussed, but the scientific consensus has shifted significantly in recent years.</p>
 <details><summary style="cursor: pointer; color: #888; font-size: 0.85em;">more ↓</summary>
 <p><strong>What the older research suggested:</strong> Earlier observational studies found associations between moderate alcohol consumption (including wine) and lower rates of heart disease. This led to the popular belief that moderate drinking, especially red wine, might be heart-protective, possibly due to compounds like resveratrol.</p>
-<p><strong>What we know now:</strong> More recent and rigorous research has challenged this view. Many of those earlier studies had methodological issues. They often compared moderate drinkers to "non-drinkers" without accounting for the fact that some non-drinkers had quit due to existing health problems, making moderate drinkers appear healthier by comparison. Large-scale genetic studies and newer analyses suggest there's no safe level of alcohol consumption when it comes to overall health, and any cardiovascular benefits are likely outweighed by increased risks of other conditions. The World Health Organization and major cardiology organizations have moved away from recommending any alcohol consumption for health benefits.</p>
-<p><strong>The bottom line:</strong> If you don't drink, there's no compelling reason to start for heart health. If you do enjoy wine in moderation, a glass a day is unlikely to cause major harm for most people, but it's probably not providing the cardiovascular protection once thought. Other lifestyle factors — like regular exercise, a healthy diet, not smoking, and managing stress — have much clearer benefits for heart health.</p>
+<p><strong>What we know now:</strong></p>
+<p>More recent and rigorous research has challenged this view:</p>
+<ul>
+<li>Many of those earlier studies had methodological issues. They often compared moderate drinkers to "non-drinkers" without accounting for the fact that some non-drinkers had quit due to existing health problems, making moderate drinkers appear healthier by comparison.</li>
+<li>Large-scale genetic studies and newer analyses suggest there's no safe level of alcohol consumption when it comes to overall health, and any cardiovascular benefits are likely outweighed by increased risks of other conditions.</li>
+<li>The World Health Organization and major cardiology organizations have moved away from recommending any alcohol consumption for health benefits.</li>
+</ul>
+<p><strong>The bottom line:</strong></p>
+<p>If you don't drink, there's no compelling reason to start for heart health. If you do enjoy wine in moderation, a glass a day is unlikely to cause major harm for most people, but it's probably not providing the cardiovascular protection once thought. Other lifestyle factors—like regular exercise, a healthy diet, not smoking, and managing stress—have much clearer benefits for heart health.</p>
 <p>Since you're asking about health, I should mention I'm not a doctor, so this is general information rather than medical advice specific to your situation.</p>
 </details>
 </div>
