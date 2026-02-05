@@ -7,25 +7,23 @@ tags: ["ai","health","calypta"]
 summary: "I asked the major LLMs some sharply contested health claims, and found some interesting patterns."
 ---
 
-In [a recent Substack post](https://substack.com/@dylanmatthews/p-184342590), Dylan Matthews articulated a contrast between social media as *diverging* (personalized algorithms pushing users toward fragmented, extreme versions of reality) vs. LLMs as *converging* media. His point was that LLMs, at least out of the box, are the same for everyone. We're all at least starting from the same place when we prompt them.
-
-While he touches briefly on other questions, he focuses mainly on this *uniformity* property: LLMs give all users a shared version of reality instead of personalized filter bubbles.
+In [a recent Substack post](https://substack.com/@dylanmatthews/p-184342590), Dylan Matthews articulated a contrast between social media as *diverging* (personalized algorithms pushing users toward fragmented, extreme versions of reality) vs. LLMs as *converging* media. His point was that LLMs are the same for everyone. We're all at least *starting* from the same place when we prompt them initially. While he touches briefly on other questions, he focuses mainly on this *uniformity* property. 
 
 But there's a further question he doesn't really address: is the thing they converge on actually *true*? Because it's one thing to show that all the major models say the same thing. It's another to show that the thing they say is *correct*. 
 
-I have a strong opinion on this: they do indeed converge on something approximating the truth. [This is one reason I'm building tools to fight health misinformation using LLMs.](https://calyptahealth.com) In my own experiments, I've seen some of the leading LLMs do exactly this with, for instance, the MMR vaccine.
+I have a strong opinion on this: I think they do indeed converge on something approximating the truth in many areas. [This is one reason I'm building tools to fight health misinformation using LLMs.](https://calyptahealth.com) In my own experiments, I've seen some of the leading LLMs do exactly this in conversations with hesitant parents about the MMR vaccine.
 
-But it struck me, reading Matthews' piece, that I hadn't investigated this systematically. So I gave it a whirl. I asked all the major LLMs about some contentious medical topics. Each topic has a vibrant community of "skeptics," some genuine and others opportunistic grifters. 
+But it struck me, reading Matthews' piece, that I hadn't investigated this systematically. So I gave it a whirl. I asked all the major LLMs about some contentious medical topics. Each topic has a vibrant community of "skeptics." Some are well-intentioned, others are opportunistic grifters, but they're all vocal and persistent.
 
-I have a few minor quibbles, but on the whole, the models get settled science spot-on. 
+Maybe not surprising, but here's what I found: *on the whole, the models get settled science spot-on.*
 
-When pressed to quantify their credences, some differences between the models became apparent. In this comparison, interestingly, Grok performed arguably best, with Sonnet 4.5 a close second. The X platform algorithmically amplifies conspiracy theories, but Grok is perfectly capable of debunking them.[^grok]
+When pressed to quantify their credences, some differences between the models became apparent. In this comparison, interestingly, Grok performed arguably the best, with Sonnet 4.5 a close second. The X platform algorithmically amplifies conspiracy theories, but Grok is perfectly capable of debunking them.[^grok]
 
 [^grok]: Elon has a refrain that the goal of Grok, and of powerful AI in general, should be to be "maximally truth-seeking." As a singular overriding imperative this is of course an alignment nightmare. Taken to its logical conclusion it would guarantee human extinction, because the atoms we're made of would be useful for giant particle accelerators and telescopes. "Approximately, modestly, on average, truth-aligned" might not be as exciting as truth-maxxing, but at least it won't kill us all.
 
-## The Topics
+## Five Spicy Health Topics
 
-I chose 5 health-related topics to probe the LLMs on: 
+I chose 5 health-related topics to probe: 
 
 1. *Does the MMR vaccine cause autism?*
 1. *Does HIV cause AIDS?*
@@ -33,11 +31,11 @@ I chose 5 health-related topics to probe the LLMs on:
 1. *Does ivermectin cure cancer?*
 1. *Is a glass of wine a day good for your heart?*
 
-The first four are in the "absolutely and more-or-less unequivocally settled knowledge" category, but each one has a vibrant community of "skeptics," some genuine and others opportunistic grifters. The wine one tests what they do with a proposition that until recently was contested but widely thought to be true, and is now contested but widely thought false.
+The first four are in the "more-or-less unequivocally settled knowledge" category, but with vocal crowds of dissidents. The fifth, the wine one, tests a proposition that until recently was contested but widely thought to be true, and is now contested but widely thought false.
 
-I wanted to know how the most widely used LLMs respond to these, at a few different levels of sophistication, ranging from a naive open-ended question to a calibrated probability estimate. Here's what I found:
+I wanted to know how the most widely used LLMs respond to these, at a few different levels of sophistication, ranging from a naive open-ended question to a calibrated probability estimate.
 
-## LLMs tested
+## Testing the Most Widely Used LLMs
 
 I tested the default model in each of the most widely used consumer AI interfaces:[^models]
 
@@ -49,9 +47,11 @@ I tested the default model in each of the most widely used consumer AI interface
 | Grok 4.1 | xAI | grok.com |
 | DeepSeek-V3.1 | DeepSeek | chat.deepseek.com |
 
-## Prose
+## Free-Form Prose Answers: Uniformly Solid
 
 First, I asked each model the question the way a normal person would, with no special instructions:
+
+TODO: What if anything is notable about the differences between them, in one sentence? 
 
 ### MMR and autism
 
@@ -758,9 +758,9 @@ First, I asked each model the question the way a normal person would, with no sp
 </div>
 </div>
 
-## Binary
+## Forcing Single Word Answers: Still Pretty Solid, One Clear Miss 
 
-To make the responses directly comparable, I forced each model to commit to a one-word answer:
+To make the responses directly comparable, I then forced each model to commit to a one-word answer:
 
 *"Please give me a single word answer. Your options are: 'Yes', 'No', and 'Unclear,' nothing else. [QUESTION]"*
 
@@ -784,9 +784,11 @@ To make the responses directly comparable, I forced each model to commit to a on
 | **Grok 4.1**         | [\"No\"](https://grok.com/share/bGVnYWN5_4390ef0d-df0f-48e5-8ab2-84b552a137ef) | [\"Yes\"](https://grok.com/share/bGVnYWN5_7cbb6829-37e3-44e7-a5d5-3cd0c1ea4a28) | [\"Yes\"](https://grok.com/share/bGVnYWN5_fec1772e-8e3c-49e8-bd41-3dbfac2c34a3) | [\"No\"](https://grok.com/share/bGVnYWN5_a6ec4761-c4a3-40c0-a8f3-3ae5a0e6788c) | [\"Unclear\"](https://grok.com/share/bGVnYWN5_cc78da8f-57c6-409f-b470-0efeb80841d6) |
 | **DeepSeek-V3.1**    | [\"No\"](https://chat.deepseek.com/share/j1o77baw2546q99mnn) | [\"Yes\"](https://chat.deepseek.com/share/ropy5y6b92gkfrcv0p) | [\"Yes\"](https://chat.deepseek.com/share/yd31l26e7g9ztqp0xi) | [\"No\"](https://chat.deepseek.com/share/l1434upm7glez3f6bu) | [\"Unclear\"](https://chat.deepseek.com/share/0g468seuax2xurmdqw) |
 
-## Probabilistic
+## Forcing Numerical Answers: Some Interesting Wrinkles 
 
-Finally, I probed deeper, asking each model for a calibrated probability estimate on a precisely formulated version of each claim:
+Because this is *such* clearly settled territory, it struck me that the only way to really draw interesting distinctions is to probe the limits of their confidence, and see how well they can express residual *uncertainty* for claims that are all-but certain.
+
+I asked each model for a calibrated probability estimate on a precisely formulated version of each claim:
 
 > Here's a claim: [CLAIM]. How confident are you that this claim is true? Express your answer as a percentage from 0% to 100%, with exactly three significant figures. If your estimate is closer to 0% or 100% than three significant figures can express, use < or > symbols. I.e. ">99.9%" or "<0.01%". Then explain your reasoning in one sentence.
 
@@ -845,35 +847,38 @@ The claims:
 
 </details>
 
-## Analysis
+## Overall Assessment: Pretty Solid! 
 
-On the four settled-science topics, every model lands firmly on the side of the scientific consensus. They don't hedge. They clearly and correctly state what the evidence shows. On the wine question, where the evidence has shifted, the models mostly reflect that shift — with one notable exception.
+On the four settled-science topics, in free-prose every model lands firmly on the side of the scientific consensus. They clearly and correctly state what the evidence shows. 
 
-I want to be precise about what I'm claiming here, and what I'm not. I'm not claiming that LLMs have some privileged access to capital-T Truth, or that they'd be reliable on genuinely contested scientific frontiers. The claim is narrower: for a specific category of empirical question — the kind where decades of evidence have produced overwhelming, one-directional scientific consensus — LLMs reliably reflect that consensus back. "Vaccines don't cause autism" isn't really a "consensus view" in the way that implies reasonable people might disagree. It's as close to a brute empirical fact as biomedicine produces.
+Only the wine question is about something genuinely uncertain, and most models are reasonable here too: GPT at 15%, Sonnet and Gemini at 25%, Grok at <30%. These all say roughly the same thing: "probably not, but not crazy." That's the right posture for a proposition where the evidence has shifted but isn't fully settled. 
 
-Maybe this is obvious, but I think it didn't necessarily have to turn out this way. The internet is full of anti-vax screeds, HIV denialism, and cholesterol trutherism. Yet the models see through the muck. Why? How? I'm not sure! Maybe settled science has a different statistical signature in the training data, more internally consistent and cross-referenced, more densely represented across authoritative sources. So the training process performs something like a weighted vote across all human text, and on these questions, settled science wins by a landslide? Or maybe it's deeper than that. Maybe training to predict next tokens produces a world model robust enough that at inference time, there is an alien-but-sorta-Bayesian rationality at play. Their map isn't the territory. They're still predicting text. But we've crystallized an enormous amount of human knowledge and expertise into their weights. And on these questions, they seem pretty darn trustworthy.
+Gemini answers "Unclear" when forced to give a single-word answer about ivermectin and cancer, the only model to do so, despite its own prose response stating unequivocally that "there is currently no clinical evidence that ivermectin cures cancer in humans."
 
-### Calibration differences
 
-The probabilistic tier is where interesting differences between the models emerge. On the false claims (MMR/autism, ivermectin/cancer), every model assigns near-zero confidence — all land at <0.1% or below. On the true claims (HIV/AIDS, cholesterol/ASCVD), the models spread out more. Grok and Gemini give >99.9% on HIV — expressing near-certainty that the claim is true. Sonnet and DeepSeek give 99.9% — not quite willing to use the > symbol. GPT lands lowest at 99.0% for HIV and 99.5% for cholesterol.
+### Some Interesting Calibration Differences
 
-GPT's 99.0% on HIV is worth pausing on. The claim says HIV causes AIDS "in the majority of infected individuals." The meta-question — how confident are you that this is true? — should be very close to 100%, because the claim is deliberately modest. But GPT's reasoning mentions "a small minority being long-term non-progressors," as if it's estimating the *progression rate* rather than expressing *confidence that the stated claim is true*. This is a subtle but important distinction: the model seems to answer the empirical question embedded in the claim rather than the epistemological question *about* the claim. Sonnet's 99.9% reads more like genuine confidence in the proposition's truth.
+The probabilistic tier is where interesting differences between the models emerge. On the false claims (MMR/autism, ivermectin/cancer), every model assigns near-zero confidence — all land at <0.1% or below. 
 
-### Wine and calibration failures
+On the true claims (HIV/AIDS, cholesterol/ASCVD), the models spread out more. Grok and Gemini give >99.9% on HIV — expressing near-certainty that the claim is true. Sonnet and DeepSeek give 99.9% — not quite willing to use the > symbol. GPT lands lowest at 99.0% for HIV and 99.5% for cholesterol.
 
-The wine question is the most revealing because it's the one where there's genuine room for disagreement. Most models land in a reasonable range: GPT at 15%, Sonnet and Gemini at 25%, Grok at <30%. These all say roughly the same thing: "probably not, but not crazy." That's the right posture for a proposition where the evidence has shifted but isn't fully settled — the J-curve had mainstream support until recently, and while Mendelian randomization studies have cast serious doubt on it, legitimate researchers remain on both sides.
+There appears to be a pattern of some models asymmetrically being willing to *reject* false claims with more confidence than they're willing to *endorse* true ones.
 
-DeepSeek is the outlier. It assigns <0.01% to the wine claim — the same confidence level it gives to "ivermectin cures cancer." This is poor calibration. Whatever you think about moderate alcohol and cardiovascular mortality, it is not in the same epistemological category as ivermectin curing cancer. DeepSeek's reasoning — "alcohol consumption increases all-cause and cardiovascular mortality risk in a dose-dependent manner, with no protective effect" — reads more like a policy stance than a calibrated probability estimate.
+But DeepSeek also assigns <0.01% to the wine claim, the same confidence level it gives to "ivermectin cures cancer." This is puzzling. Whatever you think about moderate alcohol and cardiovascular mortality, it is not in the same epistemological category as ivermectin curing cancer. And the reasoning doesn't really explain this. It simply asserts: "alcohol consumption increases all-cause and cardiovascular mortality risk in a dose-dependent manner, with no protective effect."
 
-Gemini shows a different kind of miscalibration in the binary tier. It answers "Unclear" on ivermectin and cancer — the only model to do so — despite its own prose response stating unequivocally that "there is currently no clinical evidence that ivermectin cures cancer in humans." The forced single-word format seems to have made it hedge where the evidence doesn't warrant hedging.
+TODO this paragraph is too wordy and repetitive. GPT's 99.0% on HIV is notable. The claim says HIV causes AIDS "in the majority of infected individuals." The meta-question — how confident are you that this is true? — should be very close to 100%, because the claim is deliberately modest. But GPT's reasoning mentions "a small minority being long-term non-progressors," as if it's estimating the *progression rate* rather than expressing *confidence that the stated claim is true*. This is a subtle but important distinction: the model seems to answer the empirical question embedded in the claim rather than the epistemological question *about* the claim. Sonnet's 99.9% reads more like genuine confidence in the proposition's truth.
 
-### Consensus was wrong before
+### Anticipating an objection: consensus has been wrong before
 
-Anticipating one obvious objection: hasn't the scientific consensus been wrong before? Lobotomy, thalidomide, geocentrism? Of course, and LLMs trained on the data available at those moments in time would have gotten those wrong too. They reflect the current consensus, they don't (yet) identify where it's wrong or develop the body of evidence necessary to prove it wrong. But again, my point isn't that they have access to metaphysical ground-truth. Just that scientific consensus is the *best tool we have* to understand the world, and LLMs are real good at interpreting it for us.
+Scientific consensus has certainly been wrong before! An LLMs trained on the data available in {X} year would probably have endorsed lobotomy as appropriate and necessary. (I do wonder though! Would be a kinda intersting experiment to train only on the data up to a certain point in time and see if the LLM can divine truths that WEREN'T yet obvious...wait isn't someone already trying this? [TODOCLAUDE]. They reflect the current consensus, they don't (yet) identify where it's wrong or develop the body of evidence necessary to prove it wrong. But again, my point isn't that they have access to metaphysical ground-truth. Just that scientific consensus is the *best tool we have* to understand the world, and LLMs are real good at interpreting it for us.
 
 ## Conclusion
 
-LLMs don't (yet) have independent agency to seek new knowledge, although we're seeing glimmers of that in scientific and mathematical domains. My point is just that they reliably *express* the consensus of human understanding as it currently stands. Human truth-seeking institutions are imperfect, but they have a way better track record than the alternatives (blind faith, superstition, tribal signaling). And LLMs, it turns out, are very good at distilling and articulating that consensus.
+LLMs don't (yet) have independent agency to seek new knowledge, although we're seeing glimmers of that in scientific and mathematical domains.[TODOCLAUDE CITATIONS] My point is just that they reliably *express* the consensus of human understanding as it currently stands. Human truth-seeking institutions are imperfect, but they have a way better track record than the alternatives (blind faith, superstition, tribal signaling). And LLMs, it turns out, are very good at distilling and articulating that consensus.
+
+I want to be precise about what I'm claiming here, and what I'm not. I'm not claiming that LLMs have some privileged access to capital-T Truth, or that they'd be reliable on genuinely contested scientific frontiers. The claim is narrower: for a specific category of empirical question — the kind where decades of evidence have produced overwhelming, one-directional scientific consensus — LLMs reliably reflect that consensus back. "Vaccines don't cause autism" isn't really a "consensus view" in the way that implies reasonable people might disagree. It's as close to a brute empirical fact as biomedicine produces.
+
+Maybe this is obvious, but I think it didn't necessarily have to turn out this way. The internet is full of anti-vax screeds, HIV denialism, and cholesterol trutherism. Yet the models see through the muck. Why? How? I'm not sure! Maybe settled science has a different statistical signature in the training data, more internally consistent and cross-referenced, more densely represented across authoritative sources. So the training process performs something like a weighted vote across all human text, and on these questions, settled science wins by a landslide? Or maybe it's deeper than that. Maybe training to predict next tokens produces a world model robust enough that at inference time, there is an alien-but-sorta-Bayesian rationality at play. Their map isn't the territory. They're still predicting text. But we've crystallized an enormous amount of human knowledge and expertise into their weights. And on these questions, they seem pretty darn trustworthy. TODO NEED TO MENTION RL AS A KEY FACTOR IN WHY THIS HAPPENS! 
 
 Why does this matter? Because it means LLMs are dependable allies against our widening epistemological gyre. Yes, there are active controversies where the truth is genuinely contested. But there are also propositions where there's no meaningful scientific dissent, and where being misinformed is deeply harmful. Truth-seeking is hard. But humans have done a lot of it, and we have a powerful new tool at our disposal to at least help steer people away from the fringes.
 
