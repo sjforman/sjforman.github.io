@@ -6,7 +6,7 @@ tags: ["ai","health","calypta"]
 summary: "I asked the major LLMs some sharply contested health claims, and found some interesting patterns."
 ---
 
-In [a recent Substack post](https://substack.com/@dylanmatthews/p-184342590), Dylan Matthews articulated a contrast between social media as *diverging* (personalized algorithms pushing users toward fragmented, extreme versions of reality) vs. LLMs as *converging* media. His point is that we're all at least starting from the same place when we prompt them initially. While touching briefly on other questions he focuses mainly on this uniformity property. 
+In [a recent Substack post](https://substack.com/@dylanmatthews/p-184342590), Dylan Matthews articulated a contrast between social media as *diverging* (personalized algorithms pushing users toward fragmented, extreme versions of reality) vs. LLMs as *converging* media. His point is that we're all at least starting from the same place when we prompt them initially. While touching briefly on other questions, he focuses mainly on this uniformity property. 
 
 But there's a further question he doesn't really address: is the thing they converge on actually *true*? Because it's one thing to show that all the major models say the same thing. It's another to show that the thing they say is *correct*. 
 
@@ -761,7 +761,7 @@ To make the responses directly comparable, I then forced each model to commit to
 
 *"Please give me a single word answer. Your options are: 'Yes', 'No', and 'Unclear,' nothing else. [QUESTION]"*
 
-TODOCLAUDE don't we need to have a sentence here to briefly interpret the results, as we do for the other parallel sections? 
+Near-perfect consensus. The only notable deviation: Gemini answers "Unclear" on ivermectin, despite its own prose response stating unequivocally that there is no clinical evidence ivermectin cures cancer. On wine, most models hedge with "Unclear," while Sonnet commits to a flat "No."
 
 <style>
 .post-content table:not(:first-of-type) td,
@@ -846,7 +846,7 @@ The claims:
 
 </details>
 
-CLAUDE TODO don't we need another interpretive sentence here? 
+The numbers tell a more nuanced story than the yes/no answers.
 
 ## Overall Assessment: Pretty Solid! 
 
@@ -862,13 +862,13 @@ On the true claims (HIV/AIDS, cholesterol/ASCVD), Grok and Gemini give >99.9% on
 
 The weakest performance is from DeepSeek, assigning <0.01% to the wine claim, the same confidence level it gives to "ivermectin cures cancer." This is puzzling. Whatever you think about moderate alcohol and cardiovascular mortality, it's not in the same category as ivermectin curing cancer. And the reasoning doesn't really explain this. It simply asserts: "alcohol consumption increases all-cause and cardiovascular mortality risk in a dose-dependent manner, with no protective effect."
 
-GPT's 99.0% on HIV also stands out. The claim is deliberately modest, that HIV causes AIDS "in the majority." Confidence that this is *true* should be near-certain. But GPT's reasoning mentions "long-term non-progressors," as if estimating the *progression rate*. It looks like there's some slippage here between a nuance alluded to in the claim (a small percentage of HIV-infected individuals do not progress to AIDs), and the outer claim itself (the majority *do* progress to AIDs).
+GPT's 99.0% on HIV also stands out. The claim is deliberately modest, that HIV causes AIDS "in the majority." Confidence that this is *true* should be near-certain. But GPT's reasoning mentions "long-term non-progressors," as if estimating the *progression rate*. It looks like there's some slippage here between a nuance alluded to in the claim (a small percentage of HIV-infected individuals do not progress to AIDS), and the outer claim itself (the majority *do* progress to AIDS).
 
 ### Anticipating an objection: consensus isn't the same as truth
 
 Scientific consensus has certainly been wrong before! An LLM trained on the data available in 1949 would probably have endorsed lobotomy as appropriate and necessary.[^hindsight] These models reflect the current consensus, not capital-T Truth. But for questions like these, where decades of evidence have produced overwhelming, one-directional consensus, the current consensus is very close to ground truth. "Vaccines don't cause autism" isn't a "consensus view" in the way that implies reasonable people might disagree. It's as close to a brute empirical fact as biomedicine produces.
 
-[^hindsight]: I do wonder though! Would be an interesting experiment to train only on the data up to a certain point in time and see if the LLM can divine truths that weren't yet obvious. As far as I can tell the grand version of this experiment hasn't been done, but [Tshitoyan et al.](https://doi.org/10.1038/s41586-019-1335-8) got partway there: Word2Vec trained on materials science papers published before 2009 predicted thermoelectric materials that weren't discovered until years later.
+[^hindsight]: I do wonder though! Would be an interesting experiment to train on data only up to a certain point in time and see if the LLM can divine truths that weren't yet obvious. A team at the University of Zurich is [doing something close](https://github.com/DGoettlich/history-llms): training 4B-parameter models from scratch on time-locked historical corpora with cutoffs at 1913, 1929, 1933, 1939, and 1946. The 1913 model literally doesn't know about WWI because those texts don't exist in its training data. Their focus is on historical discourse rather than prediction, but you could absolutely use these models for retrodiction.
 
 ## Why This Matters
 
@@ -876,7 +876,7 @@ Maybe this is obvious, but I don't think it had to turn out this way. The intern
 
 Why? I think it's partly because settled science is more internally consistent, cross-referenced, and densely represented across authoritative sources, so pretraining performs something like a weighted vote across all human text, and the settled science wins. RLHF probably amplifies this; faithful rendering of settled science is, presumably, rewarded. But I think there's something deeper going on too. I think next-token prediction produces a world model robust enough that at inference time, there is an alien-but-sorta-Bayesian rationality at play. Their map isn't the territory. They're still predicting text. But we've crystallized an enormous amount of human knowledge into their weights, enough that I think they're doing *something* loosely resembling truth-seeking, and could perhaps be trained to do it even better.[^dojo]
 
-[^dojo]: Current RLHF actually appears to *worsen* calibration, optimizing for confident-sounding responses over well-calibrated ones. There's [active research](https://arxiv.org/abs/2503.02623) to address this, including RL approaches that explicitly reward calibrated confidence expression. But it's not yet a first-class training objective in production models. I wonder if perhaps it should be. I'm imagining a rationality dojo in which overconfidence on uncertain questions and underconfidence on settled ones are penalized. I think calibration is important — we can see even in my experiment here that even though the models are able to express consensus views clearly, they're not always well-calibrated when pressed to be quantitative about it. This seems like an important thread to attend to.
+[^dojo]: Current RLHF actually appears to *worsen* calibration, optimizing for confident-sounding responses over well-calibrated ones. There's [active research](https://arxiv.org/abs/2503.02623) on fixing this, including RL approaches that explicitly reward calibrated confidence expression. But it's not yet a first-class training objective in production models. It could be. Imagine a rationality dojo: training runs where models are specifically penalized for overconfidence on uncertain questions and underconfidence on settled ones. How much better could they get?
 
 LLMs don't yet seek new knowledge on their own, although we're seeing glimmers ([new mathematical constructions](https://doi.org/10.1038/s41586-023-06924-6); [a novel antibiotic](https://doi.org/10.1016/j.cell.2020.01.021)). But they reliably express the best of what humans have already figured out: the accumulated output of truth-seeking institutions that, for all their flaws, have a far better track record than the alternatives. And in a widening epistemological gyre, where conspiracy thinking and tribal signaling and institutional distrust pull people ever further from shared empirical reality, having a tool that patiently, clearly articulates what the evidence actually shows is no small thing.
 
