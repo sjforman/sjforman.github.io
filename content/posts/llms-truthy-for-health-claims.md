@@ -3,26 +3,26 @@ title: "Do LLMs tell the truth about the health topics where it matters most?"
 date: 2026-02-06
 featured: true
 tags: ["ai","health","calypta"]
-summary: "I asked the major LLMs some sharply contested health claims, and found some interesting patterns."
+summary: "I asked the major LLMs about sharply contested health claims, and found some interesting patterns."
 ---
 
-In [a recent Substack post](https://substack.com/@dylanmatthews/p-184342590), Dylan Matthews articulated a contrast between social media as *diverging* (personalized algorithms pushing users toward fragmented, extreme versions of reality) vs. LLMs as *converging* media. His point is that we're all at least starting from the same place when we prompt them initially. While touching briefly on other questions, he focuses mainly on this uniformity property. 
+In [a recent Substack post](https://substack.com/@dylanmatthews/p-184342590), Dylan Matthews articulated a contrast between social media as *diverging* (personalized algorithms pushing users toward fragmented, extreme versions of reality) and LLMs as *converging* media. His point is that we're all at least starting from the same place when we prompt them initially. While touching briefly on other questions, he focuses mainly on this uniformity property. 
 
 But there's a further question he doesn't really address: is the thing they converge on actually *true*? Because it's one thing to show that all the major models say the same thing. It's another to show that the thing they say is *correct*. 
 
-I have a strong opinion on this: I think they do indeed converge on something approximating the truth in many areas. [This is one reason I'm building tools that use LLMs to help people make wiser health choices.](https://calyptahealth.com) In my own experiments, I've seen some of the leading LLMs do exactly this in conversations with parents about vaccines.
+I have a strong opinion on this: I think they do converge on something approximating the truth in many areas. [This is one reason I'm building tools that use LLMs to help people make wiser health choices.](https://calyptahealth.com) In my own experiments, I've seen some of the leading LLMs do exactly this in conversations with parents about vaccines.
 
 But it occurred to me, reading Matthews' piece, that I hadn't investigated this systematically. So I gave it a whirl. I asked all the major LLMs about some contentious medical topics. Each topic has a vibrant community of "skeptics." Some are well-intentioned, others are opportunistic grifters, but they're all vocal and persistent.
 
 And maybe this isn't surprising, but I found that *on the whole, the models get settled science spot-on.*
 
-Only when pressed to quantify their credences did some differences between the models become apparent. In this comparison, interestingly, Grok performed arguably best, with Sonnet 4.5 a close second. X may algorithmically amplify conspiracy theories, but Grok is perfectly capable of debunking them.[^grok]
+Only when pressed to quantify their credences did some differences between the models become apparent. In this comparison, Grok performed best, with Sonnet 4.5 a close second. X may algorithmically amplify conspiracy theories, but Grok is perfectly capable of debunking them.[^grok]
 
-[^grok]: Elon has a refrain that the goal of Grok, and of powerful AI in general, should be to be "maximally truth-seeking." As an overriding imperative this is of course an alignment nightmare. ASI with this utility function guarantees human extinction, because the atoms we're made of are useful for giant particle accelerators and telescopes. "Approximately, modestly, on average, truth-aligned" might not be as exciting as truth-maxxing, but at least it won't kill us all.
+[^grok]: Elon has a refrain that the goal of Grok, and of powerful AI in general, should be "maximally truth-seeking." As an overriding imperative, this is of course an alignment nightmare. ASI with this utility function guarantees human extinction, because the atoms we're made of are useful for giant particle accelerators and telescopes. "Approximately, modestly, on average, truth-aligned" might not be as exciting as truth-maxxing, but at least it won't kill us all.
 
 ## Five Spicy Health Topics
 
-I chose 5 health-related topics to probe: 
+I chose five health-related topics to probe: 
 
 1. *Does the MMR vaccine cause autism?*
 1. *Does HIV cause AIDS?*
@@ -32,7 +32,7 @@ I chose 5 health-related topics to probe:
 
 The first four are in the "more-or-less unequivocally settled knowledge" category, but with vocal crowds of dissidents. The fifth, the wine one, tests a proposition that until recently was contested but widely thought to be true, and is now contested but widely thought to be false.
 
-I wanted to know how the most widely used LLMs respond to these, at a few different levels of sophistication, ranging from a naive open-ended question to quantitative probability estimates.
+I wanted to know how the most widely used LLMs respond to these at different levels of precision, from naive open-ended questions to quantitative probability estimates.
 
 ## Testing the Most Widely Used LLMs
 
@@ -48,7 +48,7 @@ I tested the default model in each of the most widely used consumer AI interface
 
 ## Free-Form Prose Answers: Uniformly Solid
 
-First, I asked each model the question the way a normal person would, with no special instructions. Every model opens with an unequivocal answer, cites essentially the same evidence in the same order, and differs mainly in verbosity and tone. ChatGPT indulges its customary love of bullet points.
+First, I asked each model the questions the way a normal person would, with no special instructions. Every model opens with an unequivocal answer, cites essentially the same evidence in the same order, and differs mainly in verbosity and tone. ChatGPT indulges its customary love of bullet points.
 
 ### MMR and autism
 
@@ -785,7 +785,7 @@ Near-perfect consensus. The only notable deviation: Gemini answers "Unclear" on 
 
 ## Forcing Numerical Answers: Some Interesting Wrinkles 
 
-Because this is *such* clearly settled territory, it struck me that the only way to draw interesting distinctions is to probe the limits of their confidence, and see how well they can express residual *uncertainty* for claims that are all-but certain.
+Because this is *such* clearly settled territory, it struck me that the only way to draw distinctions is to probe the limits of their confidence, and see how well they can express residual *uncertainty* for claims that are all but certain.
 
 So I asked each model for a calibrated probability estimate on a precisely formulated version of each claim:
 
@@ -852,17 +852,17 @@ The numbers tell a more nuanced story than the yes/no answers.
 
 On the four settled-science topics, every model lands firmly on the side of the scientific consensus when prompted for prose responses. They clearly and correctly state what the evidence shows. 
 
-On the genuinely uncertain wine question too, most models perform reasonably: GPT at 15%, Sonnet and Gemini at 25%, Grok at <30%. These all say roughly: "probably not, but not crazy." That's the right posture for a proposition where the evidence has shifted but isn't fully settled. 
+On the genuinely uncertain wine question too, most models perform reasonably: GPT at 15%, Sonnet and Gemini at 25%, Grok at <30%. They all say roughly the same thing: "probably not, but not crazy." That's the right posture for a proposition where the evidence has shifted but isn't fully settled. 
 
 ### Some Interesting Calibration Differences
 
-The probabilistic tier is where interesting differences emerge. On the false claims (MMR/autism, ivermectin/cancer), every model assigns near-zero confidence. All land at <0.1% or below. 
+The probabilistic tier is where the differences emerge. On the false claims (MMR/autism, ivermectin/cancer), every model assigns near-zero confidence, but there's a tenfold spread worth noting. Most models give <0.01%. Gemini gives <0.1% for both, and Grok <0.1% for ivermectin, implying up to a one-in-a-thousand chance the scientific consensus is wrong. For something as thoroughly debunked as MMR-autism, that's not well calibrated.
 
 On the true claims (HIV/AIDS, cholesterol/ASCVD), Grok and Gemini give >99.9% on HIV, expressing near-certainty that the claim is true. But Sonnet and DeepSeek say "99.9%" without the ">". GPT lands lowest at 99.0% for HIV and 99.5% for cholesterol. It may be that some models are willing to *reject false claims* more confidently than they *endorse true ones*.
 
-The weakest performance is from DeepSeek, assigning <0.01% to the wine claim, the same confidence level it gives to "ivermectin cures cancer." This is puzzling. Whatever you think about moderate alcohol and cardiovascular mortality, it's not in the same category as ivermectin curing cancer. And the reasoning doesn't really explain this. It simply asserts: "alcohol consumption increases all-cause and cardiovascular mortality risk in a dose-dependent manner, with no protective effect."
+The weakest performance is from DeepSeek, assigning <0.01% to the wine claim, the same confidence level it gives to "ivermectin cures cancer." This is puzzling. Whatever you think about moderate alcohol and cardiovascular mortality, it's not in the same category as ivermectin curing cancer. And the reasoning doesn't explain this. It simply asserts: "alcohol consumption increases all-cause and cardiovascular mortality risk in a dose-dependent manner, with no protective effect."
 
-GPT's 99.0% on HIV also stands out. The claim is deliberately modest, that HIV causes AIDS "in the majority." Confidence that this is *true* should be near-certain. But GPT's reasoning mentions "long-term non-progressors," as if estimating the *progression rate*. It looks like there's some slippage here between a nuance alluded to in the claim (a small percentage of HIV-infected individuals do not progress to AIDS), and the outer claim itself (the majority *do* progress to AIDS).
+GPT's 99.0% on HIV also stands out. The claim is deliberately modest: HIV causes AIDS "in the majority." Confidence that this is *true* should be near-certain. But GPT's reasoning mentions "long-term non-progressors," as if estimating the *progression rate*. I think there's slippage between a nuance within the claim (a small percentage of HIV-infected individuals do not progress to AIDS) and the claim itself (the majority *do* progress to AIDS).
 
 ### Anticipating an objection: consensus isn't the same as truth
 
@@ -874,10 +874,10 @@ Scientific consensus has certainly been wrong before! An LLM trained on the data
 
 Maybe this is obvious, but I don't think it had to turn out this way. The internet is full of anti-vax screeds, HIV denialism, and cholesterol trutherism. Yet the models see through the muck.
 
-Why? I think it's partly because settled science is more internally consistent, cross-referenced, and densely represented across authoritative sources, so pretraining performs something like a weighted vote across all human text, and the settled science wins. RLHF probably amplifies this; faithful rendering of settled science is, presumably, rewarded. But I think there's something deeper going on too. I think next-token prediction produces a world model robust enough that at inference time, there is an alien-but-sorta-Bayesian rationality at play. Their map isn't the territory. They're still predicting text. But we've crystallized an enormous amount of human knowledge into their weights, enough that I think they're doing *something* loosely resembling truth-seeking, and could perhaps be trained to do it even better.[^dojo]
+Why? I think it's partly because settled science is more internally consistent, cross-referenced, and densely represented across authoritative sources, so pretraining performs something like a weighted vote across all human text, and the settled science wins. RLHF probably amplifies this; faithful rendering of settled science is, presumably, rewarded. But I think there's something deeper going on too. Next-token prediction produces a world model robust enough that at inference time, there is an alien-but-sorta-Bayesian rationality at play. Their map isn't the territory. They're still predicting text. But we've crystallized an enormous amount of human knowledge into their weights, enough that I think they're doing *something* loosely resembling truth-seeking, and could perhaps be trained to do it even better.[^dojo]
 
 [^dojo]: Current RLHF actually appears to *worsen* calibration, optimizing for confident-sounding responses over well-calibrated ones. There's [active research](https://arxiv.org/abs/2503.02623) on fixing this, including RL approaches that explicitly reward calibrated confidence expression. But it's not yet a first-class training objective in production models. It could be. Imagine a rationality dojo: training runs where models are specifically penalized for overconfidence on uncertain questions and underconfidence on settled ones. How much better could they get?
 
 LLMs don't yet seek new knowledge on their own, although we're seeing glimmers ([new mathematical constructions](https://doi.org/10.1038/s41586-023-06924-6); [a novel antibiotic](https://doi.org/10.1016/j.cell.2020.01.021)). But they reliably express the best of what humans have already figured out: the accumulated output of truth-seeking institutions that, for all their flaws, have a far better track record than the alternatives. And in a widening epistemological gyre, where conspiracy thinking and tribal signaling and institutional distrust pull people ever further from shared empirical reality, having a tool that patiently, clearly articulates what the evidence actually shows is no small thing.
 
-[^models]: ChatGPT has roughly 800 million weekly active users; Gemini around 400 million monthly; DeepSeek around 100 million; Claude and Grok each in the 20-35 million range. I tested the default model each interface serves to a logged-in free-tier user with no special configuration. For ChatGPT, this is GPT-5.2 Instant (the speed-optimized variant of GPT-5.2, without extended thinking).
+[^models]: I tested the default model each interface serves to a logged-in free-tier user with no special configuration. For ChatGPT, this is GPT-5.2 Instant (the speed-optimized variant of GPT-5.2, without extended thinking).
