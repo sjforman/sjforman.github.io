@@ -1,7 +1,7 @@
 ---
 title: "'Hi Scott, it's Don from Reno, call me back as soon as you can.'"
 date: 2026-01-21
-featured: true
+featured: false
 tags: ["health", "cancer", "personal"]
 ---
 

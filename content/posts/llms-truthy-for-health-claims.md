@@ -1,7 +1,7 @@
 ---
 title: "Do LLMs tell the truth about the health topics where it matters most?"
 date: 2026-02-06
-featured: true
+featured: false
 tags: ["ai","health","calypta"]
 summary: "I asked the major LLMs about sharply contested health claims, and found some interesting patterns."
 ---
