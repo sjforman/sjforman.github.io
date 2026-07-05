@@ -1,5 +1,8 @@
 title: "Scott J. Forman"
 
+params:
+  description: "Personal website of Scott J. Forman, accomplished indoorsman."
+
 taxonomies:
   tag: "tags"
 

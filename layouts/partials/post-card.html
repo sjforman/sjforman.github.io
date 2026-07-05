@@ -1,0 +1,9 @@
+<a href="{{ .RelPermalink }}"
+    class="block bg-white rounded-xl p-4 sm:p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
+    <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date | time.Format ":date_long" }}{{ end }}</p>
+    <h2 class="text-xl sm:text-2xl font-semibold mb-2">{{ .Title }}</h2>
+    {{ if .Params.subtitle }}
+    <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-4 italic">{{ .Params.subtitle }}</p>
+    {{ end }}
+    <div class="post-summary">{{ .Summary | replaceRE `<sup[^>]*>.*?</sup>` "" | replaceRE `</?p[^>]*>` "" | replaceRE `<a [^>]*>|</a>` "" | replaceRE `</?em>|</?strong>` "" | safeHTML }}</div>
+</a>

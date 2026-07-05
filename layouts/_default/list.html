@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main class="flex flex-col items-center min-h-screen px-4 py-8 space-y-4 sm:space-y-8 dark:bg-gray-900 dark:text-slate-50">
+<div class="flex flex-col items-center min-h-screen px-4 py-8 space-y-4 sm:space-y-8 dark:bg-gray-900 dark:text-slate-50">
     <!-- Tags Filter -->
     <div class="tags-filter text-sm mb-4 flex flex-wrap items-center justify-center gap-2 max-w-3xl">
         {{ if .Data.Term }}
@@ -12,62 +12,14 @@
             {{ end }}
         {{ end }}
     </div>
-    
+
     {{ $currentPageTag := .Params.tag }}
     {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $currentPageTag) }}
-        <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-4 sm:p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
-            <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-            <h2 class="text-xl sm:text-2xl font-semibold mb-2">{{ .Title }}</h2>
-            {{ if .Params.subtitle }}
-            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-4 italic">{{ .Params.subtitle }}</p>
-            {{ end }}
-            <div class="post-summary">{{ .Summary | replaceRE `<sup[^>]*>.*?</sup>` "" | replaceRE `</?p[^>]*>` "" | replaceRE `<a [^>]*>|</a>` "" | replaceRE `</?em>|</?strong>` "" | safeHTML }}</div>
-        </a>
+        {{ partial "post-card.html" . }}
     {{ else }}
         {{ range .Pages }}
-            <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-4 sm:p-8 w-full max-w-3xl shadow-lg transition duration-200 hover:shadow-xl dark:bg-gray-700">
-                <p class="text-sm text-gray-500 mb-2">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-                <h2 class="text-xl sm:text-2xl font-semibold mb-2">{{ .Title }}</h2>
-                {{ if .Params.subtitle }}
-                <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-4 italic">{{ .Params.subtitle }}</p>
-                {{ end }}
-                <div class="post-summary">{{ .Summary | replaceRE `<sup[^>]*>.*?</sup>` "" | replaceRE `</?p[^>]*>` "" | replaceRE `<a [^>]*>|</a>` "" | replaceRE `</?em>|</?strong>` "" | safeHTML }}</div>
-            </a>
+            {{ partial "post-card.html" . }}
         {{ end }}
     {{ end }}
-</main>
-<style>
-    /* Text typography - matches prose styling */
-    .post-summary {
-        line-height: 1.75;
-        color: #374151;
-    }
-
-    .dark .post-summary {
-        color: #d1d5db;
-    }
-
-    /* Grid layout only when images are present */
-    .post-summary:has(img) {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 8px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    @media (min-width: 640px) {
-        .post-summary:has(img) {
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
-        }
-    }
-
-    .post-summary img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 4px;
-    }
-</style>
+</div>
 {{ end }}
