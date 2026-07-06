@@ -224,19 +224,24 @@
   .hint.show { display: block; animation: fadein .4s; }
 
   /* decoder dial screen */
-  .strip { margin: 0 auto 4px; width: fit-content; max-width: 100%; }
+  .strip { margin: 0 auto 4px; width: fit-content; max-width: 100%; overflow: hidden; }
   .striplabel { font-size: 10px; letter-spacing: .22em; color: var(--dim); margin: 2px 0; }
   .striprow {
-    font-family: var(--mono); font-size: 13px; letter-spacing: 0;
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0;
     white-space: pre; line-height: 1.6;
   }
   .striprow.top { color: var(--cyan); }
-  .stripwin { width: 51ch; overflow: hidden; }
+  .stripwin { width: 51ch; max-width: 100%; overflow: hidden; }
   .stripwin .striprow {
     color: var(--glow);
     transition: transform .22s ease;
     width: 103ch;
   }
+  .cipherlabel {
+    font-size: 10px; letter-spacing: .22em; color: var(--dim);
+    text-align: center; margin: 2px 0 6px;
+  }
+  .cipherlabel + .cipherlabel, .cipherbox + .cipherlabel { margin-top: 14px; }
   .stripdivider { color: #33405c; font-size: 10px; line-height: 1; }
 
   .dialrow { display: flex; justify-content: center; gap: 18px; align-items: center; margin: 14px 0 4px; }
@@ -390,6 +395,9 @@
       <div class="shiftcounter" id="shiftcounter">KEY</div>
     </div>
     <div class="panel">
+      <div class="cipherlabel">THE MESSAGE READS…</div>
+      <div class="cipherbox" id="revealsrc"></div>
+      <div class="cipherlabel">…BECOMES</div>
       <div class="cipherbox" id="revealcipher"></div>
     </div>
     <div class="card" id="card">
@@ -700,6 +708,7 @@ function shiftChar(ch, k) {
 const ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let shift = 0, decoded = false, dwellTimer = null;
 
+renderCipher($("revealsrc"));
 renderCipher($("revealcipher"));
 const revealSpans = () => [...$("revealcipher").querySelectorAll(".cl")];
 const revealOriginals = revealSpans().map(s => s.textContent);
