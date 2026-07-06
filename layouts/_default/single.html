@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main class="relative flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8 dark:bg-gray-900 dark:text-slate-50">
+<div class="relative flex flex-col items-center min-h-screen bg-gray-50 px-4 py-8 dark:bg-gray-900 dark:text-slate-50">
     <div class="bg-white rounded-xl p-4 sm:p-8 w-full max-w-3xl shadow-lg dark:bg-gray-700 dark:text-slate-50 relative z-10">
         {{ if .Date }}
         <p class="text-sm text-gray-500 mb-2">{{ .Date | time.Format ":date_long" }}</p>
@@ -40,7 +40,7 @@
         </div>
         {{ end }}
     </div>
-</main>
+</div>
 
 <!-- Modal -->
 <div id="imageModal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50 z-50 p-4"
@@ -93,8 +93,8 @@
 
         document.querySelector('.modal-close').addEventListener('click', closeModal);
 
-        document.addEventListener('click', (event) => {
-            if (event.target.classList.contains('modal') && !event.target.closest('.modal-content')) {
+        document.getElementById('imageModal').addEventListener('click', (event) => {
+            if (event.target === event.currentTarget) {
                 closeModal();
             }
         });
@@ -118,11 +118,19 @@
     .markdown-content a {
         text-decoration: underline;
         transition: color 200ms;
-        color: #5FAAD9;
+        color: #2477BF;
     }
 
     .markdown-content a:hover {
-        color: #2477BF;
+        color: #185A94;
+    }
+
+    .dark .markdown-content a {
+        color: #8CC8F0;
+    }
+
+    .dark .markdown-content a:hover {
+        color: #B8DDF5;
     }
 
     .markdown-content ul {
@@ -247,26 +255,24 @@
         background-color: #f8f9fa;
     }
 
-    /* Dark mode support */
-    @media (prefers-color-scheme: dark) {
-        .markdown-content table {
-            background: #2d3748;
-        }
+    /* Dark mode support (class-based, follows the site toggle) */
+    .dark .markdown-content table {
+        background: #2d3748;
+    }
 
-        .markdown-content th {
-            background-color: #1a202c;
-            color: #e2e8f0;
-            border-bottom-color: #4a5568;
-        }
+    .dark .markdown-content th {
+        background-color: #1a202c;
+        color: #e2e8f0;
+        border-bottom-color: #4a5568;
+    }
 
-        .markdown-content td {
-            border-bottom-color: #4a5568;
-            color: #e2e8f0;
-        }
+    .dark .markdown-content td {
+        border-bottom-color: #4a5568;
+        color: #e2e8f0;
+    }
 
-        .markdown-content tr:nth-child(even) {
-            background-color: #2d3748;
-        }
+    .dark .markdown-content tr:nth-child(even) {
+        background-color: #2d3748;
     }
 </style>
 {{ end }}

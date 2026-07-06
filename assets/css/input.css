@@ -54,3 +54,37 @@
         @apply ml-1 text-gray-500 hover:text-gray-800 no-underline;
     }
 }
+
+/* Post-card summary text (shared by homepage and post lists).
+   Kept outside @layer so Tailwind never purges the .dark variant. */
+.post-summary {
+    line-height: 1.75;
+    color: #374151;
+}
+
+.dark .post-summary {
+    color: #d1d5db;
+}
+
+/* Grid layout only when images are present */
+.post-summary:has(img) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 640px) {
+    .post-summary:has(img) {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+}
+
+.post-summary img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
