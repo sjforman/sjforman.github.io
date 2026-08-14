@@ -47,7 +47,7 @@ The chat transcripts were illuminating. In several cases, correcting a single mi
 
 Meanwhile, external evidence has been accumulating. In head-to-head experiments this year (UK AI Security Institute and Oxford), frontier AI systems out-persuaded every class of expert human tested, including world-champion debaters who chose their own topics, and raised roughly [3x more real-money charitable donations than professional fundraisers](https://arxiv.org/abs/2606.16475). These systems clearly have the raw capability to change minds. Calypta is betting that this capability can be bent to positive and health-promoting purposes.
 
-Six guides are available now. They're free to use, with no signup required, because the people who most need this kind of support deserve easy access to it. But the flows aren't free to build or serve, so each one starts with a prepaid pool of conversations, and when the pool runs low, anyone can top it up. You could sponsor some conversations now, if you're so inclined. Here are the six:
+Six guides are available now. They're free to use, with no signup required, because the people who most need this kind of support deserve easy access to it. But they aren't free to build or serve, so each one starts with a prepaid pool of conversations, and when the pool runs low, anyone can top it up. You could sponsor some conversations now, if you're so inclined. Here are the six:
 
 * [MMR primary series](https://app.calyptahealth.com/pub/flows/mmr-primary-series) ([sponsor](https://app.calyptahealth.com/contribute/mmr-primary-series))
 * [HPV vaccination](https://app.calyptahealth.com/pub/flows/hpv-vaccination) ([sponsor](https://app.calyptahealth.com/contribute/hpv-vaccination))
