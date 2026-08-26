@@ -48,6 +48,6 @@ In the meantime, there's nothing stopping pediatricians from providing this info
 
 [Calypta Health](https://calyptahealth.com/) offers [tools to help with this problem](https://app.calyptahealth.com/), including a [guide for MMR specifically](https://app.calyptahealth.com/pub/flows/mmr-primary-series). Should we build Disease Information Statements, too, as supplements to the numberless VISs?
 
-[^stable]: This edition of the MMR VIS is dated January 31, 2025, and the document has read essentially this way for thirty years. Whatever you think of the current management of HHS, this is not their doing.
+[^stable]: This edition of the MMR VIS is dated January 31, 2025, and the document has read essentially this way for thirty years. These deficiencies aren't the work of the current HHS and CDC.
 
 [^strain]: The handful of vaccine-strain deaths on record were in severely immunocompromised patients, which is exactly why the vaccine is contraindicated for them.
