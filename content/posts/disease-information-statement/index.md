@@ -1,7 +1,6 @@
 ---
 title: "Why is there no Disease Information Statement?"
 date: 2026-08-26
-draft: true
 featured: true
 tags: ["calypta", "vaccines", "health"]
 subtitle: "An analysis of the deficiencies of the MMR Vaccine Information Statement"
