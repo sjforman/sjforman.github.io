@@ -3,7 +3,7 @@ title: "Why is there no Disease Information Statement?"
 date: 2026-08-26
 draft: true
 tags: ["calypta", "vaccines", "health"]
-subtitle: "A close reading of the MMR VIS, and an analysis of its deficiencies"
+subtitle: "An analysis of the deficiencies of the MMR Vaccine Information Statement"
 summary: "Measles kills about 1 in 1,000 unvaccinated people who catch it. The mandatory federal handout doesn't mention that, and since 1993 it hasn't had to."
 ---
 
