@@ -9,8 +9,6 @@ summary: "Measles kills about 1 in 1,000 unvaccinated people who catch it. The m
 
 This week we learned of [two tragic measles deaths in Pennsylvania](https://www.statnews.com/2026/08/25/two-measles-deaths-reported-pennsylvania-residents-not-vaccinated/) in unvaccinated individuals, the first in the US this year but probably not the last. There are many angles to this situation. There is the malign contribution of Andrew Wakefield and his ilk. There is the corrosion of official vaccine messaging at the highest levels of HHS. There's the distrust engendered by COVID-era errors in judgment by the public health establishment.
 
-<!--more-->
-
 But there's also something interesting going on in the extremely mundane department of...paperwork. Specifically the [Vaccine Information Statement](https://www.cdc.gov/vaccines/hcp/current-vis/mmr.html) legally mandated to be handed out alongside the MMR vaccine.[^stable] Take a look at it. What do you notice?
 
 One thing *I* notice is a conspicuous absence of numbers. Here's how measles is described:
