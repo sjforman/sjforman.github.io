@@ -18,19 +18,19 @@ One thing *I* notice is a conspicuous absence of numbers. Here's how measles is 
 
 All true! But no numbers. "Rarely," it can cause brain damage or death. How frequently is "rarely"? Unstated. How frequently do people suffer illness severe enough to require hospitalization? ¯\\\_(ツ)\_/¯.
 
-Another thing I notice is an asymmetry. Look at the rest of the document. There's a checklist of reasons to postpone or skip the shot, a section on vaccine reaction, a section on what to do if a serious reaction happens, with instructions to call 911. Then we get the federal reporting system for adverse events. A federal program that compensates vaccine injuries, with a filing deadline.
+Another thing I notice is an asymmetry. Looking at the rest of the document, I see a checklist of reasons to postpone or skip the shot, a section on vaccine reaction, a section on what to do if a serious reaction happens, with instructions to call 911. Then the federal reporting system for adverse events. And a federal program that compensates vaccine injuries, with a filing deadline.
 
-Overall, more than half of the document, 56% by my word count, is devoted to the possibility that the vaccine will hurt you. The three diseases combined get 15%. The vaccine's benefits get two sentences: 37 words, 4% of the document.
+Overall, more than half of the document, 56% by word count, is devoted to the possibility that the vaccine will hurt you. The three diseases combined get 15%. The vaccine's benefits get two sentences, 4% of the document.
 
 Here's the rundown:
 
 {{< imgproc path="vis-color-coded.png" command="resize 1600x" alt="Both pages of the CDC's MMR Vaccine Information Statement with every line color-coded: disease descriptions in blue (15% of words), vaccine benefits in green (4%), vaccine risks/reactions/VAERS/injury compensation in orange (56%), schedule and logistics in gray (25%)." >}}
 
-And the absence of numbers really does leave a distinct misimpression!
+And the absence of numbers really does leave a distinct misimpression.
 
-Measles death: "Rarely, measles can cause brain damage or death."
+**Measles death:** "Rarely, measles can cause brain damage or death."
 
-Vaccine death: "a very remote chance of a vaccine causing a severe allergic reaction, other serious injury, or death."
+**Vaccine death:** "a very remote chance of a vaccine causing a severe allergic reaction, other serious injury, or death."
 
 "Rarely" sounds pretty similar to "a very remote chance." In reality measles hospitalizes 1 in 5 unvaccinated people who catch it and kills roughly 1 in 1,000. MMR has never been documented to have killed a healthy person. Not rarely. Never.[^strain]
 
