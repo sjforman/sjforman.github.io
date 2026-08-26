@@ -42,9 +42,9 @@ But that requirement no longer exists. In 1993, a housekeeping amendment titled 
 
 As far as I can tell, this was happenstance. I don't think there was any conspiracy to hide the ball. And I have no objection to slimming the thing down. It just seems to me that something important was lost in the transition from 12 page pamphlet to 1 page handout.
 
-Maybe the law should be re-amended to once again require a full account of just how bad the diseases in question are. Or maybe the next leaders of HHS and CDC can augment the VISs in this way voluntarily. 
+Maybe the law should be re-amended to once again require a full account of just how bad the diseases in question are. Or maybe future leaders of HHS and CDC can augment the VISs in this way voluntarily.
 
-In the meantime, there's nothing stopping pediatricians from voluntarily providing this information. Even if most people don't read this stuff, it matters on the margins that the official communication on these topics is passively misleading about the risks. 
+In the meantime, there's nothing stopping pediatricians from providing this information. Even if most people don't read this stuff, it matters on the margins that the official communication on these topics is passively misleading about the risks. 
 
 [Calypta Health](https://calyptahealth.com/) offers [tools to help with this problem](https://app.calyptahealth.com/), including a [guide for MMR specifically](https://app.calyptahealth.com/pub/flows/mmr-primary-series). Should we build Disease Information Statements, too, as supplements to the numberless VISs?
 
