@@ -2,9 +2,9 @@
 title: "Why is there no Disease Information Statement?"
 date: 2026-08-26
 draft: true
-tags: ["calypta", "vaccines", "health", "policy"]
-subtitle: "A close reading of the MMR Vaccine Information Statement, and an analysis of its deficiencies"
-summary: "A close reading of the MMR Vaccine Information Statement, and an analysis of its deficiencies"
+tags: ["calypta", "vaccines", "health"]
+subtitle: "A close reading of the MMR VIS, and an analysis of its deficiencies"
+summary: "Measles kills about 1 in 1,000 unvaccinated people who catch it. The mandatory federal handout doesn't mention that, and since 1993 it hasn't had to."
 ---
 
 This week we learned of [two tragic measles deaths in Pennsylvania](https://www.statnews.com/2026/08/25/two-measles-deaths-reported-pennsylvania-residents-not-vaccinated/) in unvaccinated individuals, the first in the US this year but probably not the last. There are many angles to this situation. There is the malign contribution of Andrew Wakefield and his ilk. There is the corrosion of official vaccine messaging at the highest levels of HHS. There's the distrust engendered by COVID-era errors in judgment by the public health establishment.
