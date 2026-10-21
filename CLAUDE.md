@@ -11,6 +11,7 @@ npm run dev
 # Or run individually:
 npm run dev:server    # Hugo server on port 1314, drafts enabled
 npm run watch:css     # Tailwind CSS file watcher
+npm run build:css     # One-off Tailwind build (index.css is committed; CI does not run Tailwind)
 
 # Create a new post
 ./bin/make-post.sh "Post Title" "tag1, tag2"
@@ -23,7 +24,7 @@ Pushes to `production` branch trigger GitHub Actions deployment to GitHub Pages.
 
 ## Architecture
 
-**Hugo static site** with custom theme using **Tailwind CSS**.
+**Hugo static site** with custom theme using **Tailwind CSS v4**. There is no `tailwind.config.js`: configuration (sources, safelist, dark-mode variant, fonts, typography plugin) lives at the top of `assets/css/input.css`, which compiles to the committed `assets/css/index.css`.
 
 ### Content Structure
 - `content/posts/` - Blog posts as Markdown with YAML frontmatter
